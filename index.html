@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- egtycoon: pagina custom della build WebGL (BRIEF §P.4). Il marker «egtycoon» serve a
+     CraftBuild.CorreggiPaginaWeb per capire se Unity ha usato questo modello. -->
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Energy Grid Tycoon v0.1.0-alpha.1 | Energy Grid Tycoon</title>
+    <style>
+      html, body { height: 100%; margin: 0; padding: 0; background: #1d2330; }
+      body {
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        font-family: system-ui, "Segoe UI", sans-serif; overflow: hidden;
+      }
+      #unity-canvas { width: 960px; height: 600px; background: #1d2330; outline: none; }
+      #unity-barra { display: flex; gap: 12px; align-items: center; margin-top: 8px; color: rgb(160, 168, 190); font-size: 13px; }
+      #unity-fullscreen {
+        background: rgb(46, 55, 80); color: rgb(232, 230, 223); border: 0; border-radius: 4px;
+        padding: 6px 14px; font-size: 13px; cursor: pointer;
+      }
+      #unity-fullscreen:hover { background: rgb(58, 69, 104); }
+      #unity-avviso-tastiera { margin-top: 8px; color: rgb(200, 185, 138); font-size: 12px; }
+      /* BRIEF §P.4: avviso sui telefoni (niente tastiera: Spazio e frecce servono a giocare) */
+      #unity-avviso-mob {
+        position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+        background: rgba(150, 60, 50, 0.94); color: rgb(255, 255, 255);
+        text-align: center; padding: 8px 12px; font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="unity-avviso-mob" style="display:none">Il gioco è pensato per computer: su questo telefono mancano i tasti (Spazio, frecce) che servono a giocare.</div>
+    <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+    <div id="unity-barra">
+      <span>Energy Grid Tycoon v0.1.0-alpha.1</span>
+      <!-- BRIEF §P.4: pulsante «schermo intero» -->
+      <button id="unity-fullscreen">Schermo intero</button>
+    </div>
+    <!-- BRIEF §P.4: avviso «Clicca sul gioco per usare la tastiera», via al primo clic -->
+    <div id="unity-avviso-tastiera">Clicca sul gioco per usare la tastiera</div>
+
+    <script src="Build/build-web.loader.js"></script>
+    <script>
+      // BRIEF §P.4: Spazio e frecce comandano il gioco e non devono far scorrere la pagina.
+      window.addEventListener('keydown', function (e) {
+        if (e.code === 'Space' || e.code.indexOf('Arrow') === 0) e.preventDefault();
+      });
+
+      // BRIEF §P.4: avviso sui telefoni.
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        document.getElementById('unity-avviso-mob').style.display = 'block';
+      }
+
+      var canvas = document.querySelector('#unity-canvas');
+
+      // BRIEF §P.4: l'avviso sulla tastiera sparisce al primo clic sul gioco.
+      var avvioTastiera = document.getElementById('unity-avviso-tastiera');
+      canvas.addEventListener('pointerdown', function () {
+        avvioTastiera.style.display = 'none';
+      }, { once: true });
+
+      createUnityInstance(canvas, {
+        arguments: [],
+        dataUrl: "Build/build-web.data.unityweb",
+        frameworkUrl: "Build/build-web.framework.js.unityweb",
+        codeUrl: "Build/build-web.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Marco Scarlino",
+        productName: "Energy Grid Tycoon",
+        productVersion: "0.1.0-alpha.1",
+      }).then(function (unityInstance) {
+        // BRIEF §P.4: pulsante «schermo intero» (1 = schermo intero del browser, 0 = finestra).
+        document.getElementById('unity-fullscreen').onclick = function () {
+          unityInstance.SetFullscreen(1);
+        };
+      }).catch(function (message) {
+        alert(message);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "versione": 1,
+  "denaro_iniziale": 10000,
+  "carbone_iniziale": 500,
+  "prezzo_base_energia": 2.5,
+  "tasse": 0.1,
+  "tassa_per_abitante_ora": 0.15,
+  "larghezza_mappa": 32,
+  "altezza_mappa": 24,
+  "abitanti_iniziali": 50,
+  "soddisfazione_iniziale": 75,
+  "ore_al_giorno": 24,
+  "giorni_anno": 365,
+  "anni_di_partita": 2,
+  "popolazione_obiettivo": 400,
+  "soglia_inquinamento": 50,
+  "giorni_negativi_sconfitta": 30,
+  "domanda_per_abitante": 0.1,
+  "curva_domanda": [
+    0.55, 0.5, 0.5, 0.5, 0.5, 0.6, 0.8, 1.0,
+    1.05, 1.0, 1.0, 1.05, 1.1, 1.05, 1.0, 1.05,
+    1.2, 1.35, 1.45, 1.5, 1.4, 1.1, 0.8, 0.65
+  ],
+  "solare": {
+    "luce_media": 12,
+    "luce_ampiezza": 3,
+    "mezzogiorno_solare": 13,
+    "picco_medio": 0.8,
+    "picco_ampiezza": 0.2
+  },
+  "vento_massimo": 20,
+  "penalita_blackout_soddisfazione": 5,
+  "perdita_abitanti_blackout_pct": 0.002,
+  "recupero_soddisfazione_ora": 0.2,
+  "soglia_crescita_soddisfazione": 60,
+  "crescita_abitanti_ora": 0.04,
+  "capacita_base_municipio": 20,
+  "smaltimento_frazione_ora": 0.02,
+  "penalita_inquinamento_soddisfazione": 0.02,
+  "fattore_prezzo_minimo": 0.1,
+  "prezzo_pieno_a_surplus": 150,
+  "previsione_ore": 3,
+  "meteo_iniziale": {
+    "nuvolosita": 30,
+    "vento": 8,
+    "temperatura": 20
+  },
+  "meteo": {
+    "media": 15,
+    "stagionale": 10,
+    "diurna": 6,
+    "richiamo": 0.05,
+    "vento_target": 8,
+    "richiamo_vento": 0.1,
+    "nuvolosita_media": 45,
+    "nuvolosita_stagionale": 15,
+    "richiamo_nuvolosita": 0.05
+  }
+}
