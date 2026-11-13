@@ -7,7 +7,7 @@ soffocarla di inquinamento.
 
 Un gioco originale di **Marco Scarlino**. Gratuito.
 
-![Una partita appena iniziata, in pausa](immagini/schermata-partita.png)
+![Una partita al sesto giorno: pannelli solari, pale eoliche e una batteria attorno al municipio](immagini/schermata-partita.png)
 
 > **Stato: in sviluppo (alpha).** Il gioco si gioca dall'inizio alla fine, ma mancano ancora molte cose e qualcosa
 > può non funzionare. Ogni segnalazione aiuta: vedi [Segnalare un problema o un'idea](#segnalare-un-problema-o-unidea).
