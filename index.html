@@ -5,7 +5,21 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Energy Grid Tycoon v0.1.0-alpha.1 | Energy Grid Tycoon</title>
+    <title>Energy Grid Tycoon v0.1.0-alpha.2 | Energy Grid Tycoon</title>
+    <!-- M2c-2 (BRIEF): anteprima nei link condivisi — descrizione, Open Graph e Twitter Card. -->
+    <meta name="description" content="Porta l'energia a una città che cresce. Gioco gestionale gratuito, da giocare nel browser o da scaricare">
+    <meta property="og:title" content="Energy Grid Tycoon">
+    <meta property="og:description" content="Porta l'energia a una città che cresce. Gioco gestionale gratuito, da giocare nel browser o da scaricare">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scrnetto.github.io/energy-grid-tycoon-releases/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/scrnetto/energy-grid-tycoon-releases/main/immagini/anteprima-social.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:locale" content="it_IT">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon dall'icona del gioco (icona_gioco.png ridotta a 32 e 180 px, copiata nel modello). -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
     <style>
       html, body { height: 100%; margin: 0; padding: 0; background: #1d2330; }
       body {
@@ -32,7 +46,7 @@
     <div id="unity-avviso-mob" style="display:none">Il gioco è pensato per computer: su questo telefono mancano i tasti (Spazio, frecce) che servono a giocare.</div>
     <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
     <div id="unity-barra">
-      <span>Energy Grid Tycoon v0.1.0-alpha.1</span>
+      <span>Energy Grid Tycoon v0.1.0-alpha.2</span>
       <!-- BRIEF §P.4: pulsante «schermo intero» -->
       <button id="unity-fullscreen">Schermo intero</button>
     </div>
@@ -67,7 +81,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Marco Scarlino",
         productName: "Energy Grid Tycoon",
-        productVersion: "0.1.0-alpha.1",
+        productVersion: "0.1.0-alpha.2",
       }).then(function (unityInstance) {
         // BRIEF §P.4: pulsante «schermo intero» (1 = schermo intero del browser, 0 = finestra).
         document.getElementById('unity-fullscreen').onclick = function () {

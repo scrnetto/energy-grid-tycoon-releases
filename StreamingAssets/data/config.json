@@ -12,6 +12,7 @@
   "ore_al_giorno": 24,
   "giorni_anno": 365,
   "anni_di_partita": 2,
+  "data_inizio": "2020-10-18",
   "popolazione_obiettivo": 400,
   "soglia_inquinamento": 50,
   "giorni_negativi_sconfitta": 30,
