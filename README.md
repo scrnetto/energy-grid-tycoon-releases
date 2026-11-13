@@ -4,6 +4,7 @@
 [![Stato](https://img.shields.io/badge/stato-alpha-orange)](#versioni)
 [![Gioca nel browser](https://img.shields.io/badge/gioca-nel%20browser-3fae5a)](https://scrnetto.github.io/energy-grid-tycoon-releases/)
 [![Piattaforme](https://img.shields.io/badge/piattaforme-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-3f8fc9)](#scaricare-il-gioco)
+[![Ultimo aggiornamento](https://img.shields.io/github/release-date-pre/scrnetto/energy-grid-tycoon-releases?label=ultimo%20aggiornamento&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Download](https://img.shields.io/github/downloads/scrnetto/energy-grid-tycoon-releases/total?label=download&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Licenza](https://img.shields.io/badge/licenza-gratuito%2C%20tutti%20i%20diritti%20riservati-lightgrey)](LICENSE.md)
 [![Lingua](https://img.shields.io/badge/lingua-italiano-009246)](#)
@@ -24,8 +25,9 @@ Un gioco originale di **Marco Scarlino**. Gratuito.
 ## Gioca subito nel browser
 
 **[▶ Gioca a Energy Grid Tycoon nel browser](https://scrnetto.github.io/energy-grid-tycoon-releases/)**: niente da
-installare. Serve un computer con mouse e tastiera e un browser recente (Chrome, Firefox, Edge, Safari). Clicca sul
-gioco prima di usare la tastiera. I salvataggi restano nel browser che usi.
+installare. Serve un browser recente (Chrome, Firefox, Edge, Safari) su un computer con mouse e tastiera, oppure su
+un tablet: **tocco = clic, tocco lungo = clic destro**. Clicca sul gioco prima di usare la tastiera. I salvataggi
+restano nel browser che usi.
 
 ## Scaricare il gioco
 
@@ -55,14 +57,16 @@ Su Linux e macOS si controlla con `sha256sum -c SHA256SUMS.txt` (su macOS `shasu
 ### Requisiti
 
 - Uno schermo da almeno 1280×800.
-- Mouse e tastiera.
+- Mouse e tastiera (nella versione web va bene anche un tablet).
 - Circa 200 MB di spazio.
 - Una scheda video qualsiasi degli ultimi 10 anni: anche quelle integrate vanno bene.
 
 ## Come si gioca
 
-La partita parte **in pausa**: premi **Spazio** per far scorrere il tempo. A velocità 1× un'ora di gioco dura un
-secondo, e puoi accelerare a 2× e 4×.
+Il gioco si apre con il **menu iniziale**: **Nuova partita**, oppure **Continua** per riprendere l'ultimo
+salvataggio. La partita comincia il **18 ottobre 2020** e parte **in pausa**: premi **Spazio** per far scorrere il
+tempo. A velocità 1× un'ora di gioco dura un secondo, e puoi accelerare a 2× e 4×. Le stagioni seguono il
+calendario: si parte in autunno, e d'inverno le giornate sono più corte e il cielo più coperto.
 
 - **Obiettivo**: arrivare a **400 abitanti** con l'inquinamento **sotto la soglia** entro **2 anni**.
 - **Sconfitta**: se resti in rosso con i soldi per **30 giorni di fila**, oppure se finiscono i 2 anni.
@@ -91,8 +95,9 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 |---|---|
 | Tasti **1–7** | Scegli cosa costruire: linea, miniera, centrale a carbone, solare, eolico, batteria, quartiere |
 | **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta seleziona una casella e ne mostra i dettagli |
-| **Clic destro** | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
-| **Esc** | Annulla la scelta |
+| **Clic destro** (sul tablet: tocco lungo) | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
+| **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (riprendi, salva ed esci, nuova partita) |
+| **F11** | Schermo intero / finestra |
 | **Spazio** o pulsante ▶/❚❚ | Pausa / riprendi |
 | **F** o pulsanti delle frecce | Velocità 1×, 2×, 4× |
 | **V** | Avanza di un'ora sola |

@@ -12,6 +12,35 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.1.0-alpha.2] - 2026-11-14
+
+Menu, calendario e luce del giorno sulla mappa: il gioco ora ha un inizio, una pausa e un tempo che si legge.
+
+### Novità
+- **Menu iniziale** con il logo: Nuova partita, Continua (riprende l'ultimo salvataggio), Esci. Tutorial, livelli,
+  sfide e mondo aperto sono segnati «in arrivo». In fondo la versione e il credito, con il link al sito
+  dell'autore.
+- **Menu di pausa** con **Esc**: Riprendi, Salva ed esci al menu, Nuova partita (con conferma). Il tempo si ferma
+  finché il menu è aperto.
+- **Calendario**: la partita comincia il **18 ottobre 2020**. In alto si leggono il giorno di gioco, la data e
+  l'ora. Le stagioni seguono il calendario: si parte in autunno, l'inverno arriva il 21 dicembre.
+- **Stagione nel pannello Meteo**, con la sua icona.
+- **Giorno e notte sulla mappa**: la luce cambia con l'ora, e le nuvole scuriscono il cielo.
+- **Schermo intero**: il gioco parte a schermo intero; **F11** passa alla finestra e viceversa.
+- **Tablet e schermi touch** (versione web): un tocco è un clic, un **tocco lungo** è un clic destro.
+
+### Modifiche
+- Le linee elettriche fanno parte dei gruppi di costruzioni attaccate: un gruppo che tocca una linea collegata è
+  collegato.
+- Testi dell'interfaccia tutti in italiano (per esempio «Produzione dell'ultima ora»).
+- L'equilibrio del gioco resta lo stesso: con le stagioni nuove una partita ben giocata si vince più o meno nello
+  stesso tempo di prima.
+
+### Da sapere
+- I salvataggi della `0.1.0-alpha.1` si caricano: la data si ricava dalle ore già giocate.
+- **Esc** annulla prima la costruzione scelta; se non c'è niente da annullare, apre il menu di pausa.
+- Le versioni per Windows e macOS non sono ancora state provate su quei sistemi: se qualcosa non va, segnalalo.
+
 ## [0.1.0-alpha.1] - 2026-11-13
 
 La prima versione da provare. Si gioca dall'inizio alla fine, ma è un'alpha: ogni segnalazione aiuta.
@@ -35,4 +64,4 @@ La prima versione da provare. Si gioca dall'inizio alla fine, ma è un'alpha: og
 - Le versioni per Windows e macOS non sono ancora state provate su quei sistemi: se qualcosa non va, segnalalo.
 - Il gioco non è firmato: al primo avvio Windows e macOS chiedono una conferma (vedi «Al primo avvio» nel README).
 - In arrivo nelle prossime versioni: la luce del giorno e delle nuvole sulla mappa, lo schermo intero, il menu
-  iniziale.
+  iniziale (arrivati nella `0.1.0-alpha.2`).
