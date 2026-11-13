@@ -1,0 +1,16 @@
+name: Idea
+description: Una proposta per migliorare il gioco
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: L'idea
+      description: Cosa vorresti nel gioco e perché lo renderebbe più divertente
+    validations:
+      required: true
+  - type: input
+    id: versione
+    attributes:
+      label: Versione su cui hai giocato (facoltativo)

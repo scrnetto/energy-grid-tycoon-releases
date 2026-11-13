@@ -1,0 +1,5 @@
+# Le versioni del gioco si pubblicano come allegati delle Releases, mai dentro il repository
+*.zip
+*.exe
+*.app/
+build*/

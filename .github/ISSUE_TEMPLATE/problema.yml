@@ -1,0 +1,40 @@
+name: Problema
+description: Qualcosa nel gioco non funziona come dovrebbe
+title: "[Problema] "
+labels: ["problema"]
+body:
+  - type: markdown
+    attributes:
+      value: Grazie! Più dettagli scrivi, più è facile sistemarlo.
+  - type: input
+    id: versione
+    attributes:
+      label: Versione del gioco
+      description: È nel nome dello zip che hai scaricato (per esempio 0.1.0-alpha.1)
+      placeholder: 0.1.0-alpha.1
+    validations:
+      required: true
+  - type: dropdown
+    id: sistema
+    attributes:
+      label: Sistema
+      options: [Windows, macOS, Linux]
+    validations:
+      required: true
+  - type: textarea
+    id: cosa
+    attributes:
+      label: Cosa è successo
+      description: Cosa stavi facendo, cosa ti aspettavi e cosa è successo invece
+    validations:
+      required: true
+  - type: textarea
+    id: passi
+    attributes:
+      label: Come rifarlo (se lo sai)
+      placeholder: "1. Ho costruito… 2. Ho cliccato… 3. …"
+  - type: textarea
+    id: immagini
+    attributes:
+      label: Schermate o file
+      description: Trascina qui una schermata. Se il problema riguarda un salvataggio, allega il file della cartella dei salvataggi (vedi il README)
