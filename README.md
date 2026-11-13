@@ -7,10 +7,16 @@ soffocarla di inquinamento.
 
 Un gioco originale di **Marco Scarlino**. Gratuito.
 
-![Una partita appena iniziata](immagini/schermata-partita.png)
+![Una partita appena iniziata, in pausa](immagini/schermata-partita.png)
 
 > **Stato: in sviluppo (alpha).** Il gioco si gioca dall'inizio alla fine, ma mancano ancora molte cose e qualcosa
 > può non funzionare. Ogni segnalazione aiuta: vedi [Segnalare un problema o un'idea](#segnalare-un-problema-o-unidea).
+
+## Gioca subito nel browser
+
+**[▶ Gioca a Energy Grid Tycoon nel browser](https://scrnetto.github.io/energy-grid-tycoon-releases/)**: niente da
+installare. Serve un computer con mouse e tastiera e un browser recente (Chrome, Firefox, Edge, Safari). Clicca sul
+gioco prima di usare la tastiera. I salvataggi restano nel browser che usi.
 
 ## Scaricare il gioco
 
@@ -52,8 +58,9 @@ secondo, e puoi accelerare a 2× e 4×.
 - **Obiettivo**: arrivare a **400 abitanti** con l'inquinamento **sotto la soglia** entro **2 anni**.
 - **Sconfitta**: se resti in rosso con i soldi per **30 giorni di fila**, oppure se finiscono i 2 anni.
 - **La rete**: ogni costruzione deve essere collegata al **municipio**. Le **linee elettriche** partono dal
-  municipio e lo allungano, anche in diagonale. Una costruzione è collegata se tocca il municipio o una linea.
-  I **quartieri** si collegano anche toccando altri quartieri già collegati.
+  municipio e lo allungano, anche in diagonale. Una costruzione è collegata se tocca il municipio, una linea
+  oppure un'altra costruzione già collegata: un gruppo di costruzioni attaccate è collegato se una di loro tocca
+  la rete.
 - **Domanda ed energia**: la città consuma poco di notte e molto la sera, verso le 19. Se l'energia non basta
   c'è il **blackout**: gli abitanti si arrabbiano e qualcuno se ne va.
 - **Le fonti**:
@@ -68,18 +75,27 @@ secondo, e puoi accelerare a 2× e 4×.
 
 ### Comandi
 
+Passa il mouse su qualsiasi icona o pulsante: un riquadro spiega che cos'è. Fermandolo su una costruzione della
+mappa vedi il suo stato e quanta energia produce o consuma.
+
 | Comando | Cosa fa |
 |---|---|
 | Tasti **1–7** | Scegli cosa costruire: linea, miniera, centrale a carbone, solare, eolico, batteria, quartiere |
-| **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta mostra i dettagli della casella |
-| **Clic destro** | Demolisce la costruzione sotto il mouse (ti rimborsa metà del costo) |
+| **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta seleziona una casella e ne mostra i dettagli |
+| **Clic destro** | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
 | **Esc** | Annulla la scelta |
-| **Spazio** | Pausa / riprendi |
-| **F** | Velocità 1× → 2× → 4× |
+| **Spazio** o pulsante ▶/❚❚ | Pausa / riprendi |
+| **F** o pulsanti delle frecce | Velocità 1×, 2×, 4× |
 | **V** | Avanza di un'ora sola |
 | **WASD** o **frecce**, tasto centrale del mouse | Sposta la vista |
 | **Rotella** | Zoom |
 | **Salva** / **Carica** (in alto) | Salva o riprende la partita. Il gioco salva anche da solo ogni giorno |
+
+### Segnali sulle costruzioni
+
+- **Spina staccata** (cerchio bianco e rosso): la costruzione non è collegata alla rete.
+- **Fulmine barrato** (cerchio giallo): è collegata ma non riceve corrente (blackout), oppure una centrale a carbone
+  è ferma perché il carbone è finito.
 
 ### Consigli per la prima partita
 
@@ -93,7 +109,8 @@ secondo, e puoi accelerare a 2× e 4×.
 
 ## Dove finiscono i salvataggi
 
-I salvataggi restano sul tuo computer e il gioco non manda niente su internet.
+I salvataggi restano sul tuo computer, o nel tuo browser per la versione web, e il gioco non manda niente su
+internet.
 
 - **Windows**: `%USERPROFILE%\AppData\LocalLow\Marco Scarlino\Energy Grid Tycoon\salvataggi`
 - **macOS**: `~/Library/Application Support/Marco Scarlino/Energy Grid Tycoon/salvataggi`

@@ -12,12 +12,27 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.1.0-alpha.1] - 2026-11-13
+
+La prima versione da provare. Si gioca dall'inizio alla fine, ma è un'alpha: ogni segnalazione aiuta.
+
 ### Novità
-- Prima versione giocabile: mappa con colline, giacimenti e costa; linee elettriche, miniere, centrali a carbone,
+- Mappa con colline, giacimenti di carbone e costa. Si costruiscono linee elettriche, miniere, centrali a carbone,
   pannelli solari, pale eoliche, batterie e quartieri.
-- Giorno e notte, stagioni (giornate più corte d'inverno), meteo che cambia con previsione delle 3 ore successive.
-- Obiettivi a schermo, schermata di vittoria o sconfitta, salvataggio manuale e automatico ogni giorno.
-- I quartieri si collegano alla rete anche toccando altri quartieri già collegati.
+- Giorno e notte, stagioni (giornate più corte e più nuvole d'inverno), meteo che cambia, con la previsione delle
+  3 ore successive.
+- Le costruzioni attaccate fra loro si collegano alla rete insieme: basta che una tocchi una linea o il municipio.
+- Segnali sulle costruzioni: «non collegata» e «senza corrente».
+- Riquadri informativi al passaggio del mouse su pulsanti, icone e costruzioni.
+- Conferma prima di demolire, con lo stato della costruzione e il rimborso.
+- Pulsanti per pausa e velocità (1×, 2×, 4×) con icone animate. Il grafico in basso mostra produzione, domanda ed
+  energia nelle batterie.
+- Obiettivi sempre visibili, schermata di vittoria o sconfitta, salvataggio manuale e automatico ogni giorno.
+- Versioni per Windows, macOS e Linux, e una da giocare direttamente nel browser.
 
 ### Da sapere
-- Il gioco parte in pausa: premi Spazio per iniziare.
+- La partita parte in pausa: premi Spazio o ▶ per iniziare.
+- Le versioni per Windows e macOS non sono ancora state provate su quei sistemi: se qualcosa non va, segnalalo.
+- Il gioco non è firmato: al primo avvio Windows e macOS chiedono una conferma (vedi «Al primo avvio» nel README).
+- In arrivo nelle prossime versioni: la luce del giorno e delle nuvole sulla mappa, lo schermo intero, il menu
+  iniziale.
