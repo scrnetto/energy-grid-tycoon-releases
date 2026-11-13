@@ -1,5 +1,14 @@
 # ⚡ Energy Grid Tycoon
 
+[![Ultima versione](https://img.shields.io/github/v/release/scrnetto/energy-grid-tycoon-releases?include_prereleases&label=versione&color=f2c230)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
+[![Stato](https://img.shields.io/badge/stato-alpha-orange)](#versioni)
+[![Gioca nel browser](https://img.shields.io/badge/gioca-nel%20browser-3fae5a)](https://scrnetto.github.io/energy-grid-tycoon-releases/)
+[![Piattaforme](https://img.shields.io/badge/piattaforme-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-3f8fc9)](#scaricare-il-gioco)
+[![Download](https://img.shields.io/github/downloads/scrnetto/energy-grid-tycoon-releases/total?label=download&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
+[![Licenza](https://img.shields.io/badge/licenza-gratuito%2C%20tutti%20i%20diritti%20riservati-lightgrey)](LICENSE.md)
+[![Lingua](https://img.shields.io/badge/lingua-italiano-009246)](#)
+[![Fatto con Unity](https://img.shields.io/badge/fatto%20con-Unity%206-1d2330?logo=unity)](https://unity.com/)
+
 **Sei il gestore elettrico di una cittadina che cresce.** Ogni ora la città chiede energia: poca di notte, tanta
 la sera. Costruisci centrali, pannelli solari, pale eoliche e batterie, collega tutto con le linee elettriche e
 fai crescere la città fino a **400 abitanti in due anni di gioco**, senza blackout continui, senza debiti e senza
