@@ -56,5 +56,12 @@
     "nuvolosita_media": 45,
     "nuvolosita_stagionale": 15,
     "richiamo_nuvolosita": 0.05
+  },
+  "lavoro": {
+    "quota_attiva": 0.56,
+    "posti_servizi_municipio": 10,
+    "soglia_disoccupazione": 0.07,
+    "penalita_disoccupazione": 4,
+    "tassa_disoccupati": 0.5
   }
 }
