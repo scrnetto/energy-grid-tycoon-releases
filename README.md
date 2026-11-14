@@ -7,7 +7,7 @@
 [![Ultimo aggiornamento](https://img.shields.io/github/release-date-pre/scrnetto/energy-grid-tycoon-releases?label=ultimo%20aggiornamento&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Download](https://img.shields.io/github/downloads/scrnetto/energy-grid-tycoon-releases/total?label=download&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Licenza](https://img.shields.io/badge/licenza-gratuito%2C%20tutti%20i%20diritti%20riservati-lightgrey)](LICENSE.md)
-[![Lingua](https://img.shields.io/badge/lingua-italiano-009246)](#)
+[![Lingue](https://img.shields.io/badge/lingue-italiano%20%7C%20english-009246)](#)
 [![Fatto con Unity](https://img.shields.io/badge/fatto%20con-Unity%206-1d2330?logo=unity)](https://unity.com/)
 
 **Sei il gestore elettrico di una cittadina che cresce.** Ogni ora la città chiede energia: poca di notte, tanta
@@ -18,6 +18,13 @@ soffocarla di inquinamento.
 Un gioco originale di **Marco Scarlino**. Gratuito.
 
 ![Una partita al sesto giorno: pannelli solari, pale eoliche e una batteria attorno al municipio](immagini/schermata-partita.png)
+
+> 🇬🇧 **In English:** Energy Grid Tycoon is a free management game: you run the power grid of a growing town. Build
+> power plants, solar farms, wind farms and batteries, connect them with power lines and grow the town to **400
+> residents within two game years**, without constant blackouts, debt or too much pollution. The game is in
+> **Italian and English**: pick **«Language»** in the menu. [Play in your browser](https://scrnetto.github.io/energy-grid-tycoon-releases/?lingua=en)
+> or download it from [Releases](../../releases). This page is in Italian; the [changelog](CHANGELOG.md) has an
+> English summary for each version.
 
 > **Stato: in sviluppo (alpha).** Il gioco si gioca dall'inizio alla fine, ma mancano ancora molte cose e qualcosa
 > può non funzionare. Ogni segnalazione aiuta: vedi [Segnalare un problema o un'idea](#segnalare-un-problema-o-unidea).
@@ -64,7 +71,7 @@ Su Linux e macOS si controlla con `sha256sum -c SHA256SUMS.txt` (su macOS `shasu
 ## Come si gioca
 
 Il gioco si apre con il **menu iniziale**: **Nuova partita**, oppure **Continua** per riprendere l'ultimo
-salvataggio. La partita comincia il **18 ottobre 2020** e parte **in pausa**: premi **Spazio** per far scorrere il
+salvataggio. Dal menu scegli anche la **lingua** (italiano o inglese). La partita comincia il **18 ottobre 2020** e parte **in pausa**: premi **Spazio** per far scorrere il
 tempo. A velocità 1× un'ora di gioco dura un secondo, e puoi accelerare a 2× e 4×. Le stagioni seguono il
 calendario: si parte in autunno, e d'inverno le giornate sono più corte e il cielo più coperto.
 
@@ -96,7 +103,7 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 | Tasti **1–7** | Scegli cosa costruire: linea, miniera, centrale a carbone, solare, eolico, batteria, quartiere |
 | **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta seleziona una casella e ne mostra i dettagli |
 | **Clic destro** (sul tablet: tocco lungo) | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
-| **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (riprendi, salva ed esci, nuova partita) |
+| **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (riprendi, salva ed esci, nuova partita, lingua) |
 | **F11** | Schermo intero / finestra |
 | **Spazio** o pulsante ▶/❚❚ | Pausa / riprendi |
 | **F** o pulsanti delle frecce | Velocità 1×, 2×, 4× |

@@ -12,6 +12,34 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.2.0-alpha.1] - 2026-11-14
+
+Il gioco parla anche inglese. *The game now speaks English too.*
+
+### Novità
+- **Inglese**, oltre all'italiano. Nel menu iniziale e in quello di pausa la voce **«Lingua»** cambia lingua al
+  volo, senza riavviare la partita.
+- Al primo avvio il gioco usa la **lingua del sistema** (italiano su un computer in italiano, inglese altrimenti).
+  La scelta fatta nel menu resta salvata.
+- Nella versione web si può aprire direttamente una lingua aggiungendo `?lingua=en` o `?lingua=it` all'indirizzo.
+- **Date e numeri** seguono la lingua: in inglese «18 Oct 2020», «1,500», «8.0 m/s».
+
+### Modifiche
+- Il pannello **«Casella»** è più alto: mostra fino a cinque righe di dettagli senza tagliarle.
+- Nel menu iniziale la voce «Esci» è sempre l'ultima.
+- Il suggerimento del pulsante ▶/❚❚ ora dice solo «tasto Spazio» (F cambia la velocità).
+
+### Da sapere
+- I salvataggi delle versioni precedenti si caricano.
+- La traduzione inglese è nuova: se trovi una frase strana o sbagliata, segnalala.
+
+### In English
+- **English** is now available alongside Italian. Use **«Language»** in the start menu or the pause menu to switch
+  at any time, without restarting.
+- On first launch the game picks your **system language**; your choice in the menu is remembered.
+- In the web version, add `?lingua=en` to the address to open it straight in English.
+- Saves from earlier versions still load. The translation is new: please report anything that reads oddly.
+
 ## [0.1.0-alpha.2] - 2026-11-14
 
 Menu, calendario e luce del giorno sulla mappa: il gioco ora ha un inizio, una pausa e un tempo che si legge.
