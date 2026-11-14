@@ -3,8 +3,7 @@
   "costruzioni": [
     {
       "id": "linea",
-      "nome": "Linea elettrica",
-      "descrizione": "Collega le caselle alla rete elettrica: solo ciò che è collegato al municipio produce o consuma energia.",
+      "nome_log": "Linea elettrica",
       "tipo": "linea",
       "costo": 50,
       "manutenzione": 0.2,
@@ -22,8 +21,7 @@
     },
     {
       "id": "miniera",
-      "nome": "Miniera di carbone",
-      "descrizione": "Estrae carbone nella scorta comune; si costruisce solo sui giacimenti di carbone.",
+      "nome_log": "Miniera di carbone",
       "tipo": "miniera",
       "fonte": "nessuna",
       "costo": 400,
@@ -43,8 +41,7 @@
     },
     {
       "id": "centrale_carbone",
-      "nome": "Centrale a carbone",
-      "descrizione": "Produce energia in modo costante bruciando carbone dalla scorta comune, ma inquina l'aria della città.",
+      "nome_log": "Centrale a carbone",
       "tipo": "centrale",
       "fonte": "carbone",
       "costo": 1500,
@@ -64,8 +61,7 @@
     },
     {
       "id": "solare",
-      "nome": "Impianto solare",
-      "descrizione": "Produce energia con il sole: la resa dipende dalla luce del giorno e dalla nuvolosità.",
+      "nome_log": "Impianto solare",
       "tipo": "centrale",
       "fonte": "solare",
       "costo": 800,
@@ -85,8 +81,7 @@
     },
     {
       "id": "eolico",
-      "nome": "Parco eolico",
-      "descrizione": "Produce energia col vento, fino al 40% in più sulle colline; si ferma quando non c'è vento.",
+      "nome_log": "Parco eolico",
       "tipo": "centrale",
       "fonte": "eolico",
       "costo": 900,
@@ -106,8 +101,7 @@
     },
     {
       "id": "batteria",
-      "nome": "Batteria",
-      "descrizione": "Accumula l'energia in eccedenza e la restituisce nei momenti di picco, con il 90% di efficienza.",
+      "nome_log": "Batteria",
       "tipo": "batteria",
       "fonte": "nessuna",
       "costo": 600,
@@ -127,8 +121,7 @@
     },
     {
       "id": "quartiere",
-      "nome": "Quartiere",
-      "descrizione": "Alloggia gli abitanti della città, che consumano energia soprattutto nelle ore serali.",
+      "nome_log": "Quartiere",
       "tipo": "quartiere",
       "fonte": "nessuna",
       "costo": 300,
