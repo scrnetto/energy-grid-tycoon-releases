@@ -1,173 +1,200 @@
-# ⚡ Energy Grid Tycoon
+<p align="center">
+  <img src="immagini/logo.png" alt="Voltvale: Energy Grid Tycoon logo" width="700">
+</p>
 
-[![Ultima versione](https://img.shields.io/github/v/release/scrnetto/energy-grid-tycoon-releases?include_prereleases&label=versione&color=f2c230)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
-[![Stato](https://img.shields.io/badge/stato-alpha-orange)](#versioni)
-[![Gioca nel browser](https://img.shields.io/badge/gioca-nel%20browser-3fae5a)](https://scrnetto.github.io/energy-grid-tycoon-releases/)
-[![Piattaforme](https://img.shields.io/badge/piattaforme-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-3f8fc9)](#scaricare-il-gioco)
-[![Ultimo aggiornamento](https://img.shields.io/github/release-date-pre/scrnetto/energy-grid-tycoon-releases?label=ultimo%20aggiornamento&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
-[![Download](https://img.shields.io/github/downloads/scrnetto/energy-grid-tycoon-releases/total?label=download&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
-[![Licenza](https://img.shields.io/badge/licenza-gratuito%2C%20tutti%20i%20diritti%20riservati-lightgrey)](LICENSE.md)
-[![Lingue](https://img.shields.io/badge/lingue-italiano%20%7C%20english-009246)](#)
-[![Fatto con Unity](https://img.shields.io/badge/fatto%20con-Unity%206-1d2330?logo=unity)](https://unity.com/)
+🇬🇧 English · 🇮🇹 [Italiano](README.it.md)
 
-**Sei il gestore elettrico di una cittadina che cresce.** Ogni ora la città chiede energia: poca di notte, tanta
-la sera. Costruisci centrali, pannelli solari, pale eoliche e batterie, collega tutto con le linee elettriche e
-fai crescere la città fino a **400 abitanti in due anni di gioco**, senza blackout continui, senza debiti e senza
-soffocarla di inquinamento.
+# ⚡ Voltvale: Energy Grid Tycoon
 
-Un gioco originale di **Marco Scarlino**. Gratuito.
+[![Latest version](https://img.shields.io/github/v/release/scrnetto/energy-grid-tycoon-releases?include_prereleases&label=version&color=f2c230)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
+[![Status](https://img.shields.io/badge/status-alpha-orange)](#versions)
+[![Play in the browser](https://img.shields.io/badge/play-in%20the%20browser-3fae5a)](https://scrnetto.github.io/energy-grid-tycoon-releases/)
+[![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-3f8fc9)](#download-the-game)
+[![Last update](https://img.shields.io/github/release-date-pre/scrnetto/energy-grid-tycoon-releases?label=last%20update&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
+[![Downloads](https://img.shields.io/github/downloads/scrnetto/energy-grid-tycoon-releases/total?label=downloads&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
+[![Licence](https://img.shields.io/badge/licence-free%2C%20all%20rights%20reserved-lightgrey)](LICENSE.md)
+[![Languages](https://img.shields.io/badge/languages-it%20%7C%20en%20%7C%20de%20%7C%20fr%20%7C%20es-009246)](#languages)
+[![Made with Unity](https://img.shields.io/badge/made%20with-Unity%206-1d2330?logo=unity)](https://unity.com/)
 
-![Una partita al sesto giorno: pannelli solari, pale eoliche e una batteria attorno al municipio](immagini/schermata-partita.png)
+**You run the power grid of a growing town.** Every hour the town needs energy: a little at night, a lot in the
+evening. Build power plants, solar farms, wind farms and batteries, connect everything with power lines, find
+people to work in them, and grow the town to **400 residents within two game years**, without constant
+blackouts, without debt and without choking it with pollution.
 
-> 🇬🇧 **In English:** Energy Grid Tycoon is a free management game: you run the power grid of a growing town. Build
-> power plants, solar farms, wind farms and batteries, connect them with power lines and grow the town to **400
-> residents within two game years**, without constant blackouts, debt or too much pollution. The game is in
-> **Italian and English**: pick **«Language»** in the menu. [Play in your browser](https://scrnetto.github.io/energy-grid-tycoon-releases/?lingua=en)
-> or download it from [Releases](../../releases). This page is in Italian; the [changelog](CHANGELOG.md) has an
-> English summary for each version.
+An original game by **Marco Scarlino**. Free to play.
 
-> **Stato: in sviluppo (alpha).** Il gioco si gioca dall'inizio alla fine, ma mancano ancora molte cose e qualcosa
-> può non funzionare. Ogni segnalazione aiuta: vedi [Segnalare un problema o un'idea](#segnalare-un-problema-o-unidea).
+![A game on day six: solar farms, wind farms and a battery around the town hall](immagini/schermata-partita.png)
 
-## Gioca subito nel browser
+> **Status: in development (alpha).** You can play from start to finish, but a lot is still missing and some
+> things may not work. Every report helps: see [Reporting a problem or an idea](#reporting-a-problem-or-an-idea).
 
-**[▶ Gioca a Energy Grid Tycoon nel browser](https://scrnetto.github.io/energy-grid-tycoon-releases/)**: niente da
-installare. Serve un browser recente (Chrome, Firefox, Edge, Safari) su un computer con mouse e tastiera, oppure su
-un tablet: **tocco = clic, tocco lungo = clic destro**. Clicca sul gioco prima di usare la tastiera. I salvataggi
-restano nel browser che usi.
+## Play now in your browser
 
-## Scaricare il gioco
+**[▶ Play Voltvale in your browser](https://scrnetto.github.io/energy-grid-tycoon-releases/)**: nothing to
+install. You need a recent browser (Chrome, Firefox, Edge, Safari) on a computer with a mouse and keyboard, or a
+tablet: **tap = click, long press = right-click**. Click on the game before using the keyboard. Your saves stay in
+the browser you use.
 
-Tutte le versioni sono nella pagina **[Releases](../../releases)**. Scarica il file del tuo sistema dall'ultima
-versione:
+## Download the game
 
-| Sistema | File | Come avviarlo |
+Every version is on the **[Releases](../../releases)** page. Download the file for your system from the latest
+version:
+
+| System | File | How to start it |
 |---|---|---|
-| **Windows** 10/11 (64 bit) | `EnergyGridTycoon-<versione>-windows.zip` | Estrai lo zip e apri `EnergyGridTycoon.exe` |
-| **macOS** 12 o successivo | `EnergyGridTycoon-<versione>-macos.zip` | Estrai lo zip e apri `EnergyGridTycoon.app` |
-| **Linux** (64 bit) | `EnergyGridTycoon-<versione>-linux.zip` | Estrai lo zip e avvia `EnergyGridTycoon` |
+| **Windows** 10/11 (64-bit) | `Voltvale-<version>-windows.zip` | Extract the zip and open `Voltvale.exe` |
+| **macOS** 12 or later | `Voltvale-<version>-macos.zip` | Extract the zip and open `Voltvale.app` |
+| **Linux** (64-bit) | `Voltvale-<version>-linux.zip` | Extract the zip and run `Voltvale` |
 
-### Al primo avvio
+### First launch
 
-Il gioco non è firmato con un certificato a pagamento, quindi il sistema può avvisarti che viene da uno
-sviluppatore sconosciuto. È normale per i giochi indipendenti.
+The game isn't signed with a paid certificate, so your system may warn you that it comes from an unknown
+developer. This is normal for independent games.
 
-- **Windows**: se compare «Windows ha protetto il PC», clicca **Ulteriori informazioni**, poi **Esegui comunque**.
-- **macOS**: se compare «impossibile aprire perché lo sviluppatore non è verificato», fai **clic destro
-  sull'app → Apri**, poi conferma con **Apri**. Basta la prima volta. Se il Mac dice che l'app «è danneggiata»,
-  apri il Terminale nella cartella dello zip e scrivi `xattr -cr EnergyGridTycoon.app`.
-- **Linux**: se non parte, rendi il file eseguibile con `chmod +x EnergyGridTycoon`.
+- **Windows**: if you see «Windows protected your PC», click **More info**, then **Run anyway**.
+- **macOS**: if you see «cannot be opened because the developer cannot be verified», **right-click the app →
+  Open**, then confirm with **Open**. You only need to do this once. If your Mac says the app «is damaged», open
+  Terminal in the folder of the zip and type `xattr -cr Voltvale.app`.
+- **Linux**: if it doesn't start, make the file executable with `chmod +x Voltvale`.
 
-**Controllare il download (facoltativo).** Ogni versione ha un file `SHA256SUMS.txt` con l'impronta di ogni zip.
-Su Linux e macOS si controlla con `sha256sum -c SHA256SUMS.txt` (su macOS `shasum -a 256 -c SHA256SUMS.txt`).
+**Checking the download (optional).** Each version has a `SHA256SUMS.txt` file with the fingerprint of every zip.
+On Linux run `sha256sum -c SHA256SUMS.txt`, on macOS `shasum -a 256 -c SHA256SUMS.txt`.
 
-### Requisiti
+### Requirements
 
-- Uno schermo da almeno 1280×800.
-- Mouse e tastiera (nella versione web va bene anche un tablet).
-- Circa 200 MB di spazio.
-- Una scheda video qualsiasi degli ultimi 10 anni: anche quelle integrate vanno bene.
+- A screen of at least 1280×800.
+- Mouse and keyboard (a tablet is fine for the web version).
+- About 200 MB of free space.
+- Any graphics card from the last 10 years: built-in ones are fine too.
 
-## Come si gioca
+## How to play
 
-Il gioco si apre con il **menu iniziale**: **Nuova partita**, oppure **Continua** per riprendere l'ultimo
-salvataggio. Dal menu scegli anche la **lingua** (italiano o inglese). La partita comincia il **18 ottobre 2020** e parte **in pausa**: premi **Spazio** per far scorrere il
-tempo. A velocità 1× un'ora di gioco dura un secondo, e puoi accelerare a 2× e 4×. Le stagioni seguono il
-calendario: si parte in autunno, e d'inverno le giornate sono più corte e il cielo più coperto.
+The game opens with the **start menu**: **New game**, or **Continue** to pick up your last save. The game starts on
+**18 October 2020** and begins **paused**: press **Space** to start the clock. At 1× speed one game hour lasts one
+second, and you can speed up to 2× and 4×. The seasons follow the calendar: you start in autumn, and in winter the
+days are shorter and the sky is cloudier.
 
-- **Obiettivo**: arrivare a **400 abitanti** con l'inquinamento **sotto la soglia** entro **2 anni**.
-- **Sconfitta**: se resti in rosso con i soldi per **30 giorni di fila**, oppure se finiscono i 2 anni.
-- **La rete**: ogni costruzione deve essere collegata al **municipio**. Le **linee elettriche** partono dal
-  municipio e lo allungano, anche in diagonale. Una costruzione è collegata se tocca il municipio, una linea
-  oppure un'altra costruzione già collegata: un gruppo di costruzioni attaccate è collegato se una di loro tocca
-  la rete.
-- **Domanda ed energia**: la città consuma poco di notte e molto la sera, verso le 19. Se l'energia non basta
-  c'è il **blackout**: gli abitanti si arrabbiano e qualcuno se ne va.
-- **Le fonti**:
-  - il **sole** produce solo di giorno, poco d'inverno e col cielo coperto;
-  - il **vento** cambia di ora in ora;
-  - il **carbone** produce sempre, ma inquina e consuma il carbone estratto dalle **miniere**.
-- **Batterie**: accumulano l'energia in più e la restituiscono quando serve, per esempio la sera.
-- **Il surplus** si vende alla rete esterna, ma più ne offri e meno vale.
-- **Inquinamento**: le centrali a carbone inquinano e l'aria si pulisce piano. Una centrale si regge, troppe no.
-  Sopra la soglia la gente è scontenta e la città smette di crescere.
-- **Crescita**: la città cresce se gli abitanti sono contenti e c'è posto nei **quartieri**.
+- **Goal**: reach **400 residents** with pollution **below the limit** within **2 years**.
+- **Defeat**: if your money stays in the red for **30 days in a row**, or if the 2 years run out.
+- **The grid**: every building must be connected to the **town hall**. **Power lines** start from the town hall
+  and extend it, diagonals included. A building is connected if it touches the town hall, a line or another
+  connected building: a group of buildings side by side is connected if one of them touches the grid.
+- **Demand and energy**: the town uses little energy at night and a lot in the evening, around 7 pm. If there
+  isn't enough, there's a **blackout**: residents get angry and some leave.
+- **Energy sources**:
+  - the **sun** only produces by day, and little in winter or under clouds;
+  - the **wind** changes from hour to hour;
+  - **coal** always produces, but it pollutes and burns the coal dug up by the **mines**.
+- **Batteries** store the extra energy and give it back when needed, for example in the evening.
+- **Surplus energy** is sold to the outside grid, but the more you offer, the less it's worth.
+- **Pollution**: coal power plants pollute and the air clears slowly. One power plant is fine, too many are not.
+  Above the limit people are unhappy and the town stops growing.
+- **Growth**: the town grows if residents are happy and there's room in the **districts**.
 
-### Comandi
+### Work and staff
 
-Passa il mouse su qualsiasi icona o pulsante: un riquadro spiega che cos'è. Fermandolo su una costruzione della
-mappa vedi il suo stato e quanta energia produce o consuma.
+Buildings need people to run them.
 
-| Comando | Cosa fa |
+- About **56 %** of the residents work. The bar at the top shows filled jobs out of the available workforce.
+- **Coal power plants**, **solar farms**, **wind farms** and **coal mines** need staff. The **Tile** panel shows
+  how many they have, for example **Staff: 8/10**.
+- With too few staff a building produces less; **with no staff at all it stops** and shows the **«no staff»**
+  signal.
+- Workers go **to energy first**, then **to the mines**, then **to district services** (shops, local schools).
+  Districts keep working even when their services are short of staff.
+- **Unemployment** means less tax income, and if it's high, slightly less happy residents.
+
+### Controls
+
+Hover over any icon or button: a tooltip explains what it is. Hover over a building on the map to see its status
+and how much energy it produces or uses.
+
+| Control | What it does |
 |---|---|
-| Tasti **1–7** | Scegli cosa costruire: linea, miniera, centrale a carbone, solare, eolico, batteria, quartiere |
-| **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta seleziona una casella e ne mostra i dettagli |
-| **Clic destro** (sul tablet: tocco lungo) | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
-| **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (riprendi, salva ed esci, nuova partita, lingua) |
-| **F11** | Schermo intero / finestra |
-| **Spazio** o pulsante ▶/❚❚ | Pausa / riprendi |
-| **F** o pulsanti delle frecce | Velocità 1×, 2×, 4× |
-| **V** | Avanza di un'ora sola |
-| **WASD** o **frecce**, tasto centrale del mouse | Sposta la vista |
-| **Rotella** | Zoom |
-| **Salva** / **Carica** (in alto) | Salva o riprende la partita. Il gioco salva anche da solo ogni giorno |
+| Keys **1–7** | Pick what to build: Power line, Coal mine, Coal power plant, Solar farm, Wind farm, Battery, District |
+| **Left click** | Places the chosen building. With nothing chosen, selects a tile and shows its details |
+| **Right click** (on a tablet: long press) | With a building chosen, cancels the choice. With nothing chosen, asks to confirm demolition (half the cost refunded) |
+| **Esc** | Cancels the choice; if there's nothing to cancel, opens the **pause menu** (Resume, Save and quit to menu, New game, Language) |
+| **F11** | Full screen / window |
+| **Space** or the ▶/❚❚ button | Pause / resume |
+| **F** or the arrow buttons | Speed 1×, 2×, 4× |
+| **V** | Advance by a single hour |
+| **WASD** or **arrow keys**, middle mouse button | Move the view |
+| **Mouse wheel** | Zoom |
+| **Save** / **Load** (at the top) | Saves or resumes the game. The game also saves by itself every day |
 
-### Segnali sulle costruzioni
+### Languages
 
-- **Spina staccata** (cerchio bianco e rosso): la costruzione non è collegata alla rete.
-- **Fulmine barrato** (cerchio giallo): è collegata ma non riceve corrente (blackout), oppure una centrale a carbone
-  è ferma perché il carbone è finito.
+The game is in **Italian, English, German, French and Spanish**. Pick **Language** in the start menu or the pause
+menu to switch at any time, without restarting; your choice is remembered. On first launch the game uses your
+system language if it's one of these five, and English otherwise. In the web version you can open a language
+straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
 
-### Consigli per la prima partita
+### Signals on buildings
 
-1. Metti in pausa e guarda la mappa: le **colline** sono buone per l'eolico, i **giacimenti** scuri servono alle
-   miniere.
-2. Fai partire una **linea** dal municipio verso dove vuoi costruire.
-3. Comincia con un po' di **solare e di eolico** e una **batteria** per la sera.
-4. Costruisci **quartieri** man mano che la produzione regge la domanda.
-5. Tieni d'occhio il **grafico in basso**: se la linea rossa (domanda) supera la verde (produzione), sta per
-   arrivare un blackout.
+- **Unplugged plug** (white and red circle): the building isn't connected to the grid.
+- **Crossed-out lightning bolt** (yellow circle): it's connected but gets no power (blackout), or a coal power
+  plant has stopped because the coal has run out.
+- **Crossed-out hard hat** (light-blue circle): **no staff**, so the building has stopped. Build more districts or
+  free up workers.
+- **Lights at night**: after dark, districts and the town hall switch their lights on. A building with no power
+  stays dark, so a dark district at night is a warning.
 
-## Dove finiscono i salvataggi
+### Tips for your first game
 
-I salvataggi restano sul tuo computer, o nel tuo browser per la versione web, e il gioco non manda niente su
+1. Pause and look at the map: **hills** are good for wind farms, and the dark **coal deposits** are where mines go.
+2. Run a **power line** from the town hall towards where you want to build.
+3. Start with some **solar and wind** and a **battery** for the evening.
+4. Don't build too many power plants at once: each one needs **staff**, and the town is still small.
+5. Build **districts** as long as production keeps up with demand.
+6. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
+   blackout is coming.
+
+## Where saves are stored
+
+Saves stay on your computer, or in your browser for the web version, and the game sends nothing over the
 internet.
 
-- **Windows**: `%USERPROFILE%\AppData\LocalLow\Marco Scarlino\Energy Grid Tycoon\salvataggi`
-- **macOS**: `~/Library/Application Support/Marco Scarlino/Energy Grid Tycoon/salvataggi`
-- **Linux**: `~/.config/unity3d/Marco Scarlino/Energy Grid Tycoon/salvataggi`
+- **Windows**: `%USERPROFILE%\AppData\LocalLow\Marco Scarlino\Voltvale\salvataggi`
+- **macOS**: `~/Library/Application Support/Marco Scarlino/Voltvale/salvataggi`
+- **Linux**: `~/.config/unity3d/Marco Scarlino/Voltvale/salvataggi`
 
-I salvataggi di una versione alpha potrebbero non funzionare con la versione successiva: lo scrive il
-[changelog](CHANGELOG.md) quando succede.
+**Coming from an earlier version?** The first time you start version 0.3.0, the game **copies** your saves from
+the old «Energy Grid Tycoon» folder (same path, with «Energy Grid Tycoon» instead of «Voltvale»). The old folder
+stays where it is. You'll need to choose your **language** again once.
 
-## Versioni
+Saves from one alpha version might not work with the next one: the [changelog](CHANGELOG.md) says so when it
+happens.
 
-Le versioni seguono il [versionamento semantico](https://semver.org/lang/it/) con tre fasi:
+## Versions
 
-| Fase | Esempio | Che cosa significa |
+Versions follow [semantic versioning](https://semver.org/) in three stages:
+
+| Stage | Example | What it means |
 |---|---|---|
-| **Alpha** | `0.1.0-alpha.1` | Il gioco cambia molto da una versione all'altra; mancano parti; possono esserci errori e salvataggi non compatibili |
-| **Beta** | `0.9.0-beta.1` | Tutte le parti principali ci sono; si sistemano errori ed equilibrio del gioco |
-| **Stabile** | `1.0.0` | La prima versione completa. Poi `1.0.1` per le correzioni e `1.1.0` per le novità |
+| **Alpha** | `0.3.0-alpha.1` | The game changes a lot between versions; parts are missing; there may be bugs and saves that don't carry over |
+| **Beta** | `0.9.0-beta.1` | All the main parts are there; bugs and game balance are being polished |
+| **Stable** | `1.0.0` | The first complete version. Then `1.0.1` for fixes and `1.1.0` for new features |
 
-Le versioni alpha e beta sono segnate su GitHub come **pre-release**. Cosa cambia in ogni versione è nel
-**[CHANGELOG](CHANGELOG.md)** e nella pagina di ogni release.
+Alpha and beta versions are marked on GitHub as **pre-releases**. What changes in each version is in the
+**[CHANGELOG](CHANGELOG.md)** and on each release page.
 
-## Segnalare un problema o un'idea
+## Reporting a problem or an idea
 
-Apri una segnalazione nella pagina **[Issues](../../issues/new/choose)** e scegli:
-- **Problema**: qualcosa non funziona. Scrivi cosa stavi facendo, cosa ti aspettavi e la versione del gioco.
-- **Idea**: una proposta per migliorare il gioco.
+Open a report on the **[Issues](../../issues/new/choose)** page and choose:
+- **Problema** (problem): something doesn't work. Say what you were doing, what you expected and which version of the game
+  you have.
+- **Idea**: a suggestion to improve the game.
 
-Serve un account GitHub, che è gratuito. Se non ce l'hai, scrivi pure a Marco direttamente.
+You need a GitHub account, which is free. If you don't have one, feel free to write to Marco directly.
 
-## Licenza
+## Licence
 
-Energy Grid Tycoon è **gratuito**: puoi scaricarlo e giocarci quanto vuoi. **Non** puoi ridistribuirlo, venderlo
-o modificarlo: per farlo giocare a qualcuno, mandagli il link di questa pagina. I dettagli sono in
-[LICENSE.md](LICENSE.md).
+Voltvale is **free**: you can download it and play as much as you like. You may **not** redistribute, sell or
+modify it: to let someone else play, send them the link to this page. The details are in [LICENSE.md](LICENSE.md)
+(in Italian, with a summary in English).
 
-## Crediti
+## Credits
 
-Ideazione e design di **Marco Scarlino**. Realizzato con Unity, con l'aiuto di strumenti di intelligenza
-artificiale per il codice e la grafica.
+Designed and made by **Marco Scarlino**, with Unity and with the help of AI tools for code, graphics and
+translations.

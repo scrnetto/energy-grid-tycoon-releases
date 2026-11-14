@@ -12,6 +12,44 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.3.0-alpha.1] - 2026-11-14
+
+**Il gioco ha un nome nuovo: «Voltvale: Energy Grid Tycoon».** *The game has a new name: «Voltvale: Energy Grid Tycoon».*
+
+### Novità
+- **Nome e logo nuovi**: Voltvale. «Energy Grid Tycoon» resta come sottotitolo.
+- **Tre lingue in più**: tedesco, francese e spagnolo, oltre a italiano e inglese. Al primo avvio il gioco usa la
+  lingua del sistema, se è una delle cinque.
+- **Il lavoro**: circa il 56 % degli abitanti lavora. Centrali, impianti solari ed eolici e miniere hanno bisogno di
+  personale: con poco personale producono meno, senza si fermano (segnale del casco barrato). I lavoratori vanno
+  prima all'energia, poi alle miniere, poi ai servizi dei quartieri. La disoccupazione abbassa le tasse e un po' la
+  soddisfazione. Nella barra in alto: occupati / forza lavoro; nella casella di ogni edificio: «Personale».
+- **Luci di notte**: le finestre di quartieri e municipio si accendono al tramonto e si spengono se manca corrente.
+
+### Modifiche
+- La scritta «(in pausa)» compare solo quando il gioco è davvero in pausa.
+- A partita iniziata l'avviso di pausa dice «per riprendere».
+- Nelle lingue con parole lunghe la barra in alto e il pulsante «Demolisci» non escono più dallo spazio.
+- File da scaricare e programmi si chiamano ora `Voltvale` (`Voltvale.exe`, `Voltvale.app`).
+
+### Da sapere
+- **Salvataggi**: la cartella ora si chiama «Voltvale». Al primo avvio i salvataggi delle versioni precedenti
+  vengono **copiati** dalla cartella «Energy Grid Tycoon», che resta com'era.
+- **Lingua**: la scelta fatta nel menu non passa alla versione nuova; al primo avvio vale di nuovo la lingua del
+  sistema.
+- L'indirizzo della versione web non cambia.
+- Le traduzioni tedesca, francese e spagnola sono nuove: segnala pure le frasi strane.
+
+### In English
+- **New name and logo**: Voltvale, with «Energy Grid Tycoon» as the subtitle.
+- **Three more languages**: German, French and Spanish, alongside Italian and English. On first launch the game
+  uses your system language if it's one of the five.
+- **Work**: about 56% of residents work. Power plants, solar and wind farms and mines need staff: with too few they
+  produce less, with none they stop. Jobs go to energy first, then mines, then district services. Unemployment
+  lowers taxes and a little happiness.
+- **Night lights** on districts and the town hall, off when there's no power.
+- Saves are **copied** from the old «Energy Grid Tycoon» folder on first launch; please pick your language again.
+
 ## [0.2.0-alpha.1] - 2026-11-14
 
 Il gioco parla anche inglese. *The game now speaks English too.*
