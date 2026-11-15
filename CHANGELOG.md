@@ -12,6 +12,25 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.4.0-alpha.2] - 2026-11-15
+
+Correzioni alla 0.4.0-alpha.1. *Fixes for 0.4.0-alpha.1.*
+
+### Correzioni
+- Fattoria, peschereccio, serra e magazzino frigorifero **si vedono di nuovo**, sulla mappa e nella lista: nella
+  0.4.0-alpha.1 mancava il loro disegno.
+- Nella lista delle costruzioni i nomi **non si spezzano più a metà parola**: nome e costo stanno uno sotto
+  l'altro, e la barra di scorrimento è più sottile.
+
+### Da sapere
+- I salvataggi della 0.4.0-alpha.1 funzionano senza cambiamenti.
+
+### In English
+- Farm, fishing boat, greenhouse and cold store **are visible again**, on the map and in the list: their artwork
+  was missing in 0.4.0-alpha.1.
+- Building names in the list **no longer break mid-word**: name and cost are now stacked, with a thinner scroll bar.
+- Saves from 0.4.0-alpha.1 work as they are.
+
 ## [0.4.0-alpha.1] - 2026-11-15
 
 La città ha fame: arriva il cibo. *The town gets hungry: food arrives.*
