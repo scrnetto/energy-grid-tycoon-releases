@@ -12,6 +12,51 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.4.0-alpha.1] - 2026-11-15
+
+La città ha fame: arriva il cibo. *The town gets hungry: food arrives.*
+
+### Novità
+- **Il cibo**: gli abitanti mangiano ogni ora. La scorta è nella barra in alto e diventa rossa quando sta per finire.
+- **Quattro costruzioni nuove**:
+  - **fattoria** (pianura): produce secondo la stagione, niente d'inverno;
+  - **peschereccio** (costa): pesca tutto l'anno, ma si ferma col vento troppo forte;
+  - **serra** (pianura o collina): produce tutto l'anno, ma consuma molta energia;
+  - **magazzino frigorifero** (pianura): la città può tenere più cibo.
+- **Il cibo passa dalla rete**: le costruzioni del cibo consumano energia. In un blackout non producono e i
+  frigoriferi perdono una parte del cibo in più.
+- **Importazione automatica**: se la scorta finisce il cibo arriva da fuori, a caro prezzo. Evita la fame ma non fa
+  crescere la città, che per crescere ha bisogno di almeno un giorno di scorta propria. Senza soldi arriva la fame e
+  gli abitanti se ne vanno.
+- Nel pannello **Casella**: quanto cibo produce una costruzione, quanto spazio aggiunge un frigorifero e quanta
+  energia consuma.
+- **Luci di notte** anche su serre e frigoriferi.
+
+### Modifiche
+- I lavoratori vanno prima all'energia, **poi al cibo**, poi alle miniere, poi ai servizi dei quartieri.
+- La disoccupazione pesa un po' di più sulla soddisfazione.
+- Tasti da **1 a 9 e 0** per scegliere le costruzioni; il magazzino frigorifero si sceglie dalla lista.
+- Lo stato del salvataggio è ora sopra il grafico dell'energia.
+
+### Correzioni
+- Con molte costruzioni nella lista la barra in alto e il grafico non vengono più schiacciati.
+
+### Da sapere
+- **Salvataggi in formato nuovo.** Quelli delle versioni precedenti si caricano: la città riparte con la scorta di
+  cibo iniziale. I salvataggi della 0.4.0 non si aprono con le versioni precedenti.
+
+### In English
+- **Food**: residents eat every hour; the stock is in the top bar and turns red when it's low.
+- **Four new buildings**: farm (nothing in winter), fishing boat (stops in strong wind), greenhouse (all year, uses
+  a lot of power) and cold store (more storage).
+- **Food runs on the grid**: food buildings use power, stop in a blackout, and cold stores lose some extra food.
+- **Automatic imports** when the stock runs out: expensive, they prevent famine but the town only grows with at
+  least a day of its own stock. With no money, famine hits and residents leave.
+- Jobs now go to energy, then food, then mines, then services. Unemployment weighs a little more on happiness.
+- Keys **1–9 and 0** pick buildings; the cold store is in the list.
+- **New save format**: older saves still load with the starting food stock; 0.4.0 saves don't open in older
+  versions.
+
 ## [0.3.0-alpha.1] - 2026-11-14
 
 **Il gioco ha un nome nuovo: «Voltvale: Energy Grid Tycoon».** *The game has a new name: «Voltvale: Energy Grid Tycoon».*

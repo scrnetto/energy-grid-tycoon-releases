@@ -18,7 +18,7 @@
 
 **Sei il gestore elettrico di una cittadina che cresce.** Ogni ora la città chiede energia: poca di notte, tanta
 la sera. Costruisci centrali, impianti solari, parchi eolici e batterie, collega tutto con le linee elettriche,
-trova chi ci lavori e fai crescere la città fino a **400 abitanti in due anni di gioco**, senza blackout continui,
+trova chi ci lavori, dai da mangiare a tutti e fai crescere la città fino a **400 abitanti in due anni di gioco**, senza blackout continui,
 senza debiti e senza soffocarla di inquinamento.
 
 Un gioco originale di **Marco Scarlino**. Gratuito.
@@ -90,20 +90,38 @@ calendario: si parte in autunno, e d'inverno le giornate sono più corte e il ci
 - **Il surplus** si vende alla rete esterna, ma più ne offri e meno vale.
 - **Inquinamento**: le centrali a carbone inquinano e l'aria si pulisce piano. Una centrale si regge, troppe no.
   Sopra la soglia la gente è scontenta e la città smette di crescere.
-- **Crescita**: la città cresce se gli abitanti sono contenti e c'è posto nei **quartieri**.
+- **Crescita**: la città cresce se gli abitanti sono contenti, c'è posto nei **quartieri** e c'è abbastanza
+  **cibo** in magazzino.
 
 ### Lavoro e personale
 
 Le costruzioni hanno bisogno di qualcuno che le faccia funzionare.
 
 - Lavora circa il **56 %** degli abitanti. La barra in alto mostra i posti occupati sulla forza lavoro disponibile.
-- **Centrali a carbone**, **impianti solari**, **parchi eolici** e **miniere di carbone** hanno bisogno di
-  personale. Il pannello **Casella** mostra quanto ne hanno, per esempio **Personale: 8/10**.
+- **Centrali a carbone**, **impianti solari**, **parchi eolici**, **miniere di carbone** e le costruzioni del
+  **cibo** hanno bisogno di personale. Il pannello **Casella** mostra quanto ne hanno, per esempio **Personale: 8/10**.
 - Con poco personale una costruzione produce meno; **senza nessuno si ferma** e mostra il segnale **«senza
   personale»**.
-- I lavoratori vanno **prima all'energia**, poi **alle miniere**, poi **ai servizi dei quartieri** (negozi, scuole
+- I lavoratori vanno **prima all'energia**, poi **al cibo**, poi **alle miniere**, poi **ai servizi dei quartieri** (negozi, scuole
   di quartiere). I quartieri funzionano anche quando ai loro servizi manca personale.
 - La **disoccupazione** fa entrare meno tasse e, se è alta, rende gli abitanti un po' meno contenti.
+
+### Cibo
+
+Gli abitanti mangiano ogni ora. La scorta di cibo è nella barra in alto, accanto alla spiga, e diventa rossa quando
+sta per finire.
+
+- **Fattoria** (pianura): produce secondo la stagione, molto d'estate e **niente d'inverno**.
+- **Peschereccio** (costa): pesca tutto l'anno, ma si ferma quando il vento è troppo forte.
+- **Serra** (pianura o collina): produce tutto l'anno, però **consuma molta energia**.
+- **Magazzino frigorifero** (pianura): fa crescere la scorta che la città può tenere.
+- **Il cibo passa dalla rete**: le costruzioni del cibo consumano energia. Durante un **blackout** non producono e
+  i frigoriferi perdono una parte del cibo in più.
+- **Se la scorta finisce**, il cibo arriva da fuori in automatico, ma costa caro. Con il cibo importato la città
+  non muore di fame, però **non cresce**: per crescere serve almeno un giorno di scorta propria.
+- **Se finiscono anche i soldi** arriva la fame, e gli abitanti se ne vanno.
+- Il pannello **Casella** mostra quanto produce ogni costruzione (per esempio **Cibo: 2,0/h**), quanto spazio
+  aggiunge un frigorifero e quanta energia consuma.
 
 ### Comandi
 
@@ -112,7 +130,7 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 
 | Comando | Cosa fa |
 |---|---|
-| Tasti **1–7** | Scegli cosa costruire: linea elettrica, miniera di carbone, centrale a carbone, impianto solare, parco eolico, batteria, quartiere |
+| Tasti **1–9** e **0** | Scegli cosa costruire: linea elettrica, miniera di carbone, centrale a carbone, impianto solare, parco eolico, batteria, quartiere, fattoria, peschereccio, serra. Il magazzino frigorifero si sceglie dalla lista a sinistra |
 | **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta seleziona una casella e ne mostra i dettagli |
 | **Clic destro** (sul tablet: tocco lungo) | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
 | **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (Riprendi, Salva ed esci al menu, Nuova partita, Lingua) |
@@ -135,7 +153,7 @@ una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizz
 
 - **Spina staccata** (cerchio bianco e rosso): la costruzione non è collegata alla rete.
 - **Fulmine barrato** (cerchio giallo): è collegata ma non riceve corrente (blackout), oppure una centrale a carbone
-  è ferma perché il carbone è finito.
+  è ferma perché il carbone è finito. Una serra o un frigorifero senza corrente non funzionano.
 - **Casco barrato** (cerchio azzurro): **senza personale**, la costruzione è ferma. Costruisci altri quartieri o
   libera lavoratori.
 - **Luci di notte**: col buio quartieri e municipio accendono le luci. Una costruzione senza corrente resta al
@@ -149,7 +167,9 @@ una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizz
 3. Comincia con un po' di **solare e di eolico** e una **batteria** per la sera.
 4. Non costruire troppe centrali tutte insieme: ognuna ha bisogno di **personale**, e la città è ancora piccola.
 5. Costruisci **quartieri** man mano che la produzione regge la domanda.
-6. Tieni d'occhio il **grafico in basso**: se la linea rossa (domanda) supera la verde (produzione), sta per
+6. Metti presto una **fattoria** e pensa all'inverno: d'inverno le fattorie si fermano, e servono una scorta,
+   un peschereccio o una serra.
+7. Tieni d'occhio il **grafico in basso**: se la linea rossa (domanda) supera la verde (produzione), sta per
    arrivare un blackout.
 
 ## Dove finiscono i salvataggi
@@ -164,6 +184,9 @@ internet.
 **Arrivi da una versione precedente?** Al primo avvio della 0.3.0 il gioco **copia** i salvataggi dalla vecchia
 cartella «Energy Grid Tycoon» (stesso percorso, con «Energy Grid Tycoon» al posto di «Voltvale»). La cartella
 vecchia resta dov'è. La **lingua** va scelta di nuovo, una volta sola.
+
+**Dalla 0.4.0** i salvataggi hanno un formato nuovo. Quelli delle versioni precedenti si caricano lo stesso: la
+città riparte con la scorta di cibo iniziale. Un salvataggio della 0.4.0 non si apre con le versioni precedenti.
 
 I salvataggi di una versione alpha potrebbero non funzionare con la versione successiva: lo scrive il
 [changelog](CHANGELOG.md) quando succede.

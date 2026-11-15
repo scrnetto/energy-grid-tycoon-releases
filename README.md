@@ -18,7 +18,7 @@
 
 **You run the power grid of a growing town.** Every hour the town needs energy: a little at night, a lot in the
 evening. Build power plants, solar farms, wind farms and batteries, connect everything with power lines, find
-people to work in them, and grow the town to **400 residents within two game years**, without constant
+people to work in them, feed everyone, and grow the town to **400 residents within two game years**, without constant
 blackouts, without debt and without choking it with pollution.
 
 An original game by **Marco Scarlino**. Free to play.
@@ -89,20 +89,38 @@ days are shorter and the sky is cloudier.
 - **Surplus energy** is sold to the outside grid, but the more you offer, the less it's worth.
 - **Pollution**: coal power plants pollute and the air clears slowly. One power plant is fine, too many are not.
   Above the limit people are unhappy and the town stops growing.
-- **Growth**: the town grows if residents are happy and there's room in the **districts**.
+- **Growth**: the town grows if residents are happy, there's room in the **districts** and there's enough
+  **food** in store.
 
 ### Work and staff
 
 Buildings need people to run them.
 
 - About **56 %** of the residents work. The bar at the top shows filled jobs out of the available workforce.
-- **Coal power plants**, **solar farms**, **wind farms** and **coal mines** need staff. The **Tile** panel shows
+- **Coal power plants**, **solar farms**, **wind farms**, **coal mines** and the **food** buildings need staff. The **Tile** panel shows
   how many they have, for example **Staff: 8/10**.
 - With too few staff a building produces less; **with no staff at all it stops** and shows the **«no staff»**
   signal.
-- Workers go **to energy first**, then **to the mines**, then **to district services** (shops, local schools).
+- Workers go **to energy first**, then **to food**, then **to the mines**, then **to district services** (shops, local schools).
   Districts keep working even when their services are short of staff.
 - **Unemployment** means less tax income, and if it's high, slightly less happy residents.
+
+### Food
+
+Residents eat every hour. The food stock is in the top bar, next to the ear of wheat, and turns red when it's
+running low.
+
+- **Farm** (plains): produces with the seasons, a lot in summer and **nothing in winter**.
+- **Fishing boat** (coast): fishes all year round, but stops when the wind is too strong.
+- **Greenhouse** (plains or hills): produces all year round, but **uses a lot of power**.
+- **Cold store** (plains): raises how much food the town can keep.
+- **Food runs on the grid**: food buildings use power. During a **blackout** they don't produce, and cold stores
+  lose part of the extra food.
+- **If the stock runs out**, food is imported automatically, but it's expensive. Imported food keeps the town from
+  starving, but it **doesn't grow**: growth needs at least one day of its own stock.
+- **If the money runs out too**, famine hits and residents leave.
+- The **Tile** panel shows how much each building produces (for example **Food: 2.0/h**), how much room a cold
+  store adds, and how much power it uses.
 
 ### Controls
 
@@ -111,7 +129,7 @@ and how much energy it produces or uses.
 
 | Control | What it does |
 |---|---|
-| Keys **1–7** | Pick what to build: Power line, Coal mine, Coal power plant, Solar farm, Wind farm, Battery, District |
+| Keys **1–9** and **0** | Pick what to build: Power line, Coal mine, Coal power plant, Solar farm, Wind farm, Battery, District, Farm, Fishing boat, Greenhouse. Pick the Cold store from the list on the left |
 | **Left click** | Places the chosen building. With nothing chosen, selects a tile and shows its details |
 | **Right click** (on a tablet: long press) | With a building chosen, cancels the choice. With nothing chosen, asks to confirm demolition (half the cost refunded) |
 | **Esc** | Cancels the choice; if there's nothing to cancel, opens the **pause menu** (Resume, Save and quit to menu, New game, Language) |
@@ -134,7 +152,7 @@ straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
 
 - **Unplugged plug** (white and red circle): the building isn't connected to the grid.
 - **Crossed-out lightning bolt** (yellow circle): it's connected but gets no power (blackout), or a coal power
-  plant has stopped because the coal has run out.
+  plant has stopped because the coal has run out. A greenhouse or cold store with no power doesn't work.
 - **Crossed-out hard hat** (light-blue circle): **no staff**, so the building has stopped. Build more districts or
   free up workers.
 - **Lights at night**: after dark, districts and the town hall switch their lights on. A building with no power
@@ -147,7 +165,9 @@ straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
 3. Start with some **solar and wind** and a **battery** for the evening.
 4. Don't build too many power plants at once: each one needs **staff**, and the town is still small.
 5. Build **districts** as long as production keeps up with demand.
-6. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
+6. Put down a **farm** early and plan for winter: farms stop in winter, so you need a stock, a fishing boat or a
+   greenhouse.
+7. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
    blackout is coming.
 
 ## Where saves are stored
@@ -162,6 +182,9 @@ internet.
 **Coming from an earlier version?** The first time you start version 0.3.0, the game **copies** your saves from
 the old «Energy Grid Tycoon» folder (same path, with «Energy Grid Tycoon» instead of «Voltvale»). The old folder
 stays where it is. You'll need to choose your **language** again once.
+
+**From 0.4.0** saves use a new format. Saves from earlier versions still load: the town restarts with the
+starting food stock. A 0.4.0 save doesn't open in earlier versions.
 
 Saves from one alpha version might not work with the next one: the [changelog](CHANGELOG.md) says so when it
 happens.
