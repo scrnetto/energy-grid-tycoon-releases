@@ -30,14 +30,11 @@
     "picco_ampiezza": 0.2
   },
   "vento_massimo": 20,
-  "penalita_blackout_soddisfazione": 5,
   "perdita_abitanti_blackout_pct": 0.002,
-  "recupero_soddisfazione_ora": 0.2,
   "soglia_crescita_soddisfazione": 60,
-  "crescita_abitanti_ora": 0.04,
+  "crescita_abitanti_ora": 0.05,
   "capacita_base_municipio": 20,
   "smaltimento_frazione_ora": 0.02,
-  "penalita_inquinamento_soddisfazione": 0.02,
   "fattore_prezzo_minimo": 0.1,
   "prezzo_pieno_a_surplus": 150,
   "previsione_ore": 3,
@@ -61,7 +58,6 @@
     "quota_attiva": 0.56,
     "posti_servizi_municipio": 10,
     "soglia_disoccupazione": 0.07,
-    "penalita_disoccupazione": 8,
     "tassa_disoccupati": 0.5
   },
   "cibo": {
@@ -70,8 +66,41 @@
     "capacita_base": 150,
     "perdita_frigo_blackout": 0.1,
     "prezzo_importazione": 12,
-    "penalita_fame": 1.5,
     "perdita_abitanti_fame_pct": 0.003,
     "giorni_scorta_crescita": 1
+  },
+  "salute": {
+    "salute_iniziale": 85,
+    "malattie_base": 15,
+    "salute_inquinamento": 0.6,
+    "salute_fame": 20,
+    "riduzione_ospedali": 0.6,
+    "quota_assenti": 0.5,
+    "velocita_avvicinamento": 0.05
+  },
+  "felicita": {
+    "base": 70,
+    "velocita_avvicinamento": 0.05,
+    "per_ora_blackout": 2.5,
+    "blackout_max": 40,
+    "cibo_scorta": 5,
+    "cibo_importato": 5,
+    "fame": 30,
+    "disoccupazione": 100,
+    "inquinamento": 0.5,
+    "salute": 0.3,
+    "parchi_max": 10,
+    "tasse_felicita": {
+      "bassa": 6,
+      "normale": 0,
+      "alta": -8
+    },
+    "tasse_moltiplicatore": {
+      "bassa": 0.8,
+      "normale": 1,
+      "alta": 1.25
+    },
+    "soglia_emigrazione": 35,
+    "emigrazione_pct": 0.001
   }
 }
