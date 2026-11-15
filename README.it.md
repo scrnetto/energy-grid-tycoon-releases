@@ -23,7 +23,7 @@ senza debiti e senza soffocarla di inquinamento.
 
 Un gioco originale di **Marco Scarlino**. Gratuito.
 
-![Una partita al sesto giorno: impianti solari, parchi eolici e una batteria attorno al municipio](immagini/schermata-partita.png)
+![Una partita al secondo giorno: attorno al municipio quartieri, impianti solari, parchi eolici, una batteria, una fattoria, una serra, un parco e un ospedale](immagini/schermata-partita.png)
 
 > **Stato: in sviluppo (alpha).** Il gioco si gioca dall'inizio alla fine, ma mancano ancora molte cose e qualcosa
 > può non funzionare. Ogni segnalazione aiuta: vedi [Segnalare un problema o un'idea](#segnalare-un-problema-o-unidea).
@@ -89,8 +89,8 @@ calendario: si parte in autunno, e d'inverno le giornate sono più corte e il ci
 - **Batterie**: accumulano l'energia in più e la restituiscono quando serve, per esempio la sera.
 - **Il surplus** si vende alla rete esterna, ma più ne offri e meno vale.
 - **Inquinamento**: le centrali a carbone inquinano e l'aria si pulisce piano. Una centrale si regge, troppe no.
-  Sopra la soglia la gente è scontenta e la città smette di crescere.
-- **Crescita**: la città cresce se gli abitanti sono contenti, c'è posto nei **quartieri** e c'è abbastanza
+  Fa ammalare gli abitanti, e sopra la soglia non si vince.
+- **Crescita**: la città cresce se gli abitanti sono abbastanza **felici**, c'è posto nei **quartieri** e c'è abbastanza
   **cibo** in magazzino.
 
 ### Lavoro e personale
@@ -102,9 +102,9 @@ Le costruzioni hanno bisogno di qualcuno che le faccia funzionare.
   **cibo** hanno bisogno di personale. Il pannello **Casella** mostra quanto ne hanno, per esempio **Personale: 8/10**.
 - Con poco personale una costruzione produce meno; **senza nessuno si ferma** e mostra il segnale **«senza
   personale»**.
-- I lavoratori vanno **prima all'energia**, poi **al cibo**, poi **alle miniere**, poi **ai servizi dei quartieri** (negozi, scuole
+- I lavoratori vanno **prima all'energia**, poi **al cibo**, poi **agli ospedali**, poi **alle miniere**, poi **ai servizi** (quartieri e parchi) (negozi, scuole
   di quartiere). I quartieri funzionano anche quando ai loro servizi manca personale.
-- La **disoccupazione** fa entrare meno tasse e, se è alta, rende gli abitanti un po' meno contenti.
+- La **disoccupazione** fa entrare meno tasse e, se è alta, rende gli abitanti meno felici.
 
 ### Cibo
 
@@ -123,6 +123,21 @@ sta per finire.
 - Il pannello **Casella** mostra quanto produce ogni costruzione (per esempio **Cibo: 2,0/h**), quanto spazio
   aggiunge un frigorifero e quanta energia consuma.
 
+### Felicità, salute e tasse
+
+- **Felicità** (lo smile nella barra in alto): si muove piano verso un valore che è la somma di alcuni fattori, cioè
+  blackout delle ultime 24 ore, cibo, fame, disoccupazione, inquinamento, salute, parchi e tasse. Passando il
+  mouse sul numero vedi verso quale valore sta andando e quanto pesa ogni fattore, per esempio «Blackout −5,0» o
+  «Parchi +3,0». Sotto 60 la città non cresce, e sotto 35 la gente comincia ad andarsene.
+- **Salute** (il cuore): cala con l'inquinamento e con la fame. I **malati restano a casa**, quindi ci sono meno
+  lavoratori, e una città poco sana è anche meno felice.
+- **Ospedale** (pianura): cura fino a 250 abitanti, ha bisogno di personale e consuma energia. Durante un
+  blackout non cura. Indispensabile se punti sul carbone.
+- **Parco** (pianura o collina): rende la gente più felice. Conta di più in una città piccola: ogni parco vale +3
+  ogni 100 abitanti, fino a +10.
+- **Tasse**: tre livelli, basse, normali e alte, con il pulsante con la moneta nella barra in alto o il tasto
+  **T**. Tasse alte portano più soldi ma meno felicità; tasse basse fanno il contrario.
+
 ### Comandi
 
 Passa il mouse su qualsiasi icona o pulsante: un riquadro spiega che cos'è. Fermandolo su una costruzione della
@@ -130,7 +145,7 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 
 | Comando | Cosa fa |
 |---|---|
-| Tasti **1–9** e **0** | Scegli cosa costruire: linea elettrica, miniera di carbone, centrale a carbone, impianto solare, parco eolico, batteria, quartiere, fattoria, peschereccio, serra. Il magazzino frigorifero si sceglie dalla lista a sinistra |
+| Tasti **1–9** e **0** | Scegli cosa costruire: linea elettrica, miniera di carbone, centrale a carbone, impianto solare, parco eolico, batteria, quartiere, fattoria, peschereccio, serra. Magazzino frigorifero, parco e ospedale si scelgono dalla lista a sinistra |
 | **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta seleziona una casella e ne mostra i dettagli |
 | **Clic destro** (sul tablet: tocco lungo) | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
 | **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (Riprendi, Salva ed esci al menu, Nuova partita, Lingua) |
@@ -138,6 +153,7 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 | **Spazio** o pulsante ▶/❚❚ | Pausa / riprendi |
 | **F** o pulsanti delle frecce | Velocità 1×, 2×, 4× |
 | **V** | Avanza di un'ora sola |
+| **T** o pulsante con la moneta | Tasse basse, normali, alte |
 | **WASD** o **frecce**, tasto centrale del mouse | Sposta la vista |
 | **Rotella** | Zoom |
 | **Salva** / **Carica** (in alto) | Salva o riprende la partita. Il gioco salva anche da solo ogni giorno |
@@ -169,7 +185,9 @@ una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizz
 5. Costruisci **quartieri** man mano che la produzione regge la domanda.
 6. Metti presto una **fattoria** e pensa all'inverno: d'inverno le fattorie si fermano, e servono una scorta,
    un peschereccio o una serra.
-7. Tieni d'occhio il **grafico in basso**: se la linea rossa (domanda) supera la verde (produzione), sta per
+7. Un **parco** presto alza la felicità quando la città è piccola. Se costruisci centrali a carbone, pensa a un
+   **ospedale**.
+8. Tieni d'occhio il **grafico in basso**: se la linea rossa (domanda) supera la verde (produzione), sta per
    arrivare un blackout.
 
 ## Dove finiscono i salvataggi
@@ -187,6 +205,9 @@ vecchia resta dov'è. La **lingua** va scelta di nuovo, una volta sola.
 
 **Dalla 0.4.0** i salvataggi hanno un formato nuovo. Quelli delle versioni precedenti si caricano lo stesso: la
 città riparte con la scorta di cibo iniziale. Un salvataggio della 0.4.0 non si apre con le versioni precedenti.
+
+**Dalla 0.5.0** il formato cambia di nuovo: tasse e salute. I salvataggi delle versioni precedenti si caricano con
+tasse normali e salute iniziale. Un salvataggio della 0.5.0 non si apre con le versioni precedenti.
 
 I salvataggi di una versione alpha potrebbero non funzionare con la versione successiva: lo scrive il
 [changelog](CHANGELOG.md) quando succede.

@@ -23,7 +23,7 @@ blackouts, without debt and without choking it with pollution.
 
 An original game by **Marco Scarlino**. Free to play.
 
-![A game on day six: solar farms, wind farms and a battery around the town hall](immagini/schermata-partita.png)
+![A game on day two: around the town hall, districts, solar farms, wind farms, a battery, a farm, a greenhouse, a park and a hospital](immagini/schermata-partita.png)
 
 > **Status: in development (alpha).** You can play from start to finish, but a lot is still missing and some
 > things may not work. Every report helps: see [Reporting a problem or an idea](#reporting-a-problem-or-an-idea).
@@ -88,8 +88,8 @@ days are shorter and the sky is cloudier.
 - **Batteries** store the extra energy and give it back when needed, for example in the evening.
 - **Surplus energy** is sold to the outside grid, but the more you offer, the less it's worth.
 - **Pollution**: coal power plants pollute and the air clears slowly. One power plant is fine, too many are not.
-  Above the limit people are unhappy and the town stops growing.
-- **Growth**: the town grows if residents are happy, there's room in the **districts** and there's enough
+  It makes residents sick, and above the limit you can't win.
+- **Growth**: the town grows if residents are **happy** enough, there's room in the **districts** and there's enough
   **food** in store.
 
 ### Work and staff
@@ -101,9 +101,9 @@ Buildings need people to run them.
   how many they have, for example **Staff: 8/10**.
 - With too few staff a building produces less; **with no staff at all it stops** and shows the **«no staff»**
   signal.
-- Workers go **to energy first**, then **to food**, then **to the mines**, then **to district services** (shops, local schools).
+- Workers go **to energy first**, then **to food**, then **to hospitals**, then **to the mines**, then **to services** (districts and parks).
   Districts keep working even when their services are short of staff.
-- **Unemployment** means less tax income, and if it's high, slightly less happy residents.
+- **Unemployment** means less tax income, and if it's high, less happy residents.
 
 ### Food
 
@@ -122,6 +122,21 @@ running low.
 - The **Tile** panel shows how much each building produces (for example **Food: 2.0/h**), how much room a cold
   store adds, and how much power it uses.
 
+### Happiness, health and taxes
+
+- **Happiness** (the smiley in the top bar): it moves slowly towards a value that is the sum of a few factors,
+  namely blackouts in the last 24 hours, food, hunger, unemployment, pollution, health, parks and taxes. Hover
+  over the number to see where it's heading and how much each factor weighs, for example «Blackouts −5.0» or
+  «Parks +3.0». Below 60 the town doesn't grow, and below 35 people start to leave.
+- **Health** (the heart): drops with pollution and hunger. **Sick people stay home**, so there are fewer workers,
+  and an unhealthy town is also a less happy one.
+- **Hospital** (plains): treats up to 250 residents, needs staff and uses power. It can't treat anyone during a
+  blackout. A must if you go for coal.
+- **Park** (plains or hills): makes people happier. It counts for more in a small town: each park is worth +3 per
+  100 residents, up to +10.
+- **Taxes**: three levels, low, normal and high, with the coin button in the top bar or the **T** key. High taxes
+  bring in more money but less happiness; low taxes do the opposite.
+
 ### Controls
 
 Hover over any icon or button: a tooltip explains what it is. Hover over a building on the map to see its status
@@ -129,7 +144,7 @@ and how much energy it produces or uses.
 
 | Control | What it does |
 |---|---|
-| Keys **1–9** and **0** | Pick what to build: Power line, Coal mine, Coal power plant, Solar farm, Wind farm, Battery, District, Farm, Fishing boat, Greenhouse. Pick the Cold store from the list on the left |
+| Keys **1–9** and **0** | Pick what to build: Power line, Coal mine, Coal power plant, Solar farm, Wind farm, Battery, District, Farm, Fishing boat, Greenhouse. Pick the Cold store, Park and Hospital from the list on the left |
 | **Left click** | Places the chosen building. With nothing chosen, selects a tile and shows its details |
 | **Right click** (on a tablet: long press) | With a building chosen, cancels the choice. With nothing chosen, asks to confirm demolition (half the cost refunded) |
 | **Esc** | Cancels the choice; if there's nothing to cancel, opens the **pause menu** (Resume, Save and quit to menu, New game, Language) |
@@ -137,6 +152,7 @@ and how much energy it produces or uses.
 | **Space** or the ▶/❚❚ button | Pause / resume |
 | **F** or the arrow buttons | Speed 1×, 2×, 4× |
 | **V** | Advance by a single hour |
+| **T** or the coin button | Low, normal, high taxes |
 | **WASD** or **arrow keys**, middle mouse button | Move the view |
 | **Mouse wheel** | Zoom |
 | **Save** / **Load** (at the top) | Saves or resumes the game. The game also saves by itself every day |
@@ -167,7 +183,9 @@ straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
 5. Build **districts** as long as production keeps up with demand.
 6. Put down a **farm** early and plan for winter: farms stop in winter, so you need a stock, a fishing boat or a
    greenhouse.
-7. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
+7. An early **park** lifts happiness while the town is small. If you build coal power plants, plan a
+   **hospital**.
+8. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
    blackout is coming.
 
 ## Where saves are stored
@@ -185,6 +203,9 @@ stays where it is. You'll need to choose your **language** again once.
 
 **From 0.4.0** saves use a new format. Saves from earlier versions still load: the town restarts with the
 starting food stock. A 0.4.0 save doesn't open in earlier versions.
+
+**From 0.5.0** the format changes again: taxes and health. Saves from earlier versions load with normal taxes and
+the starting health. A 0.5.0 save doesn't open in earlier versions.
 
 Saves from one alpha version might not work with the next one: the [changelog](CHANGELOG.md) says so when it
 happens.

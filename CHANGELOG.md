@@ -12,6 +12,48 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.5.0-alpha.1] - 2026-11-15
+
+Felicità, salute e tasse. *Happiness, health and taxes.*
+
+### Novità
+- **Felicità leggibile**: va piano verso la somma di alcuni fattori, cioè blackout delle ultime 24 ore, cibo,
+  fame, disoccupazione, inquinamento, salute, parchi e tasse. Passando il mouse sul numero si vede quanto pesa
+  ognuno. Sotto 35 la gente comincia ad andarsene.
+- **Salute**: cala con l'inquinamento e la fame. I malati restano a casa e mancano al lavoro.
+- **Ospedale**: cura fino a 250 abitanti; ha bisogno di personale e di corrente.
+- **Parco**: alza la felicità, soprattutto in una città piccola.
+- **Tasse a tre livelli** (basse, normali, alte): pulsante con la moneta nella barra in alto o tasto **T**.
+- Nel pannello **Casella**: la copertura dell'ospedale e la felicità di un parco.
+- Luci di notte anche sull'ospedale.
+
+### Modifiche
+- I lavoratori vanno all'energia, al cibo, **agli ospedali**, alle miniere e infine ai servizi.
+- La città cresce un po' più in fretta, per compensare una felicità che ora sta di solito fra 70 e 85.
+- **Barre di scorrimento** della lista delle costruzioni e delle informazioni della Casella: scure e sottili, nello
+  stile del gioco.
+- Barra in alto più compatta: la data non viene più tagliata nelle lingue con parole lunghe.
+
+### Correzioni
+- Il riquadro «Apri il sito dell'autore» non resta più sulla mappa dopo aver lasciato il menu.
+
+### Da sapere
+- **Salvataggi in formato nuovo.** Quelli delle versioni precedenti si caricano con tasse normali e salute
+  iniziale. I salvataggi della 0.5.0 non si aprono con le versioni precedenti.
+
+### In English
+- **Readable happiness**: it moves slowly towards the sum of a few factors (blackouts in the last 24 hours, food,
+  hunger, unemployment, pollution, health, parks, taxes); hover over it to see each one. Below 35 people leave.
+- **Health**: drops with pollution and hunger; sick people stay home from work.
+- **Hospital** (treats up to 250 residents, needs staff and power) and **park** (more happiness, especially in a
+  small town).
+- **Three tax levels** with the coin button or the **T** key.
+- Jobs go to energy, food, **hospitals**, mines, then services. The town grows a little faster.
+- Dark, slim **scroll bars**; a more compact top bar, so the date is no longer cut off.
+- Fixed: the «Open the author's website» tooltip no longer stays on the map.
+- **New save format**: older saves load with normal taxes and starting health; 0.5.0 saves don't open in older
+  versions.
+
 ## [0.4.0-alpha.2] - 2026-11-15
 
 Correzioni alla 0.4.0-alpha.1. *Fixes for 0.4.0-alpha.1.*
