@@ -179,7 +179,7 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 | Tasti **1–9** e **0** | Scegli cosa costruire: linea elettrica, miniera di carbone, centrale a carbone, impianto solare, parco eolico, batteria, quartiere, fattoria, peschereccio, serra. Magazzino frigorifero, parco e ospedale si scelgono dalla lista a sinistra |
 | **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta seleziona una casella e ne mostra i dettagli |
 | **Clic destro** (sul tablet: tocco lungo) | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
-| **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (Riprendi, Salva ed esci al menu, Nuova partita, Lingua) |
+| **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (Riprendi, Salva come…, Salvataggio rapido, Carica partita, Salva ed esci al menu, Nuova partita, Lingua) |
 | **F11** | Schermo intero / finestra |
 | **Spazio** o pulsante ▶/❚❚ | Pausa / riprendi |
 | **F** o pulsanti delle frecce | Velocità 1×, 2×, 4× |
@@ -188,7 +188,8 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 | **WASD** o **frecce**, tasto centrale del mouse | Sposta la vista |
 | **Rotella** | Zoom |
 | Pulsante **Scorte** (in alto) | Mostra le scorte di carbone, legname, pietra, cemento e cibo |
-| **Salva** / **Carica** (in alto) | Salva o riprende la partita. Il gioco salva anche da solo ogni giorno |
+| **Salva** / **Carica** (in alto) | **Salva** crea un nuovo salvataggio col nome «Giorno N»; **Carica** riprende il salvataggio più recente. Il gioco salva anche da solo ogni giorno |
+| **F5** / **F9** | Salvataggio rapido / carica il salvataggio rapido |
 
 ### Lingue
 
@@ -224,6 +225,17 @@ una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizz
 9. Tieni d'occhio il **grafico in basso**: se la linea rossa (domanda) supera la verde (produzione), sta per
    arrivare un blackout.
 
+## Salvataggi
+
+- **Salva come…** (menu di pausa): scegli il nome del salvataggio, oppure sovrascrivi uno di quelli che hai già
+  fatto. Fino a 50 salvataggi con nome per ogni partita.
+- **Salvataggio rapido**: **F5** salva, **F9** riprende da lì. Ce n'è uno per partita e si sovrascrive ogni volta.
+  Sul tablet è nel menu di pausa.
+- **Salvataggi automatici**: uno all'inizio di ogni giorno di gioco; restano gli ultimi tre.
+- **Carica partita** (menu iniziale e menu di pausa): tutti i salvataggi, raggruppati per partita, con giorno,
+  denaro, abitanti e data. Da qui puoi **caricare**, **rinominare** un salvataggio con nome o **eliminarne** uno.
+- **Continua** (menu iniziale) riprende il salvataggio più recente, di qualunque tipo.
+
 ## Dove finiscono i salvataggi
 
 I salvataggi restano sul tuo computer, o nel tuo browser per la versione web, e il gioco non manda niente su
@@ -248,8 +260,35 @@ tasse normali e salute iniziale. Un salvataggio della 0.5.0 non si apre con le v
 legname e il cemento iniziali, e sulla mappa compaiono i boschi; le costruzioni finite in un bosco restano al loro
 posto. Un salvataggio della 0.6.0 non si apre con le versioni precedenti.
 
+**Dalla 0.7.0** i salvataggi sono in una cartella per ogni partita. Al primo avvio il gioco trasforma i salvataggi
+della versione precedente (il salvataggio e quello automatico) in una partita, che trovi in **Carica partita** e con
+**Continua**; i file originali restano nella sottocartella `vecchi`. Le versioni precedenti non vedono i salvataggi
+della 0.7.0.
+
 I salvataggi di una versione alpha potrebbero non funzionare con la versione successiva: lo scrive il
 [changelog](CHANGELOG.md) quando succede.
+
+## Prossimamente
+
+Cosa è già previsto, più o meno in quest'ordine. I piani possono cambiare.
+
+- **Strade e traffico**: ogni costruzione dovrà affacciarsi su una strada collegata al municipio. Le strade sono a
+  doppio senso e hanno un traffico, che si alleggerisce migliorandole: sterrata, strada, viale. Un pannello mostrerà
+  quante persone e quante merci stanno viaggiando.
+- **Merci e depositi**: carbone, cibo e materiali viaggeranno davvero, su camion, ferrovia o nastri trasportatori;
+  il cibo si rovina se il viaggio è lungo.
+- **Rete elettrica più realistica**: l'energia si perde con la distanza, e servono i trasformatori.
+- **Risorse che finiscono**: le miniere si esauriscono, e compaiono i laghi.
+- **Mappe nuove**: una mappa diversa a ogni partita, mappe più grandi, una minimappa.
+- **Più avanti**: vista isometrica, e più città collegate fra loro.
+
+## Problemi noti
+
+- Le versioni per **Windows** e **macOS** non sono ancora state provate su computer veri: se qualcosa non va,
+  [segnalalo](#segnalare-un-problema-o-unidea).
+- La versione **Android** si installa a mano, fuori dal Play Store.
+- Nella versione **web** i salvataggi stanno nel browser: se cancelli i dati del sito, li perdi.
+- È una **alpha**: l'equilibrio del gioco (costi, produzione, crescita) cambia ancora da una versione all'altra.
 
 ## Versioni
 

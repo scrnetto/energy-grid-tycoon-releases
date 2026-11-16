@@ -12,6 +12,28 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.7.0-alpha.1] - 2026-11-16
+
+Salvataggi multipli. *Multiple saves.*
+
+### Novità
+- **Salva come…** nel menu di pausa: scegli il nome del salvataggio, oppure sovrascrivi uno di quelli che hai già
+  fatto (con una conferma). Fino a 50 salvataggi con nome per partita.
+- **Salvataggio rapido**: **F5** salva, **F9** riprende da lì; sul tablet è nel menu di pausa.
+- **Salvataggi automatici a rotazione**: uno all'inizio di ogni giorno di gioco, restano gli ultimi tre.
+- **Carica partita**, nel menu iniziale e in quello di pausa: i salvataggi raggruppati per partita, con giorno,
+  denaro, abitanti e data; si possono caricare, rinominare ed eliminare.
+- Nei README: le sezioni **«Prossimamente»** e **«Problemi noti»**.
+
+### Modifiche
+- Il pulsante **Salva** in alto crea ogni volta un salvataggio nuovo, col nome «Giorno N»; **Carica** e
+  **Continua** riprendono il salvataggio più recente, di qualunque tipo.
+
+### Da sapere
+- I salvataggi ora stanno in una cartella per partita. Al primo avvio il gioco trasforma i salvataggi della versione
+  precedente in una partita; i file originali restano nella sottocartella `vecchi`. Le versioni precedenti non
+  vedono i salvataggi della 0.7.0.
+
 ## [0.6.0-alpha.1] - 2026-11-16
 
 Materiali, versione per Android e trailer. *Materials, an Android version and a trailer.*

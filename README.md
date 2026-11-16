@@ -177,7 +177,7 @@ and how much energy it produces or uses.
 | Keys **1–9** and **0** | Pick what to build: Power line, Coal mine, Coal power plant, Solar farm, Wind farm, Battery, District, Farm, Fishing boat, Greenhouse. Pick the Cold store, Park and Hospital from the list on the left |
 | **Left click** | Places the chosen building. With nothing chosen, selects a tile and shows its details |
 | **Right click** (on a tablet: long press) | With a building chosen, cancels the choice. With nothing chosen, asks to confirm demolition (half the cost refunded) |
-| **Esc** | Cancels the choice; if there's nothing to cancel, opens the **pause menu** (Resume, Save and quit to menu, New game, Language) |
+| **Esc** | Cancels the choice; if there's nothing to cancel, opens the **pause menu** (Resume, Save as…, Quick save, Load game, Save and quit to menu, New game, Language) |
 | **F11** | Full screen / window |
 | **Space** or the ▶/❚❚ button | Pause / resume |
 | **F** or the arrow buttons | Speed 1×, 2×, 4× |
@@ -186,7 +186,8 @@ and how much energy it produces or uses.
 | **WASD** or **arrow keys**, middle mouse button | Move the view |
 | **Mouse wheel** | Zoom |
 | **Stocks** button (at the top) | Shows the stocks of coal, timber, stone, cement and food |
-| **Save** / **Load** (at the top) | Saves or resumes the game. The game also saves by itself every day |
+| **Save** / **Load** (at the top) | **Save** creates a new save named «Day N»; **Load** resumes the most recent save. The game also saves by itself every day |
+| **F5** / **F9** | Quick save / load the quick save |
 
 ### Languages
 
@@ -221,6 +222,17 @@ straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
 9. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
    blackout is coming.
 
+## Saves
+
+- **Save as…** (pause menu): choose a name for the save, or overwrite one you've already made. Up to 50 named saves
+  per game.
+- **Quick save**: **F5** saves, **F9** goes back to it. There is one per game and it is overwritten each time. On a
+  tablet it's in the pause menu.
+- **Autosaves**: one at the start of every game day; the last three are kept.
+- **Load game** (start menu and pause menu): all your saves, grouped by game, with day, money, residents and date.
+  From here you can **load**, **rename** a named save or **delete** one.
+- **Continue** (start menu) resumes the most recent save of any kind.
+
 ## Where saves are stored
 
 Saves stay on your computer, or in your browser for the web version, and the game sends nothing over the
@@ -245,8 +257,34 @@ the starting health. A 0.5.0 save doesn't open in earlier versions.
 cement, and the map gains its woods; buildings that end up in the woods stay where they are. A 0.6.0 save doesn't
 open in earlier versions.
 
+**From 0.7.0** saves live in one folder per game. The first time you start it, the game turns the saves of the
+previous version (the save and the autosave) into one game, which you'll find in **Load game** and with
+**Continue**; the original files stay in the `vecchi` subfolder. Earlier versions don't see 0.7.0 saves.
+
 Saves from one alpha version might not work with the next one: the [changelog](CHANGELOG.md) says so when it
 happens.
+
+## Coming next
+
+What's already planned, roughly in this order. Plans may change.
+
+- **Roads and traffic**: every building will need to face a road connected to the town hall. Roads are two-way
+  and have traffic, which you ease by upgrading them: dirt road, road, avenue. A panel will show how many people
+  and how much freight are on the move.
+- **Freight and depots**: coal, food and materials will really travel, by truck, rail or conveyor belt; food spoils
+  on long trips.
+- **A more realistic grid**: energy is lost over distance, and you'll need transformers.
+- **Resources that run out**: mines get exhausted, and lakes appear.
+- **New maps**: a different map every game, bigger maps, a minimap.
+- **Later on**: an isometric view, and several towns linked together.
+
+## Known issues
+
+- The **Windows** and **macOS** versions haven't been tested on real computers yet: if something goes wrong,
+  [let us know](#reporting-a-problem-or-an-idea).
+- The **Android** version is installed by hand, outside the Play Store.
+- In the **web** version saves live in your browser: if you clear the site's data, you lose them.
+- It's an **alpha**: the game's balance (costs, production, growth) still changes from one version to the next.
 
 ## Versions
 
