@@ -8,6 +8,7 @@
 
 [![Ultima versione](https://img.shields.io/github/v/release/scrnetto/energy-grid-tycoon-releases?include_prereleases&label=versione&color=f2c230)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Stato](https://img.shields.io/badge/stato-alpha-orange)](#versioni)
+[![itch.io](https://img.shields.io/badge/itch.io-gioca%20o%20scarica-fa5c5c?logo=itchdotio&logoColor=white)](https://marcoscarlino.itch.io/voltvale)
 [![Gioca nel browser](https://img.shields.io/badge/gioca-nel%20browser-3fae5a)](https://scrnetto.github.io/energy-grid-tycoon-releases/)
 [![Piattaforme](https://img.shields.io/badge/piattaforme-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Android%20%7C%20Web-3f8fc9)](#scaricare-il-gioco)
 [![Ultimo aggiornamento](https://img.shields.io/github/release-date-pre/scrnetto/energy-grid-tycoon-releases?label=ultimo%20aggiornamento&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
@@ -41,6 +42,10 @@ Un gioco originale di **Marco Scarlino**. Gratuito.
 installare. Serve un browser recente (Chrome, Firefox, Edge, Safari) su un computer con mouse e tastiera, oppure su
 un tablet: **tocco = clic, tocco lungo = clic destro**. Clicca sul gioco prima di usare la tastiera. I salvataggi
 restano nel browser che usi.
+
+**C'è anche su itch.io: [marcoscarlino.itch.io/voltvale](https://marcoscarlino.itch.io/voltvale)**, dove puoi
+giocare nel browser, scaricare il gioco per ogni sistema e lasciare un commento. I salvataggi fatti nel browser su
+itch.io sono separati da quelli fatti qui.
 
 ## Scaricare il gioco
 

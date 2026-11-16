@@ -8,6 +8,7 @@
 
 [![Latest version](https://img.shields.io/github/v/release/scrnetto/energy-grid-tycoon-releases?include_prereleases&label=version&color=f2c230)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Status](https://img.shields.io/badge/status-alpha-orange)](#versions)
+[![itch.io](https://img.shields.io/badge/itch.io-play%20or%20download-fa5c5c?logo=itchdotio&logoColor=white)](https://marcoscarlino.itch.io/voltvale)
 [![Play in the browser](https://img.shields.io/badge/play-in%20the%20browser-3fae5a)](https://scrnetto.github.io/energy-grid-tycoon-releases/)
 [![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Android%20%7C%20Web-3f8fc9)](#download-the-game)
 [![Last update](https://img.shields.io/github/release-date-pre/scrnetto/energy-grid-tycoon-releases?label=last%20update&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
@@ -42,9 +43,14 @@ install. You need a recent browser (Chrome, Firefox, Edge, Safari) on a computer
 tablet: **tap = click, long press = right-click**. Click on the game before using the keyboard. Your saves stay in
 the browser you use.
 
+**Also on itch.io: [marcoscarlino.itch.io/voltvale](https://marcoscarlino.itch.io/voltvale)**, where you can play
+in the browser, download the game for every system and leave a comment. Saves made in the browser on itch.io are
+separate from those made here.
+
 ## Download the game
 
-Every version is on the **[Releases](../../releases)** page. Download the file for your system from the latest
+Every version is on the **[Releases](../../releases)** page and on
+**[itch.io](https://marcoscarlino.itch.io/voltvale)**. Download the file for your system from the latest
 version:
 
 | System | File | How to start it |
