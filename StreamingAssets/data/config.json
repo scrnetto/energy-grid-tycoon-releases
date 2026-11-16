@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "denaro_iniziale": 10000,
+  "denaro_iniziale": 15000,
   "carbone_iniziale": 500,
   "prezzo_base_energia": 2.5,
   "tasse": 0.1,
@@ -102,5 +102,16 @@
     },
     "soglia_emigrazione": 35,
     "emigrazione_pct": 0.001
+  },
+  "materiali": {
+    "iniziali": {
+      "legname": 200,
+      "pietra": 0,
+      "cemento": 200
+    },
+    "prezzo_importazione": {
+      "legname": 10,
+      "cemento": 20
+    }
   }
 }
