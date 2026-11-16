@@ -12,6 +12,54 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.6.0-alpha.1] - 2026-11-16
+
+Materiali, versione per Android e trailer. *Materials, an Android version and a trailer.*
+
+### Novità
+- **Materiali da costruzione**: legname e cemento. Quasi tutte le costruzioni costano, oltre ai soldi, un po' di
+  materiali; il costo è scritto sotto il prezzo nella lista e per esteso nel suggerimento.
+- **Tre industrie nuove**:
+  - **segheria**, solo nel **bosco**: 2 legname all'ora;
+  - **cava**, sulle colline: 2 pietra all'ora;
+  - **cementificio**, in pianura: trasforma 2 pietra in 2 cemento all'ora.
+  Hanno bisogno di personale e di corrente; il cementificio senza pietra si ferma e non consuma energia.
+- **Bosco**: un terreno nuovo sulla mappa. Ci si possono posare solo segherie e linee elettriche.
+- **Se i materiali mancano** si comprano da fuori al momento della posa (legname 10, cemento 20 l'unità): si può
+  giocare anche senza industrie, ma costa di più.
+- **Pannello «Scorte»**: il pulsante accanto al carbone, in alto, mostra carbone, legname, pietra, cemento e cibo,
+  con quanto entra ed esce all'ora. Si chiude con un clic fuori o con Esc.
+- Nel pannello **Casella**: quanto produce e consuma un'industria, e «fermo: manca pietra» quando serve.
+- **Versione per Android** (tablet e telefoni con schermo grande, Android 8 o più recente): un file `.apk` da
+  installare a mano, fuori dal Play Store. Tocco = clic, tocco lungo = clic destro, due dita per spostare e
+  ingrandire la mappa.
+- **Trailer** di un minuto, in italiano e in inglese.
+
+### Modifiche
+- Si parte con **15 000** crediti invece di 10 000, più 200 di legname e 200 di cemento.
+
+### Da sapere
+- **Salvataggi in formato nuovo.** Quelli delle versioni precedenti si caricano con le scorte iniziali di
+  materiali; la mappa si ridisegna con i boschi, e le costruzioni finite su un bosco restano al loro posto. I
+  salvataggi della 0.6.0 non si aprono con le versioni precedenti.
+
+### In English
+- **Building materials**: timber and cement. Most buildings now cost some materials as well as money; the list
+  shows them under the price, the tooltip spells them out.
+- **Three new industries**: **sawmill** (woods only, 2 timber/h), **quarry** (hills, 2 stone/h) and **cement
+  works** (plains, turns 2 stone into 2 cement per hour). They need staff and power; the cement works stops and
+  uses no power when it runs out of stone.
+- **Woods**: a new terrain; only sawmills and power lines can go there.
+- **Missing materials** are bought from outside when you build (timber 10, cement 20 each).
+- **Stocks panel**: the button next to coal shows coal, timber, stone, cement and food, with hourly in and out.
+- The **Tile** panel shows what an industry produces and uses, and «stopped: no stone».
+- **Android version** (tablets and large phones, Android 8 or later): an `.apk` to install by hand, outside the
+  Play Store. Tap = click, long press = right-click, two fingers to pan and zoom.
+- A one-minute **trailer**, in Italian and English.
+- You start with **15,000** credits instead of 10,000, plus 200 timber and 200 cement.
+- **New save format**: older saves load with the starting materials and the map gains its woods; buildings that
+  end up in the woods stay where they are. 0.6.0 saves don't open in older versions.
+
 ## [0.5.0-alpha.1] - 2026-11-15
 
 Felicità, salute e tasse. *Happiness, health and taxes.*

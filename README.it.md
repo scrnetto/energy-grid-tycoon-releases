@@ -9,7 +9,7 @@
 [![Ultima versione](https://img.shields.io/github/v/release/scrnetto/energy-grid-tycoon-releases?include_prereleases&label=versione&color=f2c230)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Stato](https://img.shields.io/badge/stato-alpha-orange)](#versioni)
 [![Gioca nel browser](https://img.shields.io/badge/gioca-nel%20browser-3fae5a)](https://scrnetto.github.io/energy-grid-tycoon-releases/)
-[![Piattaforme](https://img.shields.io/badge/piattaforme-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-3f8fc9)](#scaricare-il-gioco)
+[![Piattaforme](https://img.shields.io/badge/piattaforme-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Android%20%7C%20Web-3f8fc9)](#scaricare-il-gioco)
 [![Ultimo aggiornamento](https://img.shields.io/github/release-date-pre/scrnetto/energy-grid-tycoon-releases?label=ultimo%20aggiornamento&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Download](https://img.shields.io/github/downloads/scrnetto/energy-grid-tycoon-releases/total?label=download&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Licenza](https://img.shields.io/badge/licenza-gratuito%2C%20tutti%20i%20diritti%20riservati-lightgrey)](LICENSE.md)
@@ -18,12 +18,19 @@
 
 **Sei il gestore elettrico di una cittadina che cresce.** Ogni ora la città chiede energia: poca di notte, tanta
 la sera. Costruisci centrali, impianti solari, parchi eolici e batterie, collega tutto con le linee elettriche,
-trova chi ci lavori, dai da mangiare a tutti e fai crescere la città fino a **400 abitanti in due anni di gioco**, senza blackout continui,
+trova chi ci lavori, dai da mangiare a tutti, produci il legname e il cemento per costruire e fai crescere la città fino a **400 abitanti in due anni di gioco**, senza blackout continui,
 senza debiti e senza soffocarla di inquinamento.
 
 Un gioco originale di **Marco Scarlino**. Gratuito.
 
 ![Una partita al secondo giorno: attorno al municipio quartieri, impianti solari, parchi eolici, una batteria, una fattoria, una serra, un parco e un ospedale](immagini/schermata-partita.png)
+
+## Trailer
+
+[![Trailer di Voltvale: clic per vedere il video intero di un minuto](immagini/trailer-it.webp)](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-it.mp4)
+
+**[▶ Guarda il trailer (1 minuto)](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-it.mp4)** ·
+[in inglese](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-en.mp4)
 
 > **Stato: in sviluppo (alpha).** Il gioco si gioca dall'inizio alla fine, ma mancano ancora molte cose e qualcosa
 > può non funzionare. Ogni segnalazione aiuta: vedi [Segnalare un problema o un'idea](#segnalare-un-problema-o-unidea).
@@ -45,6 +52,7 @@ versione:
 | **Windows** 10/11 (64 bit) | `Voltvale-<versione>-windows.zip` | Estrai lo zip e apri `Voltvale.exe` |
 | **macOS** 12 o successivo | `Voltvale-<versione>-macos.zip` | Estrai lo zip e apri `Voltvale.app` |
 | **Linux** (64 bit) | `Voltvale-<versione>-linux.zip` | Estrai lo zip e avvia `Voltvale` |
+| **Android** 8 o successivo (tablet o telefono grande) | `Voltvale-<versione>-android.apk` | Apri il file sul dispositivo e installalo (vedi sotto) |
 
 ### Al primo avvio
 
@@ -56,14 +64,19 @@ sviluppatore sconosciuto. È normale per i giochi indipendenti.
   sull'app → Apri**, poi conferma con **Apri**. Basta la prima volta. Se il Mac dice che l'app «è danneggiata»,
   apri il Terminale nella cartella dello zip e scrivi `xattr -cr Voltvale.app`.
 - **Linux**: se non parte, rendi il file eseguibile con `chmod +x Voltvale`.
+- **Android**: il gioco non è sul Play Store. Scarica l'`.apk` sul dispositivo e aprilo; la prima volta Android
+  chiede di permettere le installazioni dal browser o dal gestore dei file («Installa app sconosciute»). Play
+  Protect può avvisare che l'app è sconosciuta: scegli di installarla comunque. Per aggiornare, installa il nuovo
+  `.apk` sopra il vecchio. Sullo schermo touch: **tocco = clic, tocco lungo = clic destro**, due dita per spostare
+  la mappa e per ingrandirla.
 
 **Controllare il download (facoltativo).** Ogni versione ha un file `SHA256SUMS.txt` con l'impronta di ogni zip.
-Su Linux si controlla con `sha256sum -c SHA256SUMS.txt`, su macOS con `shasum -a 256 -c SHA256SUMS.txt`.
+Su Linux si controlla con `sha256sum -c --ignore-missing SHA256SUMS.txt`, su macOS con `shasum -a 256 -c SHA256SUMS.txt`.
 
 ### Requisiti
 
 - Uno schermo da almeno 1280×800.
-- Mouse e tastiera (nella versione web va bene anche un tablet).
+- Mouse e tastiera, oppure un tablet (versione web o Android).
 - Circa 200 MB di spazio.
 - Una scheda video qualsiasi degli ultimi 10 anni: anche quelle integrate vanno bene.
 
@@ -98,12 +111,12 @@ calendario: si parte in autunno, e d'inverno le giornate sono più corte e il ci
 Le costruzioni hanno bisogno di qualcuno che le faccia funzionare.
 
 - Lavora circa il **56 %** degli abitanti. La barra in alto mostra i posti occupati sulla forza lavoro disponibile.
-- **Centrali a carbone**, **impianti solari**, **parchi eolici**, **miniere di carbone** e le costruzioni del
-  **cibo** hanno bisogno di personale. Il pannello **Casella** mostra quanto ne hanno, per esempio **Personale: 8/10**.
+- **Centrali a carbone**, **impianti solari**, **parchi eolici**, **miniere di carbone**, le **industrie** e le
+  costruzioni del **cibo** hanno bisogno di personale. Il pannello **Casella** mostra quanto ne hanno, per esempio **Personale: 8/10**.
 - Con poco personale una costruzione produce meno; **senza nessuno si ferma** e mostra il segnale **«senza
   personale»**.
-- I lavoratori vanno **prima all'energia**, poi **al cibo**, poi **agli ospedali**, poi **alle miniere**, poi **ai servizi** (quartieri e parchi) (negozi, scuole
-  di quartiere). I quartieri funzionano anche quando ai loro servizi manca personale.
+- I lavoratori vanno **prima all'energia**, poi **al cibo**, poi **agli ospedali**, poi **alle industrie**, poi **alle miniere**, poi **ai servizi**
+  (quartieri e parchi). I quartieri funzionano anche quando ai loro servizi manca personale.
 - La **disoccupazione** fa entrare meno tasse e, se è alta, rende gli abitanti meno felici.
 
 ### Cibo
@@ -138,6 +151,24 @@ sta per finire.
 - **Tasse**: tre livelli, basse, normali e alte, con il pulsante con la moneta nella barra in alto o il tasto
   **T**. Tasse alte portano più soldi ma meno felicità; tasse basse fanno il contrario.
 
+### Materiali e industrie
+
+Quasi tutte le costruzioni costano, oltre ai soldi, dei **materiali**: **legname** e **cemento**. La lista a
+sinistra li mostra sotto il prezzo, con piccole icone; passando il mouse sul pulsante si leggono per esteso.
+
+- **Segheria** (solo nel **bosco**, le caselle verde scuro): 2 legname all'ora.
+- **Cava** (colline): 2 pietra all'ora.
+- **Cementificio** (pianura): trasforma 2 pietra in 2 cemento all'ora e consuma molta corrente. Senza pietra si
+  ferma, e smette anche di consumare corrente.
+- Le industrie hanno bisogno di **personale** e di **corrente**. I lavoratori ci vanno dopo energia, cibo e
+  ospedali, e prima delle miniere di carbone.
+- **Se i materiali non bastano** quando costruisci, la parte che manca si compra subito da fuori (legname 10,
+  cemento 20 l'unità). Si può giocare anche senza industrie, ma costa di più.
+- Si parte con 200 di legname e 200 di cemento.
+- Il pulsante **Scorte**, accanto al carbone nella barra in alto, apre un piccolo pannello con carbone, legname,
+  pietra, cemento e cibo, e quanto entra ed esce ogni ora. Si chiude con un clic fuori o con **Esc**.
+- Il pannello **Casella** mostra quanto produce e consuma un'industria, e «fermo: manca pietra» quando è finita.
+
 ### Comandi
 
 Passa il mouse su qualsiasi icona o pulsante: un riquadro spiega che cos'è. Fermandolo su una costruzione della
@@ -156,6 +187,7 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 | **T** o pulsante con la moneta | Tasse basse, normali, alte |
 | **WASD** o **frecce**, tasto centrale del mouse | Sposta la vista |
 | **Rotella** | Zoom |
+| Pulsante **Scorte** (in alto) | Mostra le scorte di carbone, legname, pietra, cemento e cibo |
 | **Salva** / **Carica** (in alto) | Salva o riprende la partita. Il gioco salva anche da solo ogni giorno |
 
 ### Lingue
@@ -185,9 +217,11 @@ una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizz
 5. Costruisci **quartieri** man mano che la produzione regge la domanda.
 6. Metti presto una **fattoria** e pensa all'inverno: d'inverno le fattorie si fermano, e servono una scorta,
    un peschereccio o una serra.
-7. Un **parco** presto alza la felicità quando la città è piccola. Se costruisci centrali a carbone, pensa a un
+7. Nel primo mese metti una **segheria** nel bosco e una **cava** su una collina; aggiungi un **cementificio**
+   quando hai un po' di soldi da parte. Comprare i materiali da fuori ogni volta costa.
+8. Un **parco** presto alza la felicità quando la città è piccola. Se costruisci centrali a carbone, pensa a un
    **ospedale**.
-8. Tieni d'occhio il **grafico in basso**: se la linea rossa (domanda) supera la verde (produzione), sta per
+9. Tieni d'occhio il **grafico in basso**: se la linea rossa (domanda) supera la verde (produzione), sta per
    arrivare un blackout.
 
 ## Dove finiscono i salvataggi
@@ -198,6 +232,7 @@ internet.
 - **Windows**: `%USERPROFILE%\AppData\LocalLow\Marco Scarlino\Voltvale\salvataggi`
 - **macOS**: `~/Library/Application Support/Marco Scarlino/Voltvale/salvataggi`
 - **Linux**: `~/.config/unity3d/Marco Scarlino/Voltvale/salvataggi`
+- **Android**: dentro l'app; si cancellano se la disinstalli.
 
 **Arrivi da una versione precedente?** Al primo avvio della 0.3.0 il gioco **copia** i salvataggi dalla vecchia
 cartella «Energy Grid Tycoon» (stesso percorso, con «Energy Grid Tycoon» al posto di «Voltvale»). La cartella
@@ -208,6 +243,10 @@ città riparte con la scorta di cibo iniziale. Un salvataggio della 0.4.0 non si
 
 **Dalla 0.5.0** il formato cambia di nuovo: tasse e salute. I salvataggi delle versioni precedenti si caricano con
 tasse normali e salute iniziale. Un salvataggio della 0.5.0 non si apre con le versioni precedenti.
+
+**Dalla 0.6.0** il formato cambia ancora: i materiali. I salvataggi delle versioni precedenti si caricano con il
+legname e il cemento iniziali, e sulla mappa compaiono i boschi; le costruzioni finite in un bosco restano al loro
+posto. Un salvataggio della 0.6.0 non si apre con le versioni precedenti.
 
 I salvataggi di una versione alpha potrebbero non funzionare con la versione successiva: lo scrive il
 [changelog](CHANGELOG.md) quando succede.

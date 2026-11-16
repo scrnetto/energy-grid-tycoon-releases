@@ -9,7 +9,7 @@
 [![Latest version](https://img.shields.io/github/v/release/scrnetto/energy-grid-tycoon-releases?include_prereleases&label=version&color=f2c230)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Status](https://img.shields.io/badge/status-alpha-orange)](#versions)
 [![Play in the browser](https://img.shields.io/badge/play-in%20the%20browser-3fae5a)](https://scrnetto.github.io/energy-grid-tycoon-releases/)
-[![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-3f8fc9)](#download-the-game)
+[![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Android%20%7C%20Web-3f8fc9)](#download-the-game)
 [![Last update](https://img.shields.io/github/release-date-pre/scrnetto/energy-grid-tycoon-releases?label=last%20update&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Downloads](https://img.shields.io/github/downloads/scrnetto/energy-grid-tycoon-releases/total?label=downloads&color=3f8fc9)](https://github.com/scrnetto/energy-grid-tycoon-releases/releases)
 [![Licence](https://img.shields.io/badge/licence-free%2C%20all%20rights%20reserved-lightgrey)](LICENSE.md)
@@ -18,12 +18,19 @@
 
 **You run the power grid of a growing town.** Every hour the town needs energy: a little at night, a lot in the
 evening. Build power plants, solar farms, wind farms and batteries, connect everything with power lines, find
-people to work in them, feed everyone, and grow the town to **400 residents within two game years**, without constant
+people to work in them, feed everyone, produce the timber and cement you build with, and grow the town to **400 residents within two game years**, without constant
 blackouts, without debt and without choking it with pollution.
 
 An original game by **Marco Scarlino**. Free to play.
 
 ![A game on day two: around the town hall, districts, solar farms, wind farms, a battery, a farm, a greenhouse, a park and a hospital](immagini/schermata-partita.png)
+
+## Trailer
+
+[![Voltvale trailer: click to watch the full one-minute video](immagini/trailer-en.webp)](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-en.mp4)
+
+**[▶ Watch the trailer (1 minute)](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-en.mp4)** ·
+[in Italian](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-it.mp4)
 
 > **Status: in development (alpha).** You can play from start to finish, but a lot is still missing and some
 > things may not work. Every report helps: see [Reporting a problem or an idea](#reporting-a-problem-or-an-idea).
@@ -45,6 +52,7 @@ version:
 | **Windows** 10/11 (64-bit) | `Voltvale-<version>-windows.zip` | Extract the zip and open `Voltvale.exe` |
 | **macOS** 12 or later | `Voltvale-<version>-macos.zip` | Extract the zip and open `Voltvale.app` |
 | **Linux** (64-bit) | `Voltvale-<version>-linux.zip` | Extract the zip and run `Voltvale` |
+| **Android** 8 or later (tablet or large phone) | `Voltvale-<version>-android.apk` | Open the file on the device and install it (see below) |
 
 ### First launch
 
@@ -56,14 +64,18 @@ developer. This is normal for independent games.
   Open**, then confirm with **Open**. You only need to do this once. If your Mac says the app «is damaged», open
   Terminal in the folder of the zip and type `xattr -cr Voltvale.app`.
 - **Linux**: if it doesn't start, make the file executable with `chmod +x Voltvale`.
+- **Android**: the game isn't on the Play Store. Download the `.apk` on the device and open it; Android asks you to
+  allow installs from your browser or file manager the first time («Install unknown apps»). Play Protect may
+  warn you about an unknown app: choose to install anyway. To update, install the new `.apk` over the old one.
+  On a touch screen: **tap = click, long press = right-click**, two fingers to pan and pinch to zoom.
 
 **Checking the download (optional).** Each version has a `SHA256SUMS.txt` file with the fingerprint of every zip.
-On Linux run `sha256sum -c SHA256SUMS.txt`, on macOS `shasum -a 256 -c SHA256SUMS.txt`.
+On Linux run `sha256sum -c --ignore-missing SHA256SUMS.txt`, on macOS `shasum -a 256 -c SHA256SUMS.txt`.
 
 ### Requirements
 
 - A screen of at least 1280×800.
-- Mouse and keyboard (a tablet is fine for the web version).
+- Mouse and keyboard, or a tablet (web or Android version).
 - About 200 MB of free space.
 - Any graphics card from the last 10 years: built-in ones are fine too.
 
@@ -97,11 +109,11 @@ days are shorter and the sky is cloudier.
 Buildings need people to run them.
 
 - About **56 %** of the residents work. The bar at the top shows filled jobs out of the available workforce.
-- **Coal power plants**, **solar farms**, **wind farms**, **coal mines** and the **food** buildings need staff. The **Tile** panel shows
+- **Coal power plants**, **solar farms**, **wind farms**, **coal mines**, **industries** and the **food** buildings need staff. The **Tile** panel shows
   how many they have, for example **Staff: 8/10**.
 - With too few staff a building produces less; **with no staff at all it stops** and shows the **«no staff»**
   signal.
-- Workers go **to energy first**, then **to food**, then **to hospitals**, then **to the mines**, then **to services** (districts and parks).
+- Workers go **to energy first**, then **to food**, then **to hospitals**, then **to industries**, then **to the mines**, then **to services** (districts and parks).
   Districts keep working even when their services are short of staff.
 - **Unemployment** means less tax income, and if it's high, less happy residents.
 
@@ -137,6 +149,24 @@ running low.
 - **Taxes**: three levels, low, normal and high, with the coin button in the top bar or the **T** key. High taxes
   bring in more money but less happiness; low taxes do the opposite.
 
+### Materials and industries
+
+Most buildings cost **materials** as well as money: **timber** and **cement**. The list on the left shows them
+under the price, with small icons; hover over the button to read them in full.
+
+- **Sawmill** (only in the **woods**, the dark green tiles): 2 timber per hour.
+- **Quarry** (hills): 2 stone per hour.
+- **Cement works** (plains): turns 2 stone into 2 cement per hour, and uses a lot of power. Without stone it
+  stops, and stops using power too.
+- Industries need **staff** and **power**. Workers go to them after energy, food and hospitals, and before the
+  coal mines.
+- **If you don't have enough materials** when you build, the missing part is bought from outside straight away
+  (timber 10, cement 20 each). You can play without industries, but it costs more.
+- You start with 200 timber and 200 cement.
+- The **Stocks** button, next to coal in the top bar, opens a small panel with coal, timber, stone, cement and
+  food, and how much comes in and goes out each hour. Click outside it or press **Esc** to close it.
+- The **Tile** panel shows what an industry produces and uses, and «stopped: no stone» when it has run out.
+
 ### Controls
 
 Hover over any icon or button: a tooltip explains what it is. Hover over a building on the map to see its status
@@ -155,6 +185,7 @@ and how much energy it produces or uses.
 | **T** or the coin button | Low, normal, high taxes |
 | **WASD** or **arrow keys**, middle mouse button | Move the view |
 | **Mouse wheel** | Zoom |
+| **Stocks** button (at the top) | Shows the stocks of coal, timber, stone, cement and food |
 | **Save** / **Load** (at the top) | Saves or resumes the game. The game also saves by itself every day |
 
 ### Languages
@@ -183,9 +214,11 @@ straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
 5. Build **districts** as long as production keeps up with demand.
 6. Put down a **farm** early and plan for winter: farms stop in winter, so you need a stock, a fishing boat or a
    greenhouse.
-7. An early **park** lifts happiness while the town is small. If you build coal power plants, plan a
+7. In the first month, put a **sawmill** in the woods and a **quarry** on a hill; add a **cement works** when you
+   have some spare money. Buying materials from outside every time adds up.
+8. An early **park** lifts happiness while the town is small. If you build coal power plants, plan a
    **hospital**.
-8. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
+9. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
    blackout is coming.
 
 ## Where saves are stored
@@ -196,6 +229,7 @@ internet.
 - **Windows**: `%USERPROFILE%\AppData\LocalLow\Marco Scarlino\Voltvale\salvataggi`
 - **macOS**: `~/Library/Application Support/Marco Scarlino/Voltvale/salvataggi`
 - **Linux**: `~/.config/unity3d/Marco Scarlino/Voltvale/salvataggi`
+- **Android**: inside the app; they are deleted if you uninstall it.
 
 **Coming from an earlier version?** The first time you start version 0.3.0, the game **copies** your saves from
 the old «Energy Grid Tycoon» folder (same path, with «Energy Grid Tycoon» instead of «Voltvale»). The old folder
@@ -206,6 +240,10 @@ starting food stock. A 0.4.0 save doesn't open in earlier versions.
 
 **From 0.5.0** the format changes again: taxes and health. Saves from earlier versions load with normal taxes and
 the starting health. A 0.5.0 save doesn't open in earlier versions.
+
+**From 0.6.0** the format changes again: materials. Saves from earlier versions load with the starting timber and
+cement, and the map gains its woods; buildings that end up in the woods stay where they are. A 0.6.0 save doesn't
+open in earlier versions.
 
 Saves from one alpha version might not work with the next one: the [changelog](CHANGELOG.md) says so when it
 happens.
