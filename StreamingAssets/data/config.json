@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "denaro_iniziale": 15000,
+  "denaro_iniziale": 16000,
   "carbone_iniziale": 500,
   "prezzo_base_energia": 2.5,
   "tasse": 0.1,
@@ -101,17 +101,216 @@
       "alta": 1.25
     },
     "soglia_emigrazione": 35,
-    "emigrazione_pct": 0.001
+    "emigrazione_pct": 0.001,
+    "rumore_viale": 1.5,
+    "pendolari": 0.5,
+    "pendolari_max": 8
   },
   "materiali": {
     "iniziali": {
       "legname": 200,
       "pietra": 0,
-      "cemento": 200
+      "cemento": 200,
+      "rame": 0
     },
     "prezzo_importazione": {
       "legname": 10,
-      "cemento": 20
+      "cemento": 20,
+      "rame": 40
     }
+  },
+  "strade": {
+    "obbligatorie": true,
+    "terreni": ["pianura", "collina", "giacimento", "bosco"],
+    "rimborso_demolizione": 0.5,
+    "livelli": [
+      {
+        "id": "sterrata",
+        "costo": 10,
+        "materiali": {},
+        "manutenzione": 0.0,
+        "portata_per_senso": 30,
+        "velocita": 20,
+        "rumore": 0
+      },
+      {
+        "id": "strada",
+        "costo": 20,
+        "materiali": {"cemento": 2},
+        "manutenzione": 0.01,
+        "portata_per_senso": 90,
+        "velocita": 40,
+        "rumore": 0
+      },
+      {
+        "id": "viale",
+        "costo": 40,
+        "materiali": {"cemento": 6},
+        "manutenzione": 0.03,
+        "portata_per_senso": 225,
+        "velocita": 60,
+        "rumore": 1
+      }
+    ]
+  },
+  "trasporti": {
+    "attivi": true,
+    "camion_municipio": 2,
+    "carico_camion": 10,
+    "velocita_caselle_ora": 10,
+    "deperimento_cibo_per_casella": 0.008
+  },
+  "traffico": {
+    "congestione_a": 0.15,
+    "congestione_b": 4,
+    "equivalenza_camion": 3,
+    "passi_assegnazione": 4,
+    "penalita_ritardo": 0.5,
+    "tetto_ritardo": 0.3,
+    "cantiere_ore": 6,
+    "cantiere_portata": 0.3,
+    "curva_andata": [0,0,0,0,0,0,0.25,0.40,0.25,0.10,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    "curva_ritorno": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.15,0.40,0.30,0.15,0,0,0,0]
+  },
+  "linee": {
+    "perdita_max": 0.3,
+    "livelli": [
+      {
+        "id": "I",
+        "perdita_per_casella": 0.004,
+        "costo": 0,
+        "materiali": {}
+      },
+      {
+        "id": "II",
+        "perdita_per_casella": 0.002,
+        "costo": 40,
+        "materiali": {"rame": 1}
+      },
+      {
+        "id": "III",
+        "perdita_per_casella": 0.0007,
+        "costo": 80,
+        "materiali": {"rame": 3, "cemento": 2}
+      }
+    ]
+  },
+  "giacimenti": {
+    "riserva_min": 4000,
+    "riserva_max": 12000,
+    "impoverimento": 0.2,
+    "resa_minima": 0.4,
+    "avviso_riserva": 0.1,
+    "giorni_lago": 3,
+    "lago_raffreddamento": 0.05,
+    "lago_felicita": 1
+  },
+  "nomi": {
+      "strade": [
+          "Volta",
+          "Galvani",
+          "Faraday",
+          "Tesla",
+          "Ampère",
+          "Ohm",
+          "Watt",
+          "Joule",
+          "Edison",
+          "Maxwell",
+          "Kelvin",
+          "Pacinotti",
+          "Ferraris",
+          "Marconi",
+          "Curie",
+          "Fermi",
+          "Meucci",
+          "Righi",
+          "Coulomb",
+          "Hertz",
+          "Kirchhoff",
+          "Siemens",
+          "Westinghouse",
+          "Bell",
+          "Franklin",
+          "Henry",
+          "Lenz",
+          "Carnot",
+          "Diesel",
+          "Parsons",
+          "Becquerel",
+          "Lovelace",
+          "Nobel",
+          "Stephenson",
+          "Fulton",
+          "Morse",
+          "Rutherford",
+          "Bohr",
+          "Majorana",
+          "Natta"
+      ],
+      "quartieri": [
+          "Valfiora",
+          "Roccalta",
+          "Pratoverde",
+          "Fontebella",
+          "Castelrame",
+          "Poggiolume",
+          "Campodoro",
+          "Acquasole",
+          "Vignalta",
+          "Boscoscuro",
+          "Montecorvo",
+          "Riolargo",
+          "Pietrabianca",
+          "Serravento",
+          "Colleverde",
+          "Pianfiume",
+          "Torrelucente",
+          "Cerreto",
+          "Lagomoro",
+          "Faggeto",
+          "Sassorosso",
+          "Valdiprato",
+          "Borgoluce",
+          "Querceto",
+          "Ponteleva",
+          "Marinella",
+          "Spigaroli",
+          "Cardellina",
+          "Olmeta",
+          "Belsito"
+      ],
+      "ospedali": [
+          "Galeno",
+          "Ippocrate",
+          "Pasteur",
+          "Fleming",
+          "Lister",
+          "Jenner",
+          "Koch",
+          "Nightingale",
+          "Avicenna",
+          "Cardarelli",
+          "Golgi",
+          "Montalcini"
+      ],
+      "parchi": [
+          "Darwin",
+          "Humboldt",
+          "Mendel",
+          "Muir",
+          "Cuvier",
+          "Goodall",
+          "Carson",
+          "Wallace",
+          "Audubon",
+          "Aldrovandi",
+          "Spallanzani",
+          "Thoreau",
+          "Attenborough",
+          "Fossey",
+          "Lamarck",
+          "Merian"
+      ]
   }
 }
