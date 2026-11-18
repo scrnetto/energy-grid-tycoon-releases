@@ -12,6 +12,65 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.8.0-alpha.1] - 2026-11-18
+
+Strade, merci, traffico, perdite di linea, miniere che si esauriscono e nomi. *Roads, freight, traffic, line
+losses, mines that run out and names.*
+
+### Novità
+- **Strade**: ogni costruzione deve toccare con un lato una **strada collegata al municipio**; senza strada è ferma
+  e mostra il segnale «senza strada». All'inizio ci sono già quattro sterrate attorno al municipio.
+  - Strumento **Strada** (tasto **R**): clic o trascina per posare le sterrate. Una strada può passare sotto una
+    linea elettrica.
+  - Strumento **Migliora strada** (tasto **M**): sterrata → strada asfaltata → viale. Ogni livello porta più
+    traffico ed è più veloce, ma costa cemento; dopo il miglioramento la casella resta in **cantiere** per qualche
+    ora, con meno spazio per il traffico.
+  - Demolire una strada rimborsa metà della spesa.
+- **Merci sui camion**: carbone, legname, pietra, cemento e cibo non arrivano più da soli in città.
+  - Chi produce mette la merce nel suo **piazzale**; i camion la portano al municipio o al **deposito** più vicino,
+    e da lì ai **silo** di chi la consuma (le centrali a carbone, il cementificio). Il magazzino frigorifero fa da
+    deposito per il cibo.
+  - Il municipio ha due camion; ogni **autoparco** ne aggiunge tre. Se i camion non bastano arriva l'avviso
+    «Camion insufficienti», i piazzali si riempiono e le costruzioni si fermano («fermo: piazzale pieno»).
+  - Il **cibo si rovina** un po' a ogni viaggio: più è lontano, più se ne perde.
+- **Traffico**: la mattina i lavoratori vanno al lavoro e il pomeriggio tornano a casa, insieme ai camion.
+  - Le strade piene rallentano tutti. I lavoratori in ritardo rendono meno, e il ritardo del giorno prima toglie
+    **felicità** (fattore «Traffico dei pendolari»).
+  - I **viali** portano molto traffico ma sono rumorosi: tolgono un po' di felicità ai quartieri accanto.
+  - **Mappa del traffico** (tasto **G**): colora le strade secondo il carico.
+  - Pannello **Trasporti** (tasto **J** o il pulsante in alto): persone e merci in viaggio, tempo medio, camion
+    usati, le strade più cariche (un clic le mostra nella Casella) e l'andamento delle ultime 24 ore.
+  - La Casella di una strada dice livello, traffico e persone e merci per senso di marcia.
+- **Perdite di linea**: l'energia delle centrali si perde lungo le linee fino al **nodo** più vicino, che è il
+  municipio o un **trasformatore** (costruzione nuova). Più la centrale è lontana, più perde.
+  - Strumento **Migliora linea** (tasto **L**): le linee passano dal livello I al II e al III e perdono meno, ma
+    costano **rame**, un materiale nuovo che si compra da fuori.
+  - La Casella mostra la perdita di ogni centrale, e il grafico in basso ha una riga per le perdite.
+- **Miniere che si esauriscono**: ogni giacimento ha la sua riserva di carbone. Quando sta per finire la miniera
+  rende meno, e arrivano gli avvisi «miniera quasi esaurita» e «miniera esaurita». La Casella mostra la riserva e i
+  giorni che restano.
+- **Laghi**: tre giorni dopo l'esaurimento la miniera sparisce e al suo posto nasce un **lago**. Il lago rinfresca le
+  centrali a carbone vicine, che producono un po' di più; fa piacere ai quartieri accanto, come un parco; e ci si
+  può pescare.
+- **Pompaggio**: una batteria grande, da costruire accanto a un lago.
+- **Nomi**: vie, quartieri, ospedali e parchi hanno un nome, e la Casella lo mostra in cima. Col pulsante
+  **Rinomina** si cambia; lasciandolo vuoto torna quello automatico. Le strade più cariche nel pannello Trasporti
+  hanno il loro nome.
+- **Aspetto nuovo**: cornice a cruscotto, pulsanti in rilievo, barra in alto divisa in gruppi, schede della lista
+  con il costo in evidenza e il carattere **Barlow Semi Condensed** per titoli e numeri.
+- **Trailer nuovo**, con strade e traffico.
+
+### Modifiche
+- Si parte con **16 000** di denaro, per pagare le prime strade.
+- L'equilibrio del gioco è stato rivisto per le strade, i camion e le perdite di linea: si vince ancora in poco più
+  di un anno di gioco, giocando bene.
+
+### Da sapere
+- I salvataggi della 0.8.0 hanno un formato nuovo e **non si aprono nelle versioni precedenti**.
+- I salvataggi delle versioni precedenti si caricano: il gioco traccia da solo le sterrate attorno al municipio e
+  una sterrata verso ogni costruzione; le centrali a carbone ripartono col silo pieno, le miniere con la riserva
+  piena, e strade, quartieri, ospedali e parchi ricevono un nome.
+
 ## [0.7.0-alpha.1] - 2026-11-16
 
 Salvataggi multipli. *Multiple saves.*
