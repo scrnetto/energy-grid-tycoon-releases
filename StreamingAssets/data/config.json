@@ -205,6 +205,32 @@
     "lago_raffreddamento": 0.05,
     "lago_felicita": 1
   },
+  "orari": {
+    "continuo": {
+      "persone_per_posto": 4.2,
+      "aperto_dalle": 0,
+      "aperto_alle": 24,
+      "giorni": [1, 2, 3, 4, 5, 6, 7],
+      "curva_andata": [0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0],
+      "curva_ritorno": [0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 0]
+    },
+    "feriale": {
+      "persone_per_posto": 1.0,
+      "aperto_dalle": 8,
+      "aperto_alle": 17,
+      "giorni": [1, 2, 3, 4, 5],
+      "curva_andata": [0, 0, 0, 0, 0, 0, 0, 0.6, 0.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "curva_ritorno": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.6, 0.4, 0, 0, 0, 0, 0]
+    },
+    "giornaliero": {
+      "persone_per_posto": 1.4,
+      "aperto_dalle": 8,
+      "aperto_alle": 17,
+      "giorni": [1, 2, 3, 4, 5, 6, 7],
+      "curva_andata": [0, 0, 0, 0, 0, 0, 0, 0.6, 0.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "curva_ritorno": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.6, 0.4, 0, 0, 0, 0, 0]
+    }
+  },
   "nomi": {
       "strade": [
           "Volta",
