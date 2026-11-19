@@ -2,7 +2,7 @@
   <img src="immagini/logo.png" alt="Voltvale: Energy Grid Tycoon logo" width="700">
 </p>
 
-🇬🇧 English · 🇮🇹 [Italiano](README.it.md)
+🇮🇹 [Italiano](README.it.md) · 🇬🇧 English · 🇩🇪 [Deutsch](README.de.md) · 🇫🇷 [Français](README.fr.md) · 🇪🇸 [Español](README.es.md)
 
 # ⚡ Voltvale: Energy Grid Tycoon
 
@@ -19,20 +19,23 @@
 
 **You run the power grid of a growing town.** Every hour the town needs energy: a little at night, a lot in the
 evening. Build power plants, solar farms, wind farms and batteries, connect everything with power lines and
-roads, find people to work in them, feed everyone, move freight and materials by truck without jamming the
+roads, find people to work in them, shift after shift, feed everyone, move freight and materials by truck without jamming the
 traffic, and grow the town to **400 residents within two game years**, without constant blackouts, without debt
 and without choking it with pollution.
 
 An original game by **Marco Scarlino**. Free to play.
 
-![A game in progress, day 251: the town with its roads around the town hall, districts, solar farms, wind farms, batteries and industries; on the right, the Tile panel of the district «Fontebella»](immagini/schermata-partita.png)
+![A game in progress: the town with its roads around the town hall, districts, solar farms, wind farms, batteries and industries; on the right, the Tile panel, and at the bottom the charts](immagini/schermata-partita.png)
 
 ## Trailer
 
 [![Voltvale trailer: click to watch the full one-minute video](immagini/trailer-en.webp)](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-en.mp4)
 
 **[▶ Watch the trailer (1 minute)](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-en.mp4)** ·
-[in Italian](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-it.mp4)
+also in [Italian](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-it.mp4),
+[German](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-de.mp4),
+[French](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-fr.mp4) and
+[Spanish](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer/voltvale-trailer-es.mp4)
 
 > **Status: in development (alpha).** You can play from start to finish, but a lot is still missing and some
 > things may not work. Every report helps: see [Reporting a problem or an idea](#reporting-a-problem-or-an-idea).
@@ -89,9 +92,10 @@ On Linux run `sha256sum -c --ignore-missing SHA256SUMS.txt`, on macOS `shasum -a
 ## How to play
 
 The game opens with the **start menu**: **New game**, or **Continue** to pick up your last save. The game starts on
-**18 October 2020** and begins **paused**: press **Space** to start the clock. At 1× speed one game hour lasts one
-second, and you can speed up to 2× and 4×. The seasons follow the calendar: you start in autumn, and in winter the
-days are shorter and the sky is cloudier.
+**Sunday 18 October 2020** at 8 am and begins **paused**: press **Space** to start the clock. At 1× speed one game
+hour lasts one second, and you can speed up to 2× and 4×. The seasons follow the calendar: you start in autumn, and in winter the
+days are shorter and the sky is cloudier. The top bar shows the day of the game, the day of the week, the date and
+the time, for example «Day 1 · Sun 18 Oct 2020 · 08:00».
 
 - **Goal**: reach **400 residents** with pollution **below the limit** within **2 years**.
 - **Defeat**: if your money stays in the red for **30 days in a row**, or if the 2 years run out.
@@ -117,14 +121,34 @@ days are shorter and the sky is cloudier.
 
 Buildings need people to run them.
 
-- About **56 %** of the residents work. The bar at the top shows filled jobs out of the available workforce.
-- **Coal power plants**, **solar farms**, **wind farms**, **coal mines**, **industries** and the **food** buildings need staff. The **Tile** panel shows
-  how many they have, for example **Staff: 8/10**.
+- About **56 %** of the residents work. The bar at the top shows how many people have a job out of the available
+  workforce.
+- **Coal power plants**, **coal mines**, **industries**, the **food** buildings, **hospitals**, **parks**, **cold
+  stores**, **depots** and **pumped storage** need staff. **Solar farms**, **wind farms**, **batteries**, power lines
+  and transformers run by themselves.
+- The **Tile** panel shows how many jobs are filled, for example **Staff: 4/4**, and how many people that takes,
+  shifts included.
 - With too few staff a building produces less; **with no staff at all it stops** and shows the **«no staff»**
   signal.
 - Workers go **to energy first**, then **to food**, then **to hospitals**, then **to industries**, then **to the mines**, then **to services** (districts and parks).
   Districts keep working even when their services are short of staff.
 - **Unemployment** means less tax income, and if it's high, less happy residents.
+
+### Working hours and shifts
+
+Every building with staff has its own working hours, shown in the **Tile** panel:
+
+| Hours | Buildings | People per job |
+|---|---|---|
+| **Always open, 3 shifts (6, 14, 22)** | coal power plants, coal mines, hospitals, cold stores, truck depots, pumped storage | about 4: one job covered day and night takes three shifts plus rest days |
+| **Open 8–17, Monday to Friday** | sawmills, quarries, cement works, depots | 1 |
+| **Open 8–17, every day** | farms, fishing boats, greenhouses, parks, the services of the districts | about 1.4, for the days off |
+
+- A coal power plant with all its jobs filled employs about **17 people**: plan your districts accordingly.
+- **Outside its hours a building is closed**: it produces nothing and uses no power or materials. The Tile panel
+  says when it reopens, for example «Closed: reopens Monday at 08:00». Workers keep their job while it's closed.
+- Industries are closed **at the weekend**: plan your timber and cement stocks for Saturday and Sunday.
+- Food buildings work every day, but only by day: farms, fishing boats and greenhouses produce from 8 to 17.
 
 ### Food
 
@@ -140,7 +164,7 @@ running low.
 - **If the stock runs out**, food is imported automatically, but it's expensive. Imported food keeps the town from
   starving, but it **doesn't grow**: growth needs at least one day of its own stock.
 - **If the money runs out too**, famine hits and residents leave.
-- The **Tile** panel shows how much each building produces (for example **Food: 2.0/h**), how much room a cold
+- The **Tile** panel shows how much each building produced in the last hour (for example **Food: 5.4/h**), how much room a cold
   store adds, and how much power it uses.
 
 ### Happiness, health and taxes
@@ -163,10 +187,11 @@ running low.
 Most buildings cost **materials** as well as money: **timber** and **cement**. The list on the left shows them
 under the price, with small icons; hover over the button to read them in full.
 
-- **Sawmill** (only in the **woods**, the dark green tiles): 2 timber per hour.
-- **Quarry** (hills): 2 stone per hour.
-- **Cement works** (plains): turns 2 stone into 2 cement per hour, and uses a lot of power. Without stone it
+- **Sawmill** (only in the **woods**, the dark green tiles): 7.5 timber per hour.
+- **Quarry** (hills): 7.5 stone per hour.
+- **Cement works** (plains): turns 7.5 stone into 7.5 cement per hour, and uses a lot of power. Without stone it
   stops, and stops using power too.
+- Industries work **from 8 to 17, Monday to Friday** (see [Working hours and shifts](#working-hours-and-shifts)).
 - Industries need **staff** and **power**. Workers go to them after energy, food and hospitals, and before the
   coal mines.
 - **If you don't have enough materials** when you build, the missing part is bought from outside straight away
@@ -185,8 +210,9 @@ under the price, with small icons; hover over the button to read them in full.
 - **Upgrade road** tool (**M** key): **dirt road → paved road → avenue**. Each level carries more traffic and is
   faster, but costs cement. After an upgrade the tile stays **under construction** for a few hours, with less room
   for traffic.
-- **Commuters**: in the morning workers go from the districts to work, in the afternoon they go home. If the roads
-  are full, everyone slows down: late workers produce less, and the previous day's delays cost **happiness**
+- **Commuters**: workers travel from the districts to work when their hours start and go home when they end:
+  around 8 and 17 for most buildings, and at 6, 14 and 22 for the shifts of buildings that are always open. At the
+  weekend industries are closed and the roads are quieter. If the roads are full, everyone slows down: late workers produce less, and the previous day's delays cost **happiness**
   («Commuter traffic» in the happiness tooltip).
 - **Avenues** carry a lot of traffic but are **noisy**: they take a little happiness from the districts next to them.
 - **Traffic map** (**G** key): colours the roads by how busy they are.
@@ -203,6 +229,8 @@ under the price, with small icons; hover over the button to read them in full.
   traffic let the same trucks carry more.
 - If there aren't enough trucks you get the «**Not enough trucks**» warning: yards fill up and producers stop
   («stopped: yard full»). Build a truck depot, or a depot closer by.
+- A yard only holds so much: a busy sawmill, quarry or cement works can fill it before evening if the trucks don't
+  keep up.
 - **Food spoils** a little on every trip: the farther the farm, the more you lose.
 - The **Tile** panel shows yard, silo and distance from the depot; **Stocks** shows what is waiting in the yards.
 
@@ -212,7 +240,7 @@ under the price, with small icons; hover over the button to read them in full.
   **transformer** (built from the list). The farther the plant, the more it loses; the Tile panel shows how much.
 - **Upgrade line** tool (**L** key): lines go from level **I** to **II** and **III** and lose less, but cost
   **copper**, which is bought from outside.
-- The chart at the bottom has a line for losses.
+- The **Energy** chart at the bottom has a bar for losses.
 
 ### Mines and lakes
 
@@ -230,6 +258,19 @@ under the price, with small icons; hover over the button to read them in full.
 - Streets, districts, hospitals and parks have a **name**, shown at the top of the Tile panel, for example
   «Volta Street» or «Valfiora». A street keeps the same name along its whole straight stretch.
 - The **Rename** button in the Tile panel changes it; leave it empty to go back to the automatic name.
+
+### Charts
+
+The panel at the bottom shows the **last 24 hours**, one column per hour, in five tabs. Click a tab to switch (the
+game remembers your choice), and hover over a column to read the exact values of that hour.
+
+- **Energy**: production, demand, batteries and line losses.
+- **Money**: income above zero, spending below, and the balance.
+- **Materials**: how much of each material is produced and used, and the stock; pick the material with the buttons next to the chart.
+- **Town**: food produced and food eaten, the food stock, happiness and health.
+- **Transport**: people going to work and going home, trucks on the road, and how loaded the roads are.
+
+After loading a save from an earlier version the charts start empty and fill up hour by hour.
 
 ### Controls
 
@@ -258,6 +299,7 @@ and how much energy it produces or uses.
 | **G** | Traffic map |
 | **J** or the **Transport** button (at the top) | Transport panel: people, freight, busiest roads |
 | **Rename** button (in the Tile panel) | Renames a street, district, hospital or park |
+| Tabs of the chart (at the bottom) | Energy, Money, Materials, Town, Transport |
 
 ### Languages
 
@@ -285,15 +327,17 @@ straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
 2. Run a **power line** from the town hall towards where you want to build, with a **road** (**R** key) next to it:
    every building must touch one.
 3. Start with some **solar and wind** and a **battery** for the evening.
-4. Don't build too many power plants at once: each one needs **staff**, and the town is still small.
+4. Don't build too many coal power plants at once: each one needs about **17 people** on three shifts, and the
+   town is still small. Solar and wind farms need no staff.
 5. Build **districts** as long as production keeps up with demand.
 6. Put down a **farm** early and plan for winter: farms stop in winter, so you need a stock, a fishing boat or a
    greenhouse.
 7. In the first month, put a **sawmill** in the woods and a **quarry** on a hill; add a **cement works** when you
-   have some spare money. Buying materials from outside every time adds up.
+   have some spare money. Buying materials from outside every time adds up. Industries rest at the weekend: keep a
+   stock.
 8. An early **park** lifts happiness while the town is small. If you build coal power plants, plan a
    **hospital**.
-9. Keep an eye on the **chart at the bottom**: if the red line (demand) goes above the green one (production), a
+9. Keep an eye on the **Energy** chart at the bottom: if the red line (demand) goes above the green one (production), a
    blackout is coming.
 10. When «Not enough trucks» shows up, build a **truck depot**. As the town grows, check the **traffic map** (G)
     and upgrade the busiest roads (M); don't put avenues right next to districts.
@@ -343,6 +387,9 @@ versions still load: the game lays the dirt roads around the town hall and a dir
 coal power plants restart with a full silo, mines with a full reserve, and streets, districts, hospitals and parks
 get a name. A 0.8.0 save doesn't open in earlier versions.
 
+**0.9.0** uses the same save format as 0.8.0: your 0.8.0 games carry on as they are, with the new working
+hours.
+
 Saves from one alpha version might not work with the next one: the [changelog](CHANGELOG.md) says so when it
 happens.
 
@@ -350,14 +397,17 @@ happens.
 
 What's already planned, roughly in this order. Plans may change.
 
-- **Working hours and shifts**: day and night shifts for power plants and hospitals, office hours for industries
-  and farms, quieter weekends; traffic follows the timetable.
-- **Wages and household budgets**: wages, bills, food and rent; happy residents are also those who make ends meet.
+- **Event log**: a panel that keeps every warning and event, with the problems still open at the top; click one to
+  see where it happened.
+- **Wages and experience**: wages, bills, food and rent; workers who stay in the same job get better at it and
+  earn more.
+- **Maintenance crews and the Workshop**: buildings will take time to build, with crews from the town hall and
+  then from the Workshops doing the work, and later repairing what wears out, with the materials you have.
 - **Oil, gas and heat**: new energy sources, and heating in winter.
 - **Water and waste**: waterworks, treatment plants and landfills for a bigger town.
 - **Education and research**: schools, and technologies to discover that unlock new buildings.
-- **New maps**: a different map every game, bigger maps, a minimap.
-- **Later on**: an isometric view, and several towns linked together.
+- **New maps, and later on**: a different map every game, bigger maps, a minimap; then an isometric view and
+  several towns linked together.
 
 ## Known issues
 
@@ -366,7 +416,10 @@ What's already planned, roughly in this order. Plans may change.
 - The **Android** version is installed by hand, outside the Play Store.
 - In the **web** version saves live in your browser: if you clear the site's data, you lose them.
 - It's an **alpha**: the game's balance (costs, production, growth, traffic) still changes from one version to
-  the next.
+  the next. With the new working hours, industries produce a lot in a few hours: if their yards fill up, build a
+  truck depot early.
+- The German, French and Spanish translations haven't been reviewed by a native speaker yet: reports of
+  mistakes are welcome.
 
 ## Versions
 

@@ -12,6 +12,48 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.9.0-alpha.1] - 2026-11-19
+
+Grafici a schede, orari e turni. *Chart tabs, working hours and shifts.*
+
+### Novità
+- **Grafici a schede**: il pannello in basso ha cinque schede, sempre con le ultime 24 ore e una colonna per ora.
+  Passando il mouse su una colonna si leggono i valori esatti di quell'ora; il gioco ricorda la scheda scelta.
+  - **Energia**: produzione, domanda, batterie e perdite di linea (il grafico di prima).
+  - **Denaro**: entrate sopra lo zero, uscite sotto, e il saldo.
+  - **Materiali**: quanto si produce e si consuma di carbone, legname, pietra, cemento e rame, e la scorta; il
+    materiale si sceglie con i pulsanti accanto al grafico.
+  - **Città**: cibo prodotto e mangiato, scorta di cibo, felicità e salute.
+  - **Trasporti**: persone che vanno al lavoro e che tornano a casa, camion in viaggio e carico delle strade.
+- **Orari e turni**: ogni costruzione con personale ha il suo orario.
+  - **Sempre aperta, su 3 turni** (alle 6, alle 14 e alle 22): centrali a carbone, miniere, ospedali, magazzini
+    frigoriferi, autoparchi e pompaggio.
+  - **Aperta 8–17, dal lunedì al venerdì**: segherie, cave, cementifici e depositi.
+  - **Aperta 8–17, tutti i giorni**: fattorie, pescherecci, serre, parchi e i servizi dei quartieri.
+  - Fuori orario la costruzione è **chiusa**: non produce e non consuma energia né materiali. Il fine settimana le
+    industrie riposano.
+- **Il lavoro si conta in persone**: un posto sempre aperto vuole circa 4 persone a rotazione, uno di tutti i
+  giorni circa 1,4. Una centrale a carbone con tutti i posti coperti impiega circa 17 persone.
+- **Pendolari dagli orari**: il traffico si muove ai cambi turno e all'apertura e alla chiusura delle costruzioni;
+  la domenica nessuno va in fabbrica.
+- La **Casella** mostra l'orario della costruzione, le persone impiegate (turni compresi) e, quando è chiusa,
+  quando riapre, per esempio «Chiusa: riapre lunedì alle 08:00».
+- La **barra in alto** mostra il giorno della settimana: «Giorno 1 · dom 18/10/2020 · 08:00».
+- **Trailer e pagina del gioco in cinque lingue**: italiano, inglese, tedesco, francese e spagnolo.
+
+### Modifiche
+- **Impianti solari e parchi eolici** vanno da soli: non hanno più bisogno di personale.
+- Industrie e costruzioni del cibo producono di più nelle loro ore di apertura, così la resa di una settimana resta
+  simile a prima. Segheria, cava e cementificio fanno 7,5 all'ora, dalle 8 alle 17 nei giorni feriali.
+- L'equilibrio del gioco è stato rivisto per gli orari: si vince ancora in poco più di un anno di gioco, giocando
+  bene.
+
+### Da sapere
+- I salvataggi della 0.9.0 hanno **lo stesso formato** della 0.8.0: le partite della 0.8.0 si caricano e continuano
+  con i nuovi orari. I grafici partono vuoti e si riempiono ora dopo ora.
+- Con i nuovi orari un'industria produce molto in poche ore: se i camion non bastano, il suo piazzale può
+  riempirsi prima di sera. Un autoparco presto aiuta.
+
 ## [0.8.0-alpha.1] - 2026-11-18
 
 Strade, merci, traffico, perdite di linea, miniere che si esauriscono e nomi. *Roads, freight, traffic, line
