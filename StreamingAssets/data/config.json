@@ -2,7 +2,7 @@
   "versione": 1,
   "denaro_iniziale": 16000,
   "carbone_iniziale": 500,
-  "prezzo_base_energia": 2.5,
+  "prezzo_base_energia": 3.5,
   "tasse": 0.1,
   "tassa_per_abitante_ora": 0.15,
   "larghezza_mappa": 32,
@@ -54,11 +54,26 @@
     "nuvolosita_stagionale": 15,
     "richiamo_nuvolosita": 0.05
   },
+  "direzione_vento": {
+    "oscillazione_gradi": 60,
+    "periodo_ore": 36
+  },
+  "scia_pale": {
+    "raggio": 4,
+    "perdita_massima": 0.15,
+    "angolo": 30,
+    "perdita_totale_massima": 0.4
+  },
   "lavoro": {
     "quota_attiva": 0.56,
     "posti_servizi_municipio": 10,
     "soglia_disoccupazione": 0.07,
-    "tassa_disoccupati": 0.5
+    "tassa_disoccupati": 0.5,
+    "maggiorazione_notte": 0.25,
+    "ore_esperienza": 720,
+    "bonus_produzione_esperienza": 0.15,
+    "bonus_stipendio_esperienza": 0.30,
+    "stipendio_municipio_ora": 1.5
   },
   "cibo": {
     "cibo_iniziale": 120,
@@ -117,6 +132,15 @@
       "legname": 10,
       "cemento": 20,
       "rame": 40
+    }
+  },
+  "mercato": {
+    "sovrapprezzo": 1.3,
+    "quota_vendita": 0.7,
+    "scambio_max_ora": 20,
+    "prezzi_extra": {
+      "pietra": 8,
+      "carbone": 10
     }
   },
   "strade": {
@@ -338,5 +362,17 @@
           "Lamarck",
           "Merian"
       ]
+  },
+  "famiglie": {
+    "aliquota": { "bassa": 0.15, "normale": 0.25, "alta": 0.35 },
+    "tariffa": { "bassa": 0.8, "normale": 1.0, "alta": 1.25 },
+    "prezzo_cibo": 5,
+    "affitto_ora": 0.18,
+    "sussidio_ora": 0.2,
+    "altri_redditi_giorno": 15,
+    "conti_rif": 5.7,
+    "conti_k": 2.85,
+    "conti_min": -15,
+    "conti_max": 10
   }
 }
