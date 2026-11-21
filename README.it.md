@@ -46,6 +46,8 @@ anche in [inglese](https://scrnetto.github.io/energy-grid-tycoon-releases/traile
 installare. Serve un browser recente (Chrome, Firefox, Edge, Safari) su un computer con mouse e tastiera, oppure su
 un tablet: **tocco = clic, tocco lungo = clic destro**. Clicca sul gioco prima di usare la tastiera. I salvataggi
 restano nel browser che usi.
+Su un telefono tenuto **in orizzontale** il gioco passa a una disposizione fatta apposta (ancora in prova: vedi
+[Problemi noti](#problemi-noti)).
 
 **C'è anche su itch.io: [marcoscarlino.itch.io/voltvale](https://marcoscarlino.itch.io/voltvale)**, dove puoi
 giocare nel browser, scaricare il gioco per ogni sistema e lasciare un commento. I salvataggi fatti nel browser su
@@ -61,7 +63,7 @@ versione:
 | **Windows** 10/11 (64 bit) | `Voltvale-<versione>-windows.zip` | Estrai lo zip e apri `Voltvale.exe` |
 | **macOS** 12 o successivo | `Voltvale-<versione>-macos.zip` | Estrai lo zip e apri `Voltvale.app` |
 | **Linux** (64 bit) | `Voltvale-<versione>-linux.zip` | Estrai lo zip e avvia `Voltvale` |
-| **Android** 8 o successivo (tablet o telefono grande) | `Voltvale-<versione>-android.apk` | Apri il file sul dispositivo e installalo (vedi sotto) |
+| **Android** 8 o successivo (tablet o telefono) | `Voltvale-<versione>-android.apk` | Apri il file sul dispositivo e installalo (vedi sotto) |
 
 ### Al primo avvio
 
@@ -84,8 +86,8 @@ Su Linux si controlla con `sha256sum -c --ignore-missing SHA256SUMS.txt`, su mac
 
 ### Requisiti
 
-- Uno schermo da almeno 1280×800.
-- Mouse e tastiera, oppure un tablet (versione web o Android).
+- Uno schermo da almeno 1280×800, oppure un telefono tenuto in orizzontale.
+- Mouse e tastiera, oppure uno schermo touch (tablet o telefono, versione web o Android).
 - Circa 200 MB di spazio.
 - Una scheda video qualsiasi degli ultimi 10 anni: anche quelle integrate vanno bene.
 
@@ -110,7 +112,8 @@ mostra il giorno della partita, il giorno della settimana, la data e l'ora, per 
   c'è il **blackout**: gli abitanti si arrabbiano e qualcuno se ne va.
 - **Le fonti**:
   - il **sole** produce solo di giorno, poco d'inverno e col cielo coperto;
-  - il **vento** cambia di ora in ora;
+  - il **vento** cambia forza e direzione di ora in ora (il pannello Meteo dice da dove soffia); un parco eolico
+    **sottovento** a un altro, a poche caselle, rende meno (la «scia» delle pale, fino al 40 % in meno);
   - il **carbone** produce sempre, ma inquina e consuma il carbone estratto dalle **miniere**.
 - **Batterie**: accumulano l'energia in più e la restituiscono quando serve, per esempio la sera.
 - **Il surplus** si vende alla rete esterna, ma più ne offri e meno vale.
@@ -134,7 +137,8 @@ Le costruzioni hanno bisogno di qualcuno che le faccia funzionare.
   personale»**.
 - I lavoratori vanno **prima all'energia**, poi **al cibo**, poi **agli ospedali**, poi **alle industrie**, poi **alle miniere**, poi **ai servizi**
   (quartieri e parchi). I quartieri funzionano anche quando ai loro servizi manca personale.
-- La **disoccupazione** fa entrare meno tasse e, se è alta, rende gli abitanti meno felici.
+- La **disoccupazione** costa: chi non lavora non paga l'imposta sul reddito e riceve un sussidio dal comune; se è
+  alta, gli abitanti sono meno felici.
 
 ### Orari e turni
 
@@ -174,7 +178,7 @@ sta per finire.
 ### Felicità, salute e tasse
 
 - **Felicità** (lo smile nella barra in alto): si muove piano verso un valore che è la somma di alcuni fattori, cioè
-  blackout delle ultime 24 ore, cibo, fame, disoccupazione, inquinamento, salute, parchi e tasse. Passando il
+  blackout delle ultime 24 ore, cibo, fame, disoccupazione, inquinamento, salute, parchi, tasse e conti di casa. Passando il
   mouse sul numero vedi verso quale valore sta andando e quanto pesa ogni fattore, per esempio «Blackout −5,0» o
   «Parchi +3,0». Sotto 60 la città non cresce, e sotto 35 la gente comincia ad andarsene.
 - **Salute** (il cuore): cala con l'inquinamento e con la fame. I **malati restano a casa**, quindi ci sono meno
@@ -183,8 +187,23 @@ sta per finire.
   blackout non cura. Indispensabile se punti sul carbone.
 - **Parco** (pianura o collina): rende la gente più felice. Conta di più in una città piccola: ogni parco vale +3
   ogni 100 abitanti, fino a +10.
-- **Tasse**: tre livelli, basse, normali e alte, con il pulsante con la moneta nella barra in alto o il tasto
-  **T**. Tasse alte portano più soldi ma meno felicità; tasse basse fanno il contrario.
+- **Tasse**: sono l'imposta sul reddito di chi lavora, su tre livelli, basse, normali e alte, con il pulsante con la
+  moneta nella barra in alto o il tasto **T**. Tasse alte portano più soldi ma meno felicità; tasse basse fanno il
+  contrario.
+
+### Stipendi, famiglie e bollette
+
+- Il comune paga uno **stipendio** per ogni posto di lavoro coperto, un po' di più per i turni di notte.
+- Il personale fa **esperienza**: chi resta nello stesso lavoro rende fino al **15 %** in più, ma guadagna anche di
+  più. Quando il personale cambia, l'esperienza cala: tenere stabili i lavoratori conviene. La Casella mostra
+  esperienza e stipendi di ogni costruzione.
+- Le famiglie pagano al comune l'**imposta sul reddito**, la **bolletta della luce** dei quartieri, il **cibo** e
+  l'**affitto**. Chi non ha lavoro riceve un **sussidio**. Le famiglie hanno anche altri redditi, come pensioni e
+  lavoro fuori città.
+- Pannello **Famiglie** (tasto **H** o il pulsante in alto): entrate e spese delle famiglie nelle ultime 24 ore,
+  quanto resta a ogni abitante al giorno e stipendio medio. Da qui si cambia la **tariffa dell'energia**: bassa,
+  normale o alta. Una tariffa alta porta più soldi al comune, ma lascia meno alle famiglie.
+- Quanto resta alle famiglie pesa sulla felicità («Conti di casa» nel riquadro della felicità).
 
 ### Materiali e industrie
 
@@ -239,6 +258,17 @@ sinistra li mostra sotto il prezzo, con piccole icone; passando il mouse sul pul
 - Il **cibo si rovina** un po' a ogni viaggio: più la fattoria è lontana, più se ne perde.
 - La Casella mostra piazzale, silo e distanza dal deposito; le **Scorte** mostrano quanto aspetta nei piazzali.
 
+### Mercato
+
+- Il **Mercato** si costruisce dalla scheda **Trasporti** della lista; ce n'è uno per città. Ha bisogno di una strada
+  e di personale, ed è aperto dalle 8 alle 17 nei giorni feriali.
+- Con il Mercato i materiali e il cibo si comprano **senza il sovrapprezzo** dell'importazione, e si possono comprare
+  anche **carbone e pietra**. Quello che avanza si **vende** al 70 % del prezzo d'acquisto.
+- Pannello **Mercato** (tasto **K** o il pulsante con la bilancia in alto): per ogni materiale la scorta e i prezzi; le
+  soglie **«Vendi sopra»** e **«Compra sotto»** fanno scambiare il Mercato da solo, ora per ora; i pulsanti
+  **«Compra 10»** e **«Vendi 10»** valgono subito, anche fuori orario.
+- Vendite e acquisti compaiono nel registro degli eventi e nella scheda **Denaro** del grafico.
+
 ### Perdite di linea
 
 - L'energia di una centrale si perde lungo le linee fino al **nodo** più vicino: il **municipio** o un
@@ -264,17 +294,37 @@ sinistra li mostra sotto il prezzo, con piccole icone; passando il mouse sul pul
   «Borgo Valfiora». Una via tiene lo stesso nome lungo tutto il suo tratto dritto.
 - Il pulsante **Rinomina** nella Casella cambia il nome; lasciandolo vuoto torna quello automatico.
 
+### Registro degli eventi
+
+- La **campanella** in alto conta gli eventi nuovi; diventa rossa quando uno è grave.
+- Il pannello **Eventi** (tasto **E** o la campanella) mostra in cima i **problemi in corso**: debito, costruzioni
+  scollegate, senza personale o senza strada, piazzali pieni, miniere quasi esaurite, cibo importato. Sotto c'è lo
+  **storico** di quello che è successo, con i filtri per tipo.
+- Un clic su una riga centra la mappa sul posto e apre la Casella.
+
+### Previsione degli obiettivi
+
+- Il pannello **Obiettivi** dice come andrà la partita **alle condizioni attuali, senza nuove costruzioni**: verso
+  quale giorno arriverai a 400 abitanti, se l'inquinamento resterà sotto la soglia, oppure se finirai in debito.
+- L'andamento è **in linea**, **a rischio** o **fuori strada**. La previsione si aggiorna ogni giorno e dopo ogni
+  costruzione, demolizione o cambio di tasse e tariffa.
+- La scheda **Obiettivi** del grafico mostra abitanti e inquinamento dall'inizio della partita, la linea
+  dell'obiettivo e la previsione tratteggiata.
+
 ### Grafici
 
-Il pannello in basso mostra le **ultime 24 ore**, una colonna per ora, in cinque schede. Un clic su una scheda la
-apre (il gioco ricorda la scelta); passando il mouse su una colonna leggi i valori esatti di quell'ora.
+Il pannello in basso ha sei schede. Le prime cinque mostrano le **ultime 24 ore**, una colonna per ora; la sesta,
+**Obiettivi**, tutta la partita con la previsione. Un clic su una scheda la apre (il gioco ricorda la scelta);
+passando il mouse su una colonna leggi i valori esatti di quell'ora.
 
 - **Energia**: produzione, domanda, batterie e perdite di linea.
-- **Denaro**: entrate sopra lo zero, uscite sotto, e il saldo.
+- **Denaro**: entrate sopra lo zero, uscite sotto, e il saldo, con le vendite e gli acquisti al Mercato.
 - **Materiali**: quanto si produce e si consuma di ogni materiale, e la scorta; il materiale si sceglie con i
   pulsanti accanto al grafico.
 - **Città**: cibo prodotto e cibo mangiato, la scorta di cibo, felicità e salute.
 - **Trasporti**: persone che vanno al lavoro e che tornano a casa, camion in viaggio e carico delle strade.
+- **Obiettivi**: abitanti e inquinamento dall'inizio della partita, la linea dell'obiettivo e la previsione
+  tratteggiata (vedi [Previsione degli obiettivi](#previsione-degli-obiettivi)).
 
 Dopo aver caricato un salvataggio di una versione precedente i grafici partono vuoti e si riempiono ora dopo ora.
 
@@ -285,34 +335,75 @@ mappa vedi il suo stato e quanta energia produce o consuma.
 
 | Comando | Cosa fa |
 |---|---|
-| Tasti **1–9** e **0** | Scegli cosa costruire: linea elettrica, miniera di carbone, centrale a carbone, impianto solare, parco eolico, batteria, quartiere, fattoria, peschereccio, serra. Le altre costruzioni (magazzino frigorifero, parco, ospedale, industrie, depositi, trasformatore, pompaggio) si scelgono dalla lista a sinistra |
+| Tasti **1–9** e **0** | Scegli cosa costruire: linea elettrica, miniera di carbone, centrale a carbone, impianto solare, parco eolico, batteria, quartiere, fattoria, peschereccio, serra. Le altre costruzioni (magazzino frigorifero, parco, ospedale, industrie, depositi, trasformatore, pompaggio, Mercato) si scelgono dalla lista a sinistra, divisa in sei schede: Energia, Rete, Trasporti, Città, Cibo, Industria |
 | **Clic sinistro** | Posa la costruzione scelta. Senza nessuna scelta seleziona una casella e ne mostra i dettagli |
 | **Clic destro** (sul tablet: tocco lungo) | Con una costruzione scelta, annulla la scelta. Senza scelta, chiede conferma per demolire (rimborso di metà del costo) |
-| **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (Riprendi, Salva come…, Salvataggio rapido, Carica partita, Salva ed esci al menu, Nuova partita, Lingua) |
+| **Esc** | Annulla la scelta; se non c'è niente da annullare apre il **menu di pausa** (Riprendi, Salva come…, Salvataggio rapido, Carica partita, Salva ed esci al menu, Nuova partita, Impostazioni) |
+| Pulsante **⚙** (in alto) | Apre il menu di pausa, come Esc: salvataggi, impostazioni, uscita |
 | **F11** | Schermo intero / finestra |
 | **Spazio** o pulsante ▶/❚❚ | Pausa / riprendi |
-| **F** o pulsanti delle frecce | Velocità 1×, 2×, 4× |
+| **F** o il pulsante della velocità | Velocità 1× → 2× → 4× → 1× |
 | **V** | Avanza di un'ora sola |
 | **T** o pulsante con la moneta | Tasse basse, normali, alte |
-| **WASD** o **frecce**, tasto centrale del mouse | Sposta la vista |
+| **Clic e trascina** col tasto sinistro, **WASD** o **frecce**, tasto centrale del mouse | Sposta la vista |
 | **Rotella** | Zoom |
 | Pulsante **Scorte** (in alto) | Mostra le scorte di carbone, legname, pietra, cemento e cibo |
-| **Salva** / **Carica** (in alto) | **Salva** crea un nuovo salvataggio col nome «Giorno N»; **Carica** riprende il salvataggio più recente. Il gioco salva anche da solo ogni giorno |
 | **F5** / **F9** | Salvataggio rapido / carica il salvataggio rapido |
 | **R** | Strumento **Strada**: clic o trascina per posare le sterrate |
 | **M** | Strumento **Migliora strada**: sterrata → strada asfaltata → viale |
 | **L** | Strumento **Migliora linea**: linee di livello I → II → III |
 | **G** | Mappa del traffico |
 | **J** o pulsante **Trasporti** (in alto) | Pannello dei trasporti: persone, merci, strade più cariche |
+| **E** o la campanella (in alto) | Registro degli eventi: problemi in corso e storico |
+| **H** o pulsante **Famiglie** (in alto) | Pannello delle famiglie: stipendi, spese, tariffa dell'energia |
+| **K** o il pulsante con la bilancia (in alto) | Pannello del Mercato: compra e vendi materiali e cibo |
 | Pulsante **Rinomina** (nella Casella) | Cambia il nome di una via, di un quartiere, di un ospedale o di un parco |
-| Schede del grafico (in basso) | Energia, Denaro, Materiali, Città, Trasporti |
+| Pulsante **Demolisci** (icona nella Casella) | Demolisce la costruzione selezionata (rimborso di metà del costo) |
+| Schede del grafico (in basso) | Energia, Denaro, Materiali, Città, Trasporti, Obiettivi |
 
 ### Lingue
 
-Il gioco è in **italiano, inglese, tedesco, francese e spagnolo**. Dal menu iniziale o da quello di pausa la voce
-**Lingua** la cambia al volo, senza riavviare la partita, e la scelta resta salvata. Al primo avvio il gioco usa la
-lingua del sistema se è una di queste cinque, altrimenti l'inglese. Nella versione web si può aprire direttamente
-una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizzo.
+Il gioco è in **italiano, inglese, tedesco, francese e spagnolo**. Nelle **Impostazioni** (menu iniziale o menu di
+pausa) la voce **Lingua** la cambia al volo, senza riavviare la partita, e la scelta resta salvata. Al primo avvio il
+gioco usa la lingua del sistema se è una di queste cinque, altrimenti l'inglese. Nella versione web si può aprire
+direttamente una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizzo.
+
+### Impostazioni
+
+Dal menu iniziale o dal menu di pausa (**⚙** o **Esc**), voce **Impostazioni**. Ogni clic su una voce passa al valore
+successivo, e le scelte restano salvate.
+
+- **Schermo intero** (non nella versione web e su Android) e **Lingua**.
+- **Salvataggio automatico**: ogni giorno, ogni 3 giorni, ogni 7 giorni o spento.
+- **Dimensione dell'interfaccia**: 90, 100 o 110 %.
+- **Disposizione**: automatica, computer o telefono.
+- **Animazioni**: sì o no. Con «no» si fermano il traffico animato, le nuvole, il fumo e gli altri effetti: utile
+  sui computer lenti.
+- **Musica** ed **Effetti sonori**: 100, 75, 50 o 25 %, oppure muto.
+
+### Sul telefono
+
+Su un telefono tenuto **in orizzontale** il gioco usa una disposizione fatta per gli schermi piccoli:
+
+- la mappa occupa tutto lo schermo e la barra in alto è corta; un tocco sui valori apre il foglio **Città** con
+  felicità, salute e tasse;
+- le **categorie** delle costruzioni sono in basso: un tocco apre la loro griglia, un tocco su una costruzione mostra
+  la sua scheda con la descrizione e il pulsante **Costruisci**;
+- i pannelli (Casella, Meteo, Obiettivi, grafici e gli altri) salgono dal basso; i valori del grafico si leggono
+  toccando una colonna.
+
+La disposizione si sceglie da sola; nelle Impostazioni si può passare da quella del telefono a quella del computer.
+
+### Musica e una mappa viva
+
+- **Musica**: un brano per il giorno, uno per la notte e un tema con i cori per il menu iniziale; fra giorno e notte
+  la musica cambia alla fine del brano. **Effetti sonori** per le pose, le strade, le demolizioni, i blackout, i clic
+  e i pannelli. Il volume si regola nelle Impostazioni.
+- **La mappa si muove**: puntini del traffico sulle strade (con i fari di sera), ombre delle nuvole portate dal vento,
+  ombre delle costruzioni che seguono il sole, acqua che luccica e onde col vento, pale che girano più forte col vento
+  forte, fumo solo da chi lavora e dove lo porta il vento, foschia vicino a chi inquina, riflessi sugli impianti
+  solari a mezzogiorno, neve quando fa freddo.
+- I valori della barra in alto si colorano, con una freccia, quando salgono o scendono.
 
 ### Segnali sulle costruzioni
 
@@ -349,6 +440,14 @@ una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizz
 10. Quando arriva «Camion insufficienti», costruisci un **autoparco**. Quando la città cresce, guarda la **mappa del
     traffico** (G) e migliora le strade più cariche (M); non mettere i viali proprio accanto ai quartieri.
 11. Tieni le centrali vicine al municipio o a un **trasformatore**: lontano perdono energia.
+12. Quando la **campanella** diventa rossa, apri il **registro degli eventi** (E): in cima ci sono i problemi da
+    risolvere, e un clic ti porta sul posto.
+13. Guarda la **previsione** nel pannello Obiettivi: se dice «fuori strada», alle condizioni attuali la partita non si
+    vince.
+14. Quando le industrie producono più di quanto usi, un **Mercato** vende l'eccesso e ti fa comprare i materiali a
+    meno.
+15. Distanzia i **parchi eolici** lungo la direzione del vento (pannello Meteo): uno dietro l'altro si rubano il
+    vento.
 
 ## Salvataggi
 
@@ -356,7 +455,8 @@ una lingua aggiungendo `?lingua=it` (oppure `en`, `de`, `fr`, `es`) all'indirizz
   fatto. Fino a 50 salvataggi con nome per ogni partita.
 - **Salvataggio rapido**: **F5** salva, **F9** riprende da lì. Ce n'è uno per partita e si sovrascrive ogni volta.
   Sul tablet è nel menu di pausa.
-- **Salvataggi automatici**: uno all'inizio di ogni giorno di gioco; restano gli ultimi tre.
+- **Salvataggi automatici**: all'inizio di ogni giorno di gioco, oppure ogni 3 o 7 giorni, o mai (Impostazioni);
+  restano gli ultimi tre.
 - **Carica partita** (menu iniziale e menu di pausa): tutti i salvataggi, raggruppati per partita, con giorno,
   denaro, abitanti e data. Da qui puoi **caricare**, **rinominare** un salvataggio con nome o **eliminarne** uno.
 - **Continua** (menu iniziale) riprende il salvataggio più recente, di qualunque tipo.
@@ -397,6 +497,11 @@ ospedali e parchi ricevono un nome. Un salvataggio della 0.8.0 non si apre nelle
 
 La **0.9.0** usa lo stesso formato della 0.8.0: le partite della 0.8.0 continuano come sono, con i nuovi orari.
 
+**Dalla 0.10.0** il formato cambia di nuovo: registro degli eventi, stipendi, famiglie, Mercato e previsione. I
+salvataggi delle versioni precedenti si caricano: il registro parte vuoto, la tariffa è normale, il personale riparte
+senza esperienza e il grafico Obiettivi comincia dal giorno in cui riprendi la partita. Un salvataggio della 0.10.0
+non si apre nelle versioni precedenti.
+
 I salvataggi di una versione alpha potrebbero non funzionare con la versione successiva: lo scrive il
 [changelog](CHANGELOG.md) quando succede.
 
@@ -404,27 +509,33 @@ I salvataggi di una versione alpha potrebbero non funzionare con la versione suc
 
 Cosa è già previsto, più o meno in quest'ordine. I piani possono cambiare.
 
-- **Registro degli eventi**: un pannello che tiene tutti gli avvisi e gli eventi, con in cima i problemi ancora
-  aperti; un clic su una riga mostra dove è successo.
-- **Stipendi ed esperienza**: stipendi, bollette, cibo e affitti; chi resta nello stesso lavoro diventa più bravo e
-  guadagna di più.
+- **Obiettivi e sblocchi**: piccoli obiettivi, come «costruisci 10 case», che sbloccano costruzioni nuove e fanno
+  crescere il municipio; e una schermata **Nuova partita** dove scegliere il nome della città, la difficoltà e se
+  volere i disastri.
 - **Manutentori e Officina**: le costruzioni richiederanno tempo, e a farle saranno le squadre del municipio e poi
   delle Officine, che più avanti ripareranno anche quello che si consuma, con i materiali che hai.
 - **Petrolio, gas e calore**: fonti nuove, e il riscaldamento d'inverno.
 - **Acqua e rifiuti**: acquedotti, depuratori e discariche per una città più grande.
 - **Istruzione e ricerca**: scuole, e tecnologie da scoprire che sbloccano costruzioni nuove.
-- **Mappe nuove, e più avanti**: una mappa diversa a ogni partita, mappe più grandi, una minimappa; poi la vista
-  isometrica e più città collegate fra loro.
+- **Usura, emergenze e scioperi**: le costruzioni si consumano e vanno riparate; emergenze come incendi e disastri
+  naturali, per chi li sceglie.
+- **Mappe nuove, e più avanti**: una mappa diversa a ogni partita, mappe più grandi con fiumi e ponti, una minimappa;
+  poi più città collegate fra loro e, ancora dopo, la vista isometrica.
 
 ## Problemi noti
 
 - Le versioni per **Windows** e **macOS** non sono ancora state provate su computer veri: se qualcosa non va,
   [segnalalo](#segnalare-un-problema-o-unidea).
 - La versione **Android** si installa a mano, fuori dal Play Store.
+- La disposizione per **telefono** è nuova: finora è stata provata solo su schermi simulati, non ancora su telefoni
+  veri né nel browser di un telefono. Se qualcosa non va, [segnalalo](#segnalare-un-problema-o-unidea).
 - Nella versione **web** i salvataggi stanno nel browser: se cancelli i dati del sito, li perdi.
 - È una **alpha**: l'equilibrio del gioco (costi, produzione, crescita, traffico) cambia ancora da una versione
-  all'altra. Con i nuovi orari le industrie producono molto in poche ore: se i loro piazzali si riempiono, costruisci
-  presto un autoparco.
+  all'altra. Le industrie producono molto in poche ore: se i loro piazzali si riempiono, costruisci presto un
+  autoparco.
+- Su un computer lento o nel browser un clic molto rapido a volte va perso, e il clic successivo sposta la
+  mappa. Mentre la previsione si ricalcola, la scritta «previsione in aggiornamento» copre in parte il titolo del
+  pannello Obiettivi. Saranno corretti in una prossima versione.
 - Le traduzioni in tedesco, francese e spagnolo non sono ancora state rilette da una persona di madrelingua: le
   segnalazioni di errori sono benvenute.
 
@@ -461,3 +572,6 @@ Ideazione e realizzazione di **Marco Scarlino**, con Unity e con l'aiuto di stru
 per il codice, la grafica e le traduzioni.
 
 Caratteri: Barlow Semi Condensed (SIL Open Font License 1.1), DejaVu Sans (licenza Bitstream Vera).
+
+Musica ed effetti sonori sono sintetizzati nota per nota da un programma scritto per il gioco: nessun campione di
+terzi, nessuna musica generata con l'intelligenza artificiale.

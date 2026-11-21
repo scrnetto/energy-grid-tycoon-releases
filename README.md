@@ -46,6 +46,8 @@ also in [Italian](https://scrnetto.github.io/energy-grid-tycoon-releases/trailer
 install. You need a recent browser (Chrome, Firefox, Edge, Safari) on a computer with a mouse and keyboard, or a
 tablet: **tap = click, long press = right-click**. Click on the game before using the keyboard. Your saves stay in
 the browser you use.
+On a phone held **sideways** the game switches to a layout made for phones (still being tested: see
+[Known issues](#known-issues)).
 
 **Also on itch.io: [marcoscarlino.itch.io/voltvale](https://marcoscarlino.itch.io/voltvale)**, where you can play
 in the browser, download the game for every system and leave a comment. Saves made in the browser on itch.io are
@@ -62,7 +64,7 @@ version:
 | **Windows** 10/11 (64-bit) | `Voltvale-<version>-windows.zip` | Extract the zip and open `Voltvale.exe` |
 | **macOS** 12 or later | `Voltvale-<version>-macos.zip` | Extract the zip and open `Voltvale.app` |
 | **Linux** (64-bit) | `Voltvale-<version>-linux.zip` | Extract the zip and run `Voltvale` |
-| **Android** 8 or later (tablet or large phone) | `Voltvale-<version>-android.apk` | Open the file on the device and install it (see below) |
+| **Android** 8 or later (tablet or phone) | `Voltvale-<version>-android.apk` | Open the file on the device and install it (see below) |
 
 ### First launch
 
@@ -84,8 +86,8 @@ On Linux run `sha256sum -c --ignore-missing SHA256SUMS.txt`, on macOS `shasum -a
 
 ### Requirements
 
-- A screen of at least 1280×800.
-- Mouse and keyboard, or a tablet (web or Android version).
+- A screen of at least 1280×800, or a phone held sideways.
+- Mouse and keyboard, or a touch screen (tablet or phone, web or Android version).
 - About 200 MB of free space.
 - Any graphics card from the last 10 years: built-in ones are fine too.
 
@@ -108,7 +110,8 @@ the time, for example «Day 1 · Sun 18 Oct 2020 · 08:00».
   isn't enough, there's a **blackout**: residents get angry and some leave.
 - **Energy sources**:
   - the **sun** only produces by day, and little in winter or under clouds;
-  - the **wind** changes from hour to hour;
+  - the **wind** changes strength and direction from hour to hour (the Weather panel shows where it blows from); a
+    wind farm **downwind** of another one, a few tiles away, produces less (the turbines' «wake», up to 40% less);
   - **coal** always produces, but it pollutes and burns the coal dug up by the **mines**.
 - **Batteries** store the extra energy and give it back when needed, for example in the evening.
 - **Surplus energy** is sold to the outside grid, but the more you offer, the less it's worth.
@@ -132,7 +135,8 @@ Buildings need people to run them.
   signal.
 - Workers go **to energy first**, then **to food**, then **to hospitals**, then **to industries**, then **to the mines**, then **to services** (districts and parks).
   Districts keep working even when their services are short of staff.
-- **Unemployment** means less tax income, and if it's high, less happy residents.
+- **Unemployment** costs money: people without a job pay no income tax and get unemployment benefit from the town;
+  if it's high, residents are less happy.
 
 ### Working hours and shifts
 
@@ -170,7 +174,7 @@ running low.
 ### Happiness, health and taxes
 
 - **Happiness** (the smiley in the top bar): it moves slowly towards a value that is the sum of a few factors,
-  namely blackouts in the last 24 hours, food, hunger, unemployment, pollution, health, parks and taxes. Hover
+  namely blackouts in the last 24 hours, food, hunger, unemployment, pollution, health, parks, taxes and the household budget. Hover
   over the number to see where it's heading and how much each factor weighs, for example «Blackouts −5.0» or
   «Parks +3.0». Below 60 the town doesn't grow, and below 35 people start to leave.
 - **Health** (the heart): drops with pollution and hunger. **Sick people stay home**, so there are fewer workers,
@@ -179,8 +183,22 @@ running low.
   blackout. A must if you go for coal.
 - **Park** (plains or hills): makes people happier. It counts for more in a small town: each park is worth +3 per
   100 residents, up to +10.
-- **Taxes**: three levels, low, normal and high, with the coin button in the top bar or the **T** key. High taxes
-  bring in more money but less happiness; low taxes do the opposite.
+- **Taxes**: income tax on the wages of people who work, in three levels, low, normal and high, with the coin button
+  in the top bar or the **T** key. High taxes bring in more money but less happiness; low taxes do the opposite.
+
+### Wages, households and bills
+
+- The town pays a **wage** for every job that's filled, a little more for night shifts.
+- Staff gain **experience**: people who stay in the same job produce up to **15%** more, but they also earn more.
+  When the staff change, experience drops: keeping your workers pays off. The Tile panel shows the experience and
+  wages of every building.
+- Households pay the town **income tax**, the **electricity bill** of the districts, **food** and **rent**. People
+  without a job get **unemployment benefit**. Households also have other income, such as pensions and work outside
+  town.
+- **Households** panel (**H** key or the button at the top): household income and spending over the last 24 hours,
+  what's left for each resident per day and the average wage. This is where you set the **energy tariff**: low,
+  normal or high. A high tariff brings the town more money but leaves households with less.
+- What's left for households affects happiness («Household budget» in the happiness tooltip).
 
 ### Materials and industries
 
@@ -234,6 +252,17 @@ under the price, with small icons; hover over the button to read them in full.
 - **Food spoils** a little on every trip: the farther the farm, the more you lose.
 - The **Tile** panel shows yard, silo and distance from the depot; **Stocks** shows what is waiting in the yards.
 
+### Market
+
+- Build the **Market** from the **Transport** tab of the list; there's one per town. It needs a road and staff, and
+  it's open 8–17 on weekdays.
+- With the Market you buy materials and food **without the import surcharge**, and you can buy **coal and stone**
+  too. Whatever you don't need you can **sell** at 70% of the purchase price.
+- **Market** panel (**K** key or the scales button at the top): stock and prices for every material; the
+  **«Sell above»** and **«Buy below»** thresholds make the Market trade by itself, hour by hour; the **«Buy 10»** and
+  **«Sell 10»** buttons work straight away, even outside opening hours.
+- Sales and purchases show up in the event log and in the **Money** tab of the chart.
+
 ### Line losses
 
 - A power plant's energy is partly lost along the lines on the way to the nearest **node**: the **town hall** or a
@@ -259,16 +288,37 @@ under the price, with small icons; hover over the button to read them in full.
   «Volta Street» or «Valfiora». A street keeps the same name along its whole straight stretch.
 - The **Rename** button in the Tile panel changes it; leave it empty to go back to the automatic name.
 
+### Event log
+
+- The **bell** at the top counts new events; it turns red when one is serious.
+- The **Events** panel (**E** key or the bell) shows the **current problems** at the top: debt, buildings that are
+  not connected or have no staff or no road, full yards, mines running out, imported food. Below is the **log** of
+  what happened, with filters by type.
+- Click a line to centre the map on the spot and open the Tile panel.
+
+### Goal forecast
+
+- The **Goals** panel tells you how the game will go **under current conditions, with no new buildings**: around
+  which day you'll reach 400 residents, whether pollution will stay below the limit, or whether you'll end up in
+  debt.
+- The outlook is **on track**, **at risk** or **off track**. The forecast is updated every day and after every
+  building, demolition or change of taxes and tariff.
+- The **Goals** tab of the chart shows residents and pollution since the start of the game, the goal line and the
+  forecast as a dashed line.
+
 ### Charts
 
-The panel at the bottom shows the **last 24 hours**, one column per hour, in five tabs. Click a tab to switch (the
-game remembers your choice), and hover over a column to read the exact values of that hour.
+The panel at the bottom has six tabs. The first five show the **last 24 hours**, one column per hour; the sixth,
+**Goals**, shows the whole game with the forecast. Click a tab to switch (the game remembers your choice), and hover
+over a column to read the exact values of that hour.
 
 - **Energy**: production, demand, batteries and line losses.
-- **Money**: income above zero, spending below, and the balance.
+- **Money**: income above zero, spending below, and the balance, with sales and purchases at the Market.
 - **Materials**: how much of each material is produced and used, and the stock; pick the material with the buttons next to the chart.
 - **Town**: food produced and food eaten, the food stock, happiness and health.
 - **Transport**: people going to work and going home, trucks on the road, and how loaded the roads are.
+- **Goals**: residents and pollution since the start of the game, the goal line and the forecast as a dashed line
+  (see [Goal forecast](#goal-forecast)).
 
 After loading a save from an earlier version the charts start empty and fill up hour by hour.
 
@@ -279,34 +329,75 @@ and how much energy it produces or uses.
 
 | Control | What it does |
 |---|---|
-| Keys **1–9** and **0** | Pick what to build: Power line, Coal mine, Coal power plant, Solar farm, Wind farm, Battery, District, Farm, Fishing boat, Greenhouse. The other buildings (cold store, park, hospital, industries, depots, transformer, pumped storage) are in the list on the left |
+| Keys **1–9** and **0** | Pick what to build: Power line, Coal mine, Coal power plant, Solar farm, Wind farm, Battery, District, Farm, Fishing boat, Greenhouse. The other buildings (cold store, park, hospital, industries, depots, transformer, pumped storage, Market) are in the list on the left, in six tabs: Energy, Grid, Transport, Town, Food, Industry |
 | **Left click** | Places the chosen building. With nothing chosen, selects a tile and shows its details |
 | **Right click** (on a tablet: long press) | With a building chosen, cancels the choice. With nothing chosen, asks to confirm demolition (half the cost refunded) |
-| **Esc** | Cancels the choice; if there's nothing to cancel, opens the **pause menu** (Resume, Save as…, Quick save, Load game, Save and quit to menu, New game, Language) |
+| **Esc** | Cancels the choice; if there's nothing to cancel, opens the **pause menu** (Resume, Save as…, Quick save, Load game, Save and quit to menu, New game, Settings) |
+| **⚙** button (at the top) | Opens the pause menu, like Esc: saves, settings, quit |
 | **F11** | Full screen / window |
 | **Space** or the ▶/❚❚ button | Pause / resume |
-| **F** or the arrow buttons | Speed 1×, 2×, 4× |
+| **F** or the speed button | Speed 1× → 2× → 4× → 1× |
 | **V** | Advance by a single hour |
 | **T** or the coin button | Low, normal, high taxes |
-| **WASD** or **arrow keys**, middle mouse button | Move the view |
+| **Click and drag** with the left button, **WASD** or **arrow keys**, middle mouse button | Move the view |
 | **Mouse wheel** | Zoom |
 | **Stocks** button (at the top) | Shows the stocks of coal, timber, stone, cement and food |
-| **Save** / **Load** (at the top) | **Save** creates a new save named «Day N»; **Load** resumes the most recent save. The game also saves by itself every day |
 | **F5** / **F9** | Quick save / load the quick save |
 | **R** | **Road** tool: click or drag to lay dirt roads |
 | **M** | **Upgrade road** tool: dirt road → paved road → avenue |
 | **L** | **Upgrade line** tool: lines from level I → II → III |
 | **G** | Traffic map |
 | **J** or the **Transport** button (at the top) | Transport panel: people, freight, busiest roads |
+| **E** or the bell (at the top) | Event log: current problems and what happened |
+| **H** or the **Households** button (at the top) | Households panel: wages, spending, energy tariff |
+| **K** or the scales button (at the top) | Market panel: buy and sell materials and food |
 | **Rename** button (in the Tile panel) | Renames a street, district, hospital or park |
-| Tabs of the chart (at the bottom) | Energy, Money, Materials, Town, Transport |
+| **Demolish** button (icon in the Tile panel) | Demolishes the selected building (half the cost refunded) |
+| Tabs of the chart (at the bottom) | Energy, Money, Materials, Town, Transport, Goals |
 
 ### Languages
 
-The game is in **Italian, English, German, French and Spanish**. Pick **Language** in the start menu or the pause
-menu to switch at any time, without restarting; your choice is remembered. On first launch the game uses your
+The game is in **Italian, English, German, French and Spanish**. Pick **Language** in the **Settings** (start menu or
+pause menu) to switch at any time, without restarting; your choice is remembered. On first launch the game uses your
 system language if it's one of these five, and English otherwise. In the web version you can open a language
 straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
+
+### Settings
+
+From the start menu or the pause menu (**⚙** or **Esc**), choose **Settings**. Each click on an item moves to the
+next value, and your choices are remembered.
+
+- **Fullscreen** (not in the web and Android versions) and **Language**.
+- **Autosave**: every day, every 3 days, every 7 days, or off.
+- **Interface size**: 90, 100 or 110%.
+- **Layout**: automatic, computer or phone.
+- **Animations**: on or off. Off stops the moving traffic, clouds, smoke and the other effects: handy on slow
+  computers.
+- **Music** and **Sound effects**: 100, 75, 50 or 25%, or off.
+
+### On a phone
+
+On a phone held **sideways** the game uses a layout made for small screens:
+
+- the map fills the screen and the top bar is short; tap the values to open the **Town** sheet with happiness,
+  health and taxes;
+- the building **categories** are at the bottom: tap one to open its grid, then tap a building to see its card with
+  the description and the **Build** button;
+- the panels (Tile, Weather, Goals, charts and the others) slide up from the bottom; tap a column of a chart to read
+  its values.
+
+The layout is picked automatically; you can switch between phone and computer in the Settings.
+
+### Music and a living map
+
+- **Music**: one piece for the day, one for the night and a theme with choirs for the start menu; between day and
+  night the music changes at the end of the piece. **Sound effects** for placing, roads, demolition, blackouts,
+  clicks and panels. Set the volume in the Settings.
+- **The map moves**: traffic dots on the roads (with headlights in the evening), cloud shadows carried by the wind,
+  building shadows that follow the sun, glittering water and waves in the wind, turbines that spin faster in a strong
+  wind, smoke only from buildings at work and drifting with the wind, haze near polluters, reflections on solar farms
+  at noon, snow when it's cold.
+- The values in the top bar light up, with an arrow, when they go up or down.
 
 ### Signals on buildings
 
@@ -342,6 +433,12 @@ straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
 10. When «Not enough trucks» shows up, build a **truck depot**. As the town grows, check the **traffic map** (G)
     and upgrade the busiest roads (M); don't put avenues right next to districts.
 11. Keep power plants close to the town hall or a **transformer**: far away they lose energy.
+12. When the **bell** turns red, open the **event log** (E): the problems to fix are at the top, and a click takes
+    you there.
+13. Check the **forecast** in the Goals panel: if it says «off track», the game won't be won as things stand.
+14. When your industries make more than you use, a **Market** sells the surplus and lets you buy materials for less.
+15. Space out your **wind farms** along the wind direction (Weather panel): one behind the other, they steal each
+    other's wind.
 
 ## Saves
 
@@ -349,7 +446,8 @@ straight away by adding `?lingua=en` (or `it`, `de`, `fr`, `es`) to the address.
   per game.
 - **Quick save**: **F5** saves, **F9** goes back to it. There is one per game and it is overwritten each time. On a
   tablet it's in the pause menu.
-- **Autosaves**: one at the start of every game day; the last three are kept.
+- **Autosaves**: at the start of every game day, or every 3 or 7 days, or never (Settings); the last three are
+  kept.
 - **Load game** (start menu and pause menu): all your saves, grouped by game, with day, money, residents and date.
   From here you can **load**, **rename** a named save or **delete** one.
 - **Continue** (start menu) resumes the most recent save of any kind.
@@ -390,6 +488,10 @@ get a name. A 0.8.0 save doesn't open in earlier versions.
 **0.9.0** uses the same save format as 0.8.0: your 0.8.0 games carry on as they are, with the new working
 hours.
 
+**From 0.10.0** the format changes again: event log, wages, households, Market and forecast. Saves from earlier
+versions still load: the event log starts empty, the tariff is normal, staff start again with no experience and the
+Goals chart begins on the day you pick the game up again. A 0.10.0 save doesn't open in earlier versions.
+
 Saves from one alpha version might not work with the next one: the [changelog](CHANGELOG.md) says so when it
 happens.
 
@@ -397,27 +499,31 @@ happens.
 
 What's already planned, roughly in this order. Plans may change.
 
-- **Event log**: a panel that keeps every warning and event, with the problems still open at the top; click one to
-  see where it happened.
-- **Wages and experience**: wages, bills, food and rent; workers who stay in the same job get better at it and
-  earn more.
+- **Goals and unlocks**: small goals, like «build 10 houses», that unlock new buildings and grow the town hall; and
+  a **New game** screen to choose the town's name, the difficulty and whether you want disasters.
 - **Maintenance crews and the Workshop**: buildings will take time to build, with crews from the town hall and
   then from the Workshops doing the work, and later repairing what wears out, with the materials you have.
 - **Oil, gas and heat**: new energy sources, and heating in winter.
 - **Water and waste**: waterworks, treatment plants and landfills for a bigger town.
 - **Education and research**: schools, and technologies to discover that unlock new buildings.
-- **New maps, and later on**: a different map every game, bigger maps, a minimap; then an isometric view and
-  several towns linked together.
+- **Wear, emergencies and strikes**: buildings wear out and need repairs; emergencies such as fires and natural
+  disasters, for those who choose them.
+- **New maps, and later on**: a different map every game, bigger maps with rivers and bridges, a minimap; then
+  several towns linked together and, further on, an isometric view.
 
 ## Known issues
 
 - The **Windows** and **macOS** versions haven't been tested on real computers yet: if something goes wrong,
   [let us know](#reporting-a-problem-or-an-idea).
 - The **Android** version is installed by hand, outside the Play Store.
+- The **phone** layout is new: so far it has only been tried on simulated screens, not yet on real phones or in a
+  phone's browser. If something doesn't work, [let us know](#reporting-a-problem-or-an-idea).
 - In the **web** version saves live in your browser: if you clear the site's data, you lose them.
 - It's an **alpha**: the game's balance (costs, production, growth, traffic) still changes from one version to
-  the next. With the new working hours, industries produce a lot in a few hours: if their yards fill up, build a
-  truck depot early.
+  the next. Industries produce a lot in a few hours: if their yards fill up, build a truck depot early.
+- On a slow computer or in the browser, a very quick click can occasionally be lost, and the next click
+  then moves the map. The Goals panel title can be partly covered by the text «forecast updating» while the
+  forecast is being recalculated. Both will be fixed in a later version.
 - The German, French and Spanish translations haven't been reviewed by a native speaker yet: reports of
   mistakes are welcome.
 
@@ -455,3 +561,6 @@ Designed and made by **Marco Scarlino**, with Unity and with the help of AI tool
 translations.
 
 Fonts: Barlow Semi Condensed (SIL Open Font License 1.1), DejaVu Sans (Bitstream Vera license).
+
+Music and sound effects are synthesised note by note by a program written for the game: no third-party samples, and
+no music generated with artificial intelligence.

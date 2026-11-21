@@ -47,6 +47,8 @@ también en [italiano](https://scrnetto.github.io/energy-grid-tycoon-releases/tr
 instalar nada. Necesitas un navegador reciente (Chrome, Firefox, Edge, Safari) en un ordenador con ratón y
 teclado, o una tableta: **toque = clic, toque largo = clic derecho**. Haz clic en el juego antes de usar el
 teclado. Tus partidas guardadas se quedan en el navegador que uses.
+En un teléfono en **horizontal**, el juego pasa a una disposición pensada para teléfonos (todavía en pruebas:
+mira [Problemas conocidos](#problemas-conocidos)).
 
 **También en itch.io: [marcoscarlino.itch.io/voltvale](https://marcoscarlino.itch.io/voltvale)**, donde puedes
 jugar en el navegador, descargar el juego para cada sistema y dejar un comentario. Las partidas guardadas en el
@@ -62,7 +64,7 @@ Todas las versiones están en la página **[Releases](../../releases)** y en
 | **Windows** 10/11 (64 bits) | `Voltvale-<versión>-windows.zip` | Extrae el zip y abre `Voltvale.exe` |
 | **macOS** 12 o posterior | `Voltvale-<versión>-macos.zip` | Extrae el zip y abre `Voltvale.app` |
 | **Linux** (64 bits) | `Voltvale-<versión>-linux.zip` | Extrae el zip y ejecuta `Voltvale` |
-| **Android** 8 o posterior (tableta o teléfono grande) | `Voltvale-<versión>-android.apk` | Abre el archivo en el dispositivo e instálalo (ver abajo) |
+| **Android** 8 o posterior (tableta o teléfono) | `Voltvale-<versión>-android.apk` | Abre el archivo en el dispositivo e instálalo (ver abajo) |
 
 ### La primera vez que lo abres
 
@@ -87,8 +89,8 @@ En Linux se comprueba con `sha256sum -c --ignore-missing SHA256SUMS.txt`, en mac
 
 ### Requisitos
 
-- Una pantalla de al menos 1280×800.
-- Ratón y teclado, o una tableta (versión web o Android).
+- Una pantalla de al menos 1280×800, o un teléfono en horizontal.
+- Ratón y teclado, o una pantalla táctil (tableta o teléfono, versión web o Android).
 - Unos 200 MB de espacio libre.
 - Cualquier tarjeta gráfica de los últimos 10 años: las integradas también sirven.
 
@@ -112,7 +114,9 @@ más nublado. La barra de arriba muestra el día de la partida, el día de la se
   alcanza, hay **apagón**: los habitantes se enfadan y algunos se van.
 - **Las fuentes**:
   - el **sol** solo produce de día, y poco en invierno o con el cielo nublado;
-  - el **viento** cambia de hora en hora;
+  - el **viento** cambia de fuerza y de dirección de hora en hora (el panel Tiempo dice de dónde sopla); un parque
+    eólico **a sotavento** de otro, a pocas casillas, produce menos (la «estela» de los aerogeneradores, hasta un 40 %
+    menos);
   - el **carbón** produce siempre, pero contamina y quema el carbón que extraen las **minas**.
 - **Las baterías** almacenan la energía sobrante y la devuelven cuando hace falta, por ejemplo por la tarde.
 - **El excedente** se vende a la red exterior, pero cuanto más ofreces, menos vale.
@@ -137,7 +141,8 @@ Los edificios necesitan gente que los haga funcionar.
 - Los trabajadores van **primero a la energía**, luego **a la comida**, luego **a los hospitales**, luego **a las
   industrias**, luego **a las minas** y luego **a los servicios** (barrios y parques). Los barrios funcionan aunque a
   sus servicios les falte personal.
-- El **desempleo** hace que entren menos impuestos y, si es alto, que los habitantes estén menos felices.
+- El **desempleo** cuesta: quien no trabaja no paga el impuesto sobre la renta y recibe un subsidio del
+  ayuntamiento; si es alto, los habitantes están menos felices.
 
 ### Horarios y turnos
 
@@ -178,8 +183,8 @@ en rojo cuando se están acabando.
 ### Felicidad, salud e impuestos
 
 - **Felicidad** (la cara sonriente de la barra de arriba): se mueve despacio hacia un valor que es la suma de
-  algunos factores: apagones de las últimas 24 horas, comida, hambre, desempleo, contaminación, salud, parques e
-  impuestos. Al pasar el ratón por encima del número ves hacia qué valor va y cuánto pesa cada factor, por ejemplo
+  algunos factores: apagones de las últimas 24 horas, comida, hambre, desempleo, contaminación, salud, parques,
+  impuestos y cuentas de casa. Al pasar el ratón por encima del número ves hacia qué valor va y cuánto pesa cada factor, por ejemplo
   «Apagones −5,0» o «Parques +3,0». Por debajo de 60 la ciudad no crece, y por debajo de 35 la gente empieza a
   irse.
 - **Salud** (el corazón): baja con la contaminación y el hambre. **Los enfermos se quedan en casa**, así que hay
@@ -188,8 +193,23 @@ en rojo cuando se están acabando.
   no atiende a nadie. Imprescindible si apuestas por el carbón.
 - **Parque** (llanura o colina): hace más feliz a la gente. Cuenta más en una ciudad pequeña: cada parque vale +3
   por cada 100 habitantes, hasta +10.
-- **Impuestos**: tres niveles, bajos, normales y altos, con el botón de la moneda en la barra de arriba o la tecla
-  **T**. Los impuestos altos dan más dinero pero menos felicidad; los bajos, lo contrario.
+- **Impuestos**: son el impuesto sobre la renta de quien trabaja, en tres niveles, bajos, normales y altos, con el
+  botón de la moneda en la barra de arriba o la tecla **T**. Los impuestos altos dan más dinero pero menos felicidad;
+  los bajos, lo contrario.
+
+### Salarios, familias y facturas
+
+- El ayuntamiento paga un **salario** por cada puesto cubierto, un poco más en los turnos de noche.
+- El personal gana **experiencia**: quien sigue en el mismo puesto produce hasta un **15 %** más, pero también gana
+  más. Cuando el personal cambia, la experiencia baja: conviene mantener a los trabajadores. El panel Casilla muestra
+  la experiencia y los salarios de cada edificio.
+- Las familias pagan al ayuntamiento el **impuesto sobre la renta**, la **factura de la luz** de los barrios, la
+  **comida** y el **alquiler**. Quien no tiene trabajo recibe un **subsidio de desempleo**. Las familias tienen además
+  otros ingresos, como pensiones y trabajo fuera de la ciudad.
+- Panel **Familias** (tecla **H** o el botón de arriba): ingresos y gastos de las familias en las últimas 24 horas,
+  lo que le queda a cada habitante al día y el salario medio. Aquí eliges la **tarifa de la energía**: baja, normal o
+  alta. Una tarifa alta da más dinero al ayuntamiento, pero deja menos a las familias.
+- Lo que les queda a las familias pesa en la felicidad («Cuentas de casa» en el recuadro de la felicidad).
 
 ### Materiales e industrias
 
@@ -248,6 +268,17 @@ izquierda los muestra debajo del precio, con iconos pequeños; al pasar el rató
 - El panel **Casilla** muestra patio, silo y distancia al almacén; las **Reservas** muestran lo que espera en los
   patios.
 
+### Mercado
+
+- El **Mercado** se construye desde la pestaña **Transporte** de la lista; hay uno por ciudad. Necesita una carretera
+  y personal, y abre de 8 a 17 los días laborables.
+- Con el Mercado compras materiales y comida **sin el recargo** de la importación, y también puedes comprar **carbón
+  y piedra**. Lo que te sobra lo **vendes** al 70 % del precio de compra.
+- Panel **Mercado** (tecla **K** o el botón de la balanza arriba): reserva y precios de cada material; los umbrales
+  **«Vender por encima»** y **«Comprar por debajo»** hacen que el Mercado intercambie solo, hora a hora; los botones
+  **«Comprar 10»** y **«Vender 10»** valen al momento, también fuera de horario.
+- Ventas y compras aparecen en el registro de eventos y en la pestaña **Dinero** del gráfico.
+
 ### Pérdidas en la línea
 
 - Parte de la energía de una central se pierde en las líneas hasta el **nodo** más cercano: el **ayuntamiento** o un
@@ -274,17 +305,37 @@ izquierda los muestra debajo del precio, con iconos pequeños; al pasar el rató
   «Calle Volta». Una calle mantiene el mismo nombre a lo largo de todo su tramo recto.
 - El botón **Renombrar** del panel Casilla lo cambia; si lo dejas vacío, vuelve el nombre automático.
 
+### Registro de eventos
+
+- La **campana** de arriba cuenta los eventos nuevos; se pone roja cuando uno es grave.
+- El panel **Eventos** (tecla **E** o la campana) muestra arriba los **problemas actuales**: deuda, edificios sin
+  conexión, sin personal o sin carretera, patios llenos, minas casi agotadas, comida importada. Debajo está el
+  **historial** de lo ocurrido, con filtros por tipo.
+- Un clic en una línea centra el mapa en el lugar y abre el panel Casilla.
+
+### Previsión de los objetivos
+
+- El panel **Objetivos** dice cómo irá la partida **en las condiciones actuales, sin nuevas construcciones**: hacia qué
+  día llegarás a 400 habitantes, si la contaminación seguirá por debajo del umbral, o si acabarás en deuda.
+- La tendencia es **en camino**, **en riesgo** o **fuera de camino**. La previsión se actualiza cada día y después de
+  cada construcción, demolición o cambio de impuestos y tarifa.
+- La pestaña **Objetivos** del gráfico muestra los habitantes y la contaminación desde el inicio de la partida, la
+  línea del objetivo y la previsión discontinua.
+
 ### Gráficos
 
-El panel de abajo muestra las **últimas 24 horas**, una columna por hora, en cinco pestañas. Un clic en una pestaña
-la abre (el juego recuerda tu elección); al pasar el ratón por una columna lees los valores exactos de esa hora.
+El panel de abajo tiene seis pestañas. Las cinco primeras muestran las **últimas 24 horas**, una columna por hora; la
+sexta, **Objetivos**, toda la partida con la previsión. Un clic en una pestaña la abre (el juego recuerda tu
+elección); al pasar el ratón por una columna lees los valores exactos de esa hora.
 
 - **Energía**: producción, demanda, baterías y pérdidas en la línea.
-- **Dinero**: ingresos por encima del cero, gastos por debajo, y el saldo.
+- **Dinero**: ingresos por encima del cero, gastos por debajo, y el saldo, con las ventas y compras en el Mercado.
 - **Materiales**: cuánto se produce y se consume de cada material, y las reservas; el material se elige con los
   botones junto al gráfico.
 - **Ciudad**: comida producida y comida consumida, las reservas de comida, la felicidad y la salud.
 - **Transporte**: personas que van al trabajo y que vuelven a casa, camiones en ruta y carga de las calles.
+- **Objetivos**: habitantes y contaminación desde el inicio de la partida, la línea del objetivo y la previsión
+  discontinua (mira [Previsión de los objetivos](#previsión-de-los-objetivos)).
 
 Después de cargar una partida de una versión anterior, los gráficos empiezan vacíos y se llenan hora a hora.
 
@@ -295,34 +346,75 @@ su estado y cuánta energía produce o consume.
 
 | Control | Qué hace |
 |---|---|
-| Teclas **1–9** y **0** | Elegir qué construir: línea eléctrica, mina de carbón, central de carbón, planta solar, parque eólico, batería, barrio, granja, pesquero, invernadero. Los demás edificios (almacén frigorífico, parque, hospital, industrias, almacenes, parque de camiones, transformador, bombeo) están en la lista de la izquierda |
+| Teclas **1–9** y **0** | Elegir qué construir: línea eléctrica, mina de carbón, central de carbón, planta solar, parque eólico, batería, barrio, granja, pesquero, invernadero. Los demás edificios (almacén frigorífico, parque, hospital, industrias, almacenes, parque de camiones, transformador, bombeo, Mercado) están en la lista de la izquierda, en seis pestañas: Energía, Red, Transporte, Ciudad, Comida, Industria |
 | **Clic izquierdo** | Coloca el edificio elegido. Sin nada elegido, selecciona una casilla y muestra sus detalles |
 | **Clic derecho** (en tableta: toque largo) | Con un edificio elegido, anula la elección. Sin elección, pide confirmación para demoler (se devuelve la mitad del coste) |
-| **Esc** | Anula la elección; si no hay nada que anular, abre el **menú de pausa** (Reanudar, Guardar como…, Guardado rápido, Cargar partida, Guardar y salir al menú, Nueva partida, Idioma) |
+| **Esc** | Anula la elección; si no hay nada que anular, abre el **menú de pausa** (Reanudar, Guardar como…, Guardado rápido, Cargar partida, Guardar y salir al menú, Nueva partida, Ajustes) |
+| Botón **⚙** (arriba) | Abre el menú de pausa, como Esc: partidas guardadas, ajustes, salir |
 | **F11** | Pantalla completa / ventana |
 | **Espacio** o el botón ▶/❚❚ | Pausa / reanudar |
-| **F** o los botones de flechas | Velocidad 1×, 2×, 4× |
+| **F** o el botón de velocidad | Velocidad 1× → 2× → 4× → 1× |
 | **V** | Avanzar una sola hora |
 | **T** o el botón de la moneda | Impuestos bajos, normales, altos |
-| **WASD** o **flechas**, botón central del ratón | Mover la vista |
+| **Clic y arrastrar** con el botón izquierdo, **WASD** o **flechas**, botón central del ratón | Mover la vista |
 | **Rueda del ratón** | Zoom |
 | Botón **Reservas** (arriba) | Muestra las reservas de carbón, madera, piedra, cemento y comida |
-| **Guardar** / **Cargar** (arriba) | **Guardar** crea una nueva partida guardada llamada «Día N»; **Cargar** retoma la más reciente. El juego también guarda solo cada día |
 | **F5** / **F9** | Guardado rápido / cargar el guardado rápido |
 | **R** | Herramienta **Carretera**: haz clic o arrastra para poner caminos de tierra |
 | **M** | Herramienta **Mejorar carretera**: camino de tierra → carretera asfaltada → avenida |
 | **L** | Herramienta **Mejorar línea**: líneas del nivel I → II → III |
 | **G** | Mapa del tráfico |
 | **J** o el botón **Transportes** (arriba) | Panel de transportes: personas, mercancías, carreteras más cargadas |
+| **E** o la campana (arriba) | Registro de eventos: problemas actuales e historial |
+| **H** o el botón **Familias** (arriba) | Panel de las familias: salarios, gastos, tarifa de la energía |
+| **K** o el botón de la balanza (arriba) | Panel del Mercado: comprar y vender materiales y comida |
 | Botón **Renombrar** (en el panel Casilla) | Cambia el nombre de una calle, un barrio, un hospital o un parque |
-| Pestañas del gráfico (abajo) | Energía, Dinero, Materiales, Ciudad, Transporte |
+| Botón **Demoler** (icono en el panel Casilla) | Demuele el edificio seleccionado (se devuelve la mitad del coste) |
+| Pestañas del gráfico (abajo) | Energía, Dinero, Materiales, Ciudad, Transporte, Objetivos |
 
 ### Idiomas
 
-El juego está en **italiano, inglés, alemán, francés y español**. En el menú de inicio o en el de pausa, la opción
-**Idioma** lo cambia en cualquier momento, sin reiniciar; tu elección se guarda. La primera vez que lo abres, el
-juego usa el idioma de tu sistema si es uno de estos cinco, y si no, el inglés. En la versión web puedes abrir
-directamente un idioma añadiendo `?lingua=es` (o `it`, `en`, `de`, `fr`) a la dirección.
+El juego está en **italiano, inglés, alemán, francés y español**. En los **Ajustes** (menú de inicio o menú de
+pausa), la opción **Idioma** lo cambia en cualquier momento, sin reiniciar; tu elección se guarda. La primera vez
+que lo abres, el juego usa el idioma de tu sistema si es uno de estos cinco, y si no, el inglés. En la versión web
+puedes abrir directamente un idioma añadiendo `?lingua=es` (o `it`, `en`, `de`, `fr`) a la dirección.
+
+### Ajustes
+
+Desde el menú de inicio o el menú de pausa (**⚙** o **Esc**), elige **Ajustes**. Cada clic en una opción pasa al
+valor siguiente, y tus elecciones se guardan.
+
+- **Pantalla completa** (no en las versiones web y Android) e **Idioma**.
+- **Guardado automático**: cada día, cada 3 días, cada 7 días o desactivado.
+- **Tamaño de la interfaz**: 90, 100 o 110 %.
+- **Disposición**: automática, ordenador o teléfono.
+- **Animaciones**: sí o no. Con «no» se detienen el tráfico animado, las nubes, el humo y los demás efectos: útil en
+  ordenadores lentos.
+- **Música** y **Efectos de sonido**: 100, 75, 50 o 25 %, o silencio.
+
+### En el teléfono
+
+En un teléfono en **horizontal**, el juego usa una disposición pensada para pantallas pequeñas:
+
+- el mapa ocupa toda la pantalla y la barra de arriba es corta; un toque en los valores abre la hoja **Ciudad** con
+  la felicidad, la salud y los impuestos;
+- las **categorías** de edificios están abajo: un toque abre su cuadrícula, y un toque en un edificio muestra su
+  ficha con la descripción y el botón **Construir**;
+- los paneles (Casilla, Tiempo, Objetivos, gráficos y los demás) suben desde abajo; los valores del gráfico se leen
+  tocando una columna.
+
+La disposición se elige sola; en los Ajustes puedes cambiar entre la del teléfono y la del ordenador.
+
+### Música y un mapa vivo
+
+- **Música**: una pieza para el día, otra para la noche y un tema con coros para el menú de inicio; entre el día y
+  la noche, la música cambia al final de la pieza. **Efectos de sonido** para las construcciones, las carreteras, las
+  demoliciones, los apagones, los clics y los paneles. El volumen se ajusta en los Ajustes.
+- **El mapa se mueve**: puntos del tráfico en las carreteras (con los faros por la noche), sombras de las nubes que
+  empuja el viento, sombras de los edificios que siguen al sol, agua que brilla y olas con el viento,
+  aerogeneradores que giran más rápido con viento fuerte, humo solo de los edificios que trabajan y que se lleva el
+  viento, bruma cerca de quien contamina, reflejos en las plantas solares a mediodía, nieve cuando hace frío.
+- Los valores de la barra de arriba se colorean, con una flecha, cuando suben o bajan.
 
 ### Señales en los edificios
 
@@ -361,6 +453,14 @@ directamente un idioma añadiendo `?lingua=es` (o `it`, `en`, `de`, `fr`) a la d
     **mapa del tráfico** (G) y mejora las carreteras más cargadas (M); no pongas avenidas justo al lado de los
     barrios.
 11. Mantén las centrales cerca del ayuntamiento o de un **transformador**: lejos pierden energía.
+12. Cuando la **campana** se ponga roja, abre el **registro de eventos** (E): arriba están los problemas que hay que
+    resolver, y un clic te lleva al lugar.
+13. Mira la **previsión** en el panel Objetivos: si dice «fuera de camino», en las condiciones actuales la partida no
+    se gana.
+14. Cuando tus industrias producen más de lo que usas, un **Mercado** vende el excedente y te deja comprar materiales
+    más baratos.
+15. Separa los **parques eólicos** en la dirección del viento (panel Tiempo): uno detrás de otro se roban el
+    viento.
 
 ## Partidas guardadas
 
@@ -368,7 +468,8 @@ directamente un idioma añadiendo `?lingua=es` (o `it`, `en`, `de`, `fr`) a la d
   tienes. Hasta 50 partidas guardadas con nombre por partida.
 - **Guardado rápido**: **F5** guarda, **F9** vuelve a ese punto. Hay uno por partida y se sobrescribe cada vez. En
   tableta está en el menú de pausa.
-- **Guardados automáticos**: uno al principio de cada día de juego; se conservan los tres últimos.
+- **Guardados automáticos**: al principio de cada día de juego, o cada 3 o 7 días, o nunca (Ajustes); se
+  conservan los tres últimos.
 - **Cargar partida** (menú de inicio y menú de pausa): todas tus partidas guardadas, agrupadas por partida, con día,
   dinero, habitantes y fecha. Desde aquí puedes **cargar**, **renombrar** una partida guardada con nombre o
   **borrar** una.
@@ -413,6 +514,11 @@ guardada con la 0.8.0 no se abre en versiones anteriores.
 **La 0.9.0** usa el mismo formato que la 0.8.0: tus partidas de la 0.8.0 siguen tal como están, con los nuevos
 horarios.
 
+**Desde la 0.10.0** el formato cambia de nuevo: registro de eventos, salarios, familias, Mercado y previsión. Las
+partidas guardadas de versiones anteriores se cargan: el registro empieza vacío, la tarifa es normal, el personal
+vuelve a empezar sin experiencia y el gráfico Objetivos empieza el día en que retomas la partida. Una partida
+guardada con la 0.10.0 no se abre en versiones anteriores.
+
 Las partidas guardadas de una versión alpha podrían no funcionar con la siguiente: el
 [changelog](CHANGELOG.md) lo dice cuando ocurre.
 
@@ -420,27 +526,34 @@ Las partidas guardadas de una versión alpha podrían no funcionar con la siguie
 
 Lo que ya está previsto, más o menos en este orden. Los planes pueden cambiar.
 
-- **Registro de eventos**: un panel que guarda todos los avisos y eventos, con arriba los problemas aún abiertos; un
-  clic muestra dónde ha pasado.
-- **Sueldos y experiencia**: sueldos, facturas, comida y alquileres; quien sigue en el mismo puesto se vuelve más
-  hábil y gana más.
+- **Objetivos y desbloqueos**: pequeños objetivos, como «construye 10 casas», que desbloquean edificios nuevos y
+  hacen crecer el ayuntamiento; y una pantalla de **Nueva partida** para elegir el nombre de la ciudad, la dificultad
+  y si quieres desastres.
 - **Equipos de mantenimiento y Taller**: construir llevará tiempo. Harán el trabajo los equipos del ayuntamiento y
   luego de los Talleres, que también repararán lo que se desgaste, con tus materiales.
 - **Petróleo, gas y calor**: fuentes nuevas, y la calefacción en invierno.
 - **Agua y residuos**: redes de agua, depuradoras y vertederos para una ciudad más grande.
 - **Educación e investigación**: escuelas, y tecnologías por descubrir que desbloquean edificios nuevos.
-- **Mapas nuevos, y más adelante**: un mapa distinto en cada partida, mapas más grandes, un minimapa; luego una
-  vista isométrica y varias ciudades conectadas entre sí.
+- **Desgaste, emergencias y huelgas**: los edificios se desgastan y hay que repararlos; emergencias como incendios y
+  desastres naturales, para quien los elija.
+- **Mapas nuevos, y más adelante**: un mapa distinto en cada partida, mapas más grandes con ríos y puentes, un
+  minimapa; luego varias ciudades conectadas entre sí y, más adelante todavía, una vista isométrica.
 
 ## Problemas conocidos
 
 - Las versiones para **Windows** y **macOS** aún no se han probado en ordenadores reales: si algo falla,
   [avísanos](#informar-de-un-problema-o-proponer-una-idea).
 - La versión **Android** se instala a mano, fuera de Play Store.
+- La disposición para **teléfono** es nueva: hasta ahora solo se ha probado en pantallas simuladas, todavía no en
+  teléfonos reales ni en el navegador de un teléfono. Si algo falla,
+  [avísanos](#informar-de-un-problema-o-proponer-una-idea).
 - En la versión **web** las partidas guardadas están en el navegador: si borras los datos del sitio, las pierdes.
 - Es una **alpha**: el equilibrio del juego (costes, producción, crecimiento, tráfico) aún cambia de una versión a
-  otra. Con los nuevos horarios, las industrias producen mucho en pocas horas: si sus patios se llenan, construye
-  pronto un parque de camiones.
+  otra. Las industrias producen mucho en pocas horas: si sus patios se llenan, construye pronto un parque de
+  camiones.
+- En un ordenador lento o en el navegador, un clic muy rápido a veces se pierde, y el clic siguiente mueve el
+  mapa. Mientras la previsión se recalcula, el aviso de actualización tapa en parte el título del panel
+  Objetivos. Ambos se corregirán en una próxima versión.
 - Las traducciones al alemán, francés y español aún no las ha revisado una persona nativa: los avisos de errores
   son bienvenidos.
 
@@ -477,3 +590,6 @@ Ideado y realizado por **Marco Scarlino**, con Unity y con la ayuda de herramien
 el código, los gráficos y las traducciones.
 
 Fuentes: Barlow Semi Condensed (SIL Open Font License 1.1), DejaVu Sans (licencia Bitstream Vera).
+
+La música y los efectos de sonido se sintetizan nota a nota con un programa escrito para el juego: sin muestras de
+terceros y sin música generada con inteligencia artificial.

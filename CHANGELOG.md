@@ -12,6 +12,95 @@ Ogni versione ha queste sezioni, quando servono:
 
 ## [Non ancora pubblicata]
 
+## [0.10.0-alpha.1] - 2026-11-21
+
+Musica e suoni, Mercato, stipendi e famiglie, registro degli eventi, interfaccia per telefono, previsione degli
+obiettivi e una mappa più viva. *Music and sound, the Market, wages and households, an event log, a phone layout, a
+goal forecast and a livelier map.*
+
+### Novità
+- **Musica ed effetti sonori**: un brano per il giorno, uno per la notte e un tema con i cori per il menu iniziale.
+  Fra giorno e notte la musica cambia alla fine del brano, senza stacchi. Effetti per le pose, le strade, le
+  demolizioni, i blackout, i clic, i pannelli, la vittoria e la sconfitta. Musica ed effetti sono composti nota per
+  nota da un programma scritto apposta, **senza intelligenza artificiale**.
+- **Barra in alto più semplice**: il pulsante **⚙** apre il menu (salvataggi, impostazioni, uscita) al posto di
+  Salva e Carica; accanto a ▶/❚❚ c'è **un solo pulsante di velocità**, che passa da 1× a 2× a 4× come il tasto **F**.
+- **Impostazioni**, dal menu iniziale e dal menu di pausa: schermo intero, lingua, **salvataggio automatico** ogni 1,
+  3 o 7 giorni o spento, **dimensione dell'interfaccia** 90, 100 o 110 %, **disposizione** (automatica, computer o
+  telefono), **animazioni** sì o no, volume della **musica** e degli **effetti sonori**. Le scelte restano salvate.
+- **Lista delle costruzioni a schede**: sei categorie, **Energia, Rete, Trasporti, Città, Cibo e Industria**. Il
+  gioco ricorda l'ultima scheda aperta, e i tasti delle costruzioni aprono la scheda giusta.
+- **Registro degli eventi** (tasto **E** o la campanella in alto):
+  - in cima i **problemi in corso**: debito, costruzioni scollegate, senza personale o senza strada, piazzali pieni,
+    miniere quasi esaurite, cibo importato;
+  - sotto, lo **storico** di quello che è successo, con i filtri per tipo;
+  - un clic su una riga mostra il posto sulla mappa e apre la Casella;
+  - la campanella conta gli eventi nuovi, in rosso se uno è grave.
+- **Stipendi e famiglie**:
+  - il comune paga uno **stipendio** per ogni posto coperto, un po' di più di notte;
+  - il personale fa **esperienza**: chi resta nello stesso lavoro rende fino al 15 % in più e guadagna di più; quando
+    il personale cambia, l'esperienza cala. La Casella mostra esperienza e stipendi di ogni costruzione;
+  - le famiglie pagano al comune l'**imposta sul reddito**, la **bolletta della luce** dei quartieri, il **cibo** e
+    l'**affitto**; chi non ha lavoro riceve un **sussidio**;
+  - pannello **Famiglie** (tasto **H**): entrate e spese delle famiglie nelle ultime 24 ore, quanto resta a ogni
+    abitante, stipendio medio e **tariffa dell'energia** (bassa, normale, alta);
+  - quanto resta alle famiglie pesa sulla felicità, con il fattore «Conti di casa».
+- **Mercato** (scheda Trasporti, uno per città):
+  - compra legname, cemento, rame e cibo **senza il sovrapprezzo** dell'importazione, e compra anche **carbone e
+    pietra**;
+  - **vende** quello che avanza al 70 % del prezzo d'acquisto;
+  - pannello **Mercato** (tasto **K**): per ogni materiale scorta e prezzi, soglie «vendi sopra» e «compra sotto» per
+    gli scambi automatici, e i pulsanti «Compra 10» e «Vendi 10», che valgono subito, anche fuori orario;
+  - è aperto dalle 8 alle 17 nei giorni feriali e ha bisogno di personale e di una strada; vendite e acquisti
+    compaiono nel registro e nel grafico Denaro.
+- **Previsione degli obiettivi**: il pannello Obiettivi dice come andrà la partita «alle condizioni attuali, senza
+  nuove costruzioni»: verso quale giorno arriverai a 400 abitanti, se l'inquinamento resterà sotto la soglia, oppure
+  se finirai in debito. L'andamento è **in linea**, **a rischio** o **fuori strada**. La previsione si aggiorna ogni
+  giorno e dopo ogni costruzione. Il grafico in basso ha una sesta scheda, **Obiettivi**, con abitanti e
+  inquinamento dall'inizio della partita e la previsione tratteggiata.
+- **Interfaccia per telefono**, in orizzontale: mappa a tutto schermo, barra in alto corta, categorie in basso con la
+  griglia delle costruzioni e una scheda con la descrizione, pannelli che salgono dal basso, foglio «Città» con
+  felicità, salute e tasse, valori del grafico al tocco. Sul telefono si sceglie da sola; nelle Impostazioni si può
+  cambiare.
+- **Una mappa più viva**:
+  - puntini del traffico sulle strade, più fitti dove passano più auto e camion, con i fari di sera;
+  - ombre delle nuvole che corrono col vento;
+  - valori della barra in alto che si colorano, con una freccia, quando salgono o scendono;
+  - riva lungo la costa e bordi morbidi fra bosco, collina e pianura;
+  - ombre delle costruzioni che seguono il sole e spariscono di notte;
+  - quartieri e fattorie in più varianti;
+  - acqua che luccica di giorno e onde che seguono il vento; pale eoliche che girano più forte col vento forte;
+  - fumo a sbuffi, portato dal vento, dalle centrali a carbone, dai cementifici e dalle segherie, solo quando
+    lavorano;
+  - foschia vicino alle costruzioni che inquinano, riflessi sugli impianti solari a mezzogiorno, neve quando fa
+    freddo.
+
+  Su un computer lento si spegne tutto con «Animazioni: no».
+- **Direzione del vento**: il pannello Meteo dice da dove soffia, per esempio «9,3 m/s da NO».
+- **Scia delle pale**: un parco eolico sottovento a un altro, a poche caselle, rende meno, fino al 40 % in meno. La
+  Casella mostra quanto perde: conviene distanziare le pale lungo la direzione del vento.
+- **Sposta la mappa trascinando**: clic e trascina con il tasto sinistro.
+- Il pulsante **Demolisci** è un'icona nella Casella, accanto a Rinomina.
+
+### Modifiche
+- Le **tasse** non sono più una quota fissa per abitante: sono l'imposta sul reddito di chi lavora, sempre su tre
+  livelli (tasto **T**).
+- La **lingua** si sceglie nelle Impostazioni.
+- Nel menu iniziale le voci non ancora pronte sono in grigio, senza la scritta «in arrivo».
+- L'equilibrio del gioco è stato rivisto per stipendi, bollette e scia delle pale: si vince ancora in poco più di un
+  anno di gioco, giocando bene.
+
+### Correzioni
+- Molte costruzioni della lista, fra cui deposito, autoparco e trasformatore, non mostravano la descrizione al
+  passaggio del mouse: ora ce l'hanno tutte.
+- Un clic su una riga del pannello Trasporti arrivava anche alla mappa sotto il pannello.
+- Nel pannello Trasporti la stessa strada poteva comparire più volte: ora c'è una riga per strada, con il suo nome.
+
+### Da sapere
+- I salvataggi della 0.10.0 hanno un formato nuovo e **non si aprono nelle versioni precedenti**.
+- I salvataggi delle versioni precedenti si caricano: il registro degli eventi parte vuoto, la tariffa è normale,
+  il personale riparte senza esperienza e il grafico Obiettivi comincia dal giorno in cui riprendi la partita.
+
 ## [0.9.0-alpha.1] - 2026-11-19
 
 Grafici a schede, orari e turni. *Chart tabs, working hours and shifts.*

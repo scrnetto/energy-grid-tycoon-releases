@@ -47,6 +47,8 @@ auch auf [Italienisch](https://scrnetto.github.io/energy-grid-tycoon-releases/tr
 installieren. Du brauchst einen aktuellen Browser (Chrome, Firefox, Edge, Safari) auf einem Computer mit Maus und
 Tastatur oder ein Tablet: **Tippen = Klick, langes Drücken = Rechtsklick**. Klicke ins Spiel, bevor du die
 Tastatur benutzt. Deine Spielstände bleiben in dem Browser, den du verwendest.
+Auf einem Smartphone im **Querformat** wechselt das Spiel zu einer eigenen Anordnung für Telefone (noch in
+Erprobung: siehe [Bekannte Probleme](#bekannte-probleme)).
 
 **Auch auf itch.io: [marcoscarlino.itch.io/voltvale](https://marcoscarlino.itch.io/voltvale)**. Dort kannst du im
 Browser spielen, das Spiel für jedes System herunterladen und einen Kommentar hinterlassen. Spielstände aus dem
@@ -63,7 +65,7 @@ herunter:
 | **Windows** 10/11 (64 Bit) | `Voltvale-<version>-windows.zip` | Zip entpacken und `Voltvale.exe` öffnen |
 | **macOS** 12 oder neuer | `Voltvale-<version>-macos.zip` | Zip entpacken und `Voltvale.app` öffnen |
 | **Linux** (64 Bit) | `Voltvale-<version>-linux.zip` | Zip entpacken und `Voltvale` starten |
-| **Android** 8 oder neuer (Tablet oder großes Smartphone) | `Voltvale-<version>-android.apk` | Datei auf dem Gerät öffnen und installieren (siehe unten) |
+| **Android** 8 oder neuer (Tablet oder Smartphone) | `Voltvale-<version>-android.apk` | Datei auf dem Gerät öffnen und installieren (siehe unten) |
 
 ### Beim ersten Start
 
@@ -87,8 +89,8 @@ Unter Linux mit `sha256sum -c --ignore-missing SHA256SUMS.txt`, unter macOS mit 
 
 ### Systemanforderungen
 
-- Ein Bildschirm mit mindestens 1280×800.
-- Maus und Tastatur oder ein Tablet (Web- oder Android-Version).
+- Ein Bildschirm mit mindestens 1280×800 oder ein Smartphone im Querformat.
+- Maus und Tastatur oder ein Touchscreen (Tablet oder Smartphone, Web- oder Android-Version).
 - Etwa 200 MB freier Speicher.
 - Eine beliebige Grafikkarte der letzten 10 Jahre: Auch integrierte Grafik reicht.
 
@@ -113,7 +115,9 @@ der Himmel bewölkter. Die Leiste oben zeigt den Spieltag, den Wochentag, das Da
   gibt es einen **Stromausfall**: Die Einwohner ärgern sich, und manche ziehen weg.
 - **Energiequellen**:
   - die **Sonne** liefert nur tagsüber Strom, und wenig im Winter oder bei Wolken;
-  - der **Wind** ändert sich von Stunde zu Stunde;
+  - der **Wind** ändert Stärke und Richtung von Stunde zu Stunde (das Fenster Wetter zeigt, woher er weht); ein
+    Windpark **im Windschatten** eines anderen, wenige Felder entfernt, erzeugt weniger (der „Nachlauf“ der
+    Anlagen, bis zu 40 % weniger);
   - **Kohle** liefert immer, verschmutzt aber die Luft und verbrennt die Kohle aus den **Minen**.
 - **Batterien** speichern den überschüssigen Strom und geben ihn bei Bedarf ab, zum Beispiel am Abend.
 - **Überschüssiger Strom** wird an das Netz draußen verkauft, aber je mehr du anbietest, desto weniger ist er wert.
@@ -138,7 +142,8 @@ Gebäude brauchen Leute, die sie betreiben.
 - Arbeitskräfte gehen **zuerst zur Energie**, dann **zur Nahrung**, dann **zu den Krankenhäusern**, dann **zur
   Industrie**, dann **zu den Minen**, dann **zu den Diensten** (Wohnviertel und Parks). Wohnviertel funktionieren
   auch dann, wenn ihren Diensten Personal fehlt.
-- **Arbeitslosigkeit** bedeutet weniger Steuereinnahmen und, wenn sie hoch ist, weniger zufriedene Einwohner.
+- **Arbeitslosigkeit** kostet: Wer keine Arbeit hat, zahlt keine Einkommensteuer und bekommt Arbeitslosengeld von
+  der Stadt; ist sie hoch, sind die Einwohner weniger zufrieden.
 
 ### Arbeitszeiten und Schichten
 
@@ -180,7 +185,7 @@ knapp wird.
 
 - **Zufriedenheit** (der Smiley in der Leiste oben): bewegt sich langsam auf einen Wert zu, der die Summe einiger
   Faktoren ist, nämlich Stromausfälle der letzten 24 Stunden, Nahrung, Hunger, Arbeitslosigkeit, Verschmutzung,
-  Gesundheit, Parks und Steuern. Fährst du mit der Maus über die Zahl, siehst du, wohin sie sich bewegt und wie stark
+  Gesundheit, Parks, Steuern und Haushaltskasse. Fährst du mit der Maus über die Zahl, siehst du, wohin sie sich bewegt und wie stark
   jeder Faktor wiegt, zum Beispiel „Stromausfälle −5,0“ oder „Parks +3,0“. Unter 60 wächst die Stadt nicht, und unter
   35 beginnen die Leute wegzuziehen.
 - **Gesundheit** (das Herz): sinkt mit Verschmutzung und Hunger. **Kranke bleiben zu Hause**, also gibt es weniger
@@ -189,8 +194,23 @@ knapp wird.
   Stromausfall kann es niemanden behandeln. Ein Muss, wenn du auf Kohle setzt.
 - **Park** (Ebene oder Hügel): macht die Leute zufriedener. In einer kleinen Stadt zählt er mehr: Jeder Park bringt
   +3 pro 100 Einwohner, bis zu +10.
-- **Steuern**: drei Stufen, niedrig, normal und hoch, mit dem Münzknopf in der Leiste oben oder der Taste **T**.
-  Hohe Steuern bringen mehr Geld, aber weniger Zufriedenheit; niedrige Steuern das Gegenteil.
+- **Steuern**: die Einkommensteuer auf die Löhne der Arbeitenden, in drei Stufen, niedrig, normal und hoch, mit dem
+  Münzknopf in der Leiste oben oder der Taste **T**. Hohe Steuern bringen mehr Geld, aber weniger Zufriedenheit;
+  niedrige Steuern das Gegenteil.
+
+### Löhne, Haushalte und Rechnungen
+
+- Die Stadt zahlt für jede besetzte Stelle einen **Lohn**, für Nachtschichten etwas mehr.
+- Das Personal sammelt **Erfahrung**: Wer an derselben Stelle bleibt, erzeugt bis zu **15 %** mehr, verdient aber
+  auch mehr. Wechselt das Personal, sinkt die Erfahrung: Es lohnt sich, die Arbeitskräfte zu halten. Das Fenster Feld
+  zeigt Erfahrung und Löhne jedes Gebäudes.
+- Die Haushalte zahlen der Stadt **Einkommensteuer**, die **Stromrechnung** der Wohnviertel, **Nahrung** und
+  **Miete**. Wer keine Arbeit hat, bekommt **Arbeitslosengeld**. Die Haushalte haben auch sonstige Einkünfte, etwa
+  Renten und Arbeit außerhalb der Stadt.
+- Fenster **Haushalte** (Taste **H** oder der Knopf oben): Einnahmen und Ausgaben der Haushalte in den letzten 24
+  Stunden, was jedem Einwohner pro Tag übrig bleibt, und der Durchschnittslohn. Hier stellst du den **Energietarif**
+  ein: niedrig, normal oder hoch. Ein hoher Tarif bringt der Stadt mehr Geld, lässt den Haushalten aber weniger.
+- Was den Haushalten bleibt, wirkt auf die Zufriedenheit („Haushaltskasse“ im Zufriedenheits-Hinweis).
 
 ### Baustoffe und Industrie
 
@@ -249,6 +269,17 @@ unter dem Preis mit kleinen Symbolen; fährst du mit der Maus über den Knopf, l
 - **Nahrung verdirbt** auf jeder Fahrt ein wenig: Je weiter der Bauernhof entfernt ist, desto mehr geht verloren.
 - Das Fenster **Feld** zeigt Hof, Silo und Entfernung zum Lager; **Vorräte** zeigt, was auf den Höfen wartet.
 
+### Markt
+
+- Den **Markt** baust du im Reiter **Verkehr** der Liste; es gibt einen pro Stadt. Er braucht eine Straße und
+  Personal und ist werktags von 8 bis 17 Uhr geöffnet.
+- Mit dem Markt kaufst du Baustoffe und Nahrung **ohne den Importaufschlag**, und du kannst auch **Kohle und Stein**
+  kaufen. Was du nicht brauchst, **verkaufst** du zu 70 % des Kaufpreises.
+- Fenster **Markt** (Taste **K** oder der Knopf mit der Waage oben): Vorrat und Preise jedes Materials; die
+  Schwellen **„Verkauf über“** und **„Kauf unter“** lassen den Markt Stunde für Stunde von selbst handeln; die
+  Knöpfe **„10 kaufen“** und **„10 verkaufen“** wirken sofort, auch außerhalb der Öffnungszeiten.
+- Verkäufe und Käufe erscheinen im Ereignisprotokoll und auf der Registerkarte **Geld** des Diagramms.
+
 ### Leitungsverluste
 
 - Ein Teil des Stroms eines Kraftwerks geht auf den Leitungen bis zum nächsten **Knoten** verloren: dem
@@ -275,18 +306,38 @@ unter dem Preis mit kleinen Symbolen; fährst du mit der Maus über den Knopf, l
   Beispiel „Voltastraße“. Eine Straße behält ihren Namen auf ihrem ganzen geraden Abschnitt.
 - Der Knopf **Umbenennen** im Fenster Feld ändert ihn; leer gelassen kehrt der automatische Name zurück.
 
+### Ereignisprotokoll
+
+- Die **Glocke** oben zählt die neuen Ereignisse; sie wird rot, wenn eines ernst ist.
+- Das Fenster **Ereignisse** (Taste **E** oder die Glocke) zeigt oben die **aktuellen Probleme**: Schulden, Gebäude
+  ohne Netz, ohne Personal oder ohne Straße, volle Höfe, Minen, die zur Neige gehen, importierte Nahrung. Darunter
+  steht der **Verlauf** des Geschehens, mit Filtern nach Art.
+- Ein Klick auf eine Zeile zentriert die Karte auf die Stelle und öffnet das Fenster Feld.
+
+### Zielprognose
+
+- Das Fenster **Ziele** sagt, wie das Spiel **unter den aktuellen Bedingungen, ohne neue Gebäude** verläuft: etwa an
+  welchem Tag du 400 Einwohner erreichst, ob die Verschmutzung unter dem Grenzwert bleibt, oder ob du in die
+  Schulden rutschst.
+- Die Aussicht ist **im Plan**, **gefährdet** oder **nicht im Plan**. Die Prognose wird jeden Tag aktualisiert und
+  nach jedem Bau, jedem Abriss und jeder Änderung von Steuern und Tarif.
+- Die Registerkarte **Ziele** des Diagramms zeigt Einwohner und Verschmutzung seit Spielbeginn, die Ziellinie und
+  die Prognose gestrichelt.
+
 ### Diagramme
 
-Das Fenster unten zeigt die **letzten 24 Stunden**, eine Spalte pro Stunde, auf fünf Registerkarten. Ein Klick auf
-eine Registerkarte wechselt dorthin (das Spiel merkt sich deine Wahl); fährst du mit der Maus über eine Spalte,
-liest du die genauen Werte dieser Stunde.
+Das Fenster unten hat sechs Registerkarten. Die ersten fünf zeigen die **letzten 24 Stunden**, eine Spalte pro
+Stunde; die sechste, **Ziele**, das ganze Spiel mit der Prognose. Ein Klick auf eine Registerkarte wechselt dorthin
+(das Spiel merkt sich deine Wahl); fährst du mit der Maus über eine Spalte, liest du die genauen Werte dieser Stunde.
 
 - **Energie**: Erzeugung, Nachfrage, Batterien und Leitungsverluste.
-- **Geld**: Einnahmen über der Null, Ausgaben darunter, und der Kontostand.
+- **Geld**: Einnahmen über der Null, Ausgaben darunter, und der Kontostand, mit Verkäufen und Käufen am Markt.
 - **Materialien**: wie viel von jedem Material erzeugt und verbraucht wird, und der Vorrat; das Material wählst du
   mit den Knöpfen neben dem Diagramm.
 - **Stadt**: erzeugte und verzehrte Nahrung, der Nahrungsvorrat, Zufriedenheit und Gesundheit.
 - **Verkehr**: Menschen auf dem Weg zur Arbeit und nach Hause, Lkw unterwegs und die Straßenauslastung.
+- **Ziele**: Einwohner und Verschmutzung seit Spielbeginn, die Ziellinie und die Prognose gestrichelt (siehe
+  [Zielprognose](#zielprognose)).
 
 Nach dem Laden eines Spielstands aus einer früheren Version starten die Diagramme leer und füllen sich Stunde für
 Stunde.
@@ -298,34 +349,76 @@ auf der Karte stehen, siehst du seinen Zustand und wie viel Strom es erzeugt ode
 
 | Steuerung | Was sie tut |
 |---|---|
-| Tasten **1–9** und **0** | Wählen, was gebaut wird: Stromleitung, Kohlemine, Kohlekraftwerk, Solarpark, Windpark, Batterie, Wohnviertel, Bauernhof, Fischkutter, Gewächshaus. Die übrigen Gebäude (Kühlhaus, Park, Krankenhaus, Industrie, Lager, Fuhrpark, Umspannwerk, Pumpspeicher) stehen in der Liste links |
+| Tasten **1–9** und **0** | Wählen, was gebaut wird: Stromleitung, Kohlemine, Kohlekraftwerk, Solarpark, Windpark, Batterie, Wohnviertel, Bauernhof, Fischkutter, Gewächshaus. Die übrigen Gebäude (Kühlhaus, Park, Krankenhaus, Industrie, Lager, Fuhrpark, Umspannwerk, Pumpspeicher, Markt) stehen in der Liste links, auf sechs Reitern: Energie, Netz, Verkehr, Stadt, Nahrung, Industrie |
 | **Linksklick** | Setzt das gewählte Gebäude. Ohne Auswahl wählt er ein Feld und zeigt dessen Details |
 | **Rechtsklick** (auf dem Tablet: langes Drücken) | Mit gewähltem Gebäude: hebt die Auswahl auf. Ohne Auswahl: fragt nach, ob abgerissen werden soll (die Hälfte der Kosten wird erstattet) |
-| **Esc** | Hebt die Auswahl auf; gibt es nichts aufzuheben, öffnet es das **Pausenmenü** (Weiter, Speichern unter…, Schnellspeichern, Spiel laden, Speichern und zum Menü, Neues Spiel, Sprache) |
+| **Esc** | Hebt die Auswahl auf; gibt es nichts aufzuheben, öffnet es das **Pausenmenü** (Weiter, Speichern unter…, Schnellspeichern, Spiel laden, Speichern und zum Menü, Neues Spiel, Einstellungen) |
+| Knopf **⚙** (oben) | Öffnet das Pausenmenü, wie Esc: Spielstände, Einstellungen, Beenden |
 | **F11** | Vollbild / Fenster |
 | **Leertaste** oder der Knopf ▶/❚❚ | Pause / weiter |
-| **F** oder die Pfeilknöpfe | Geschwindigkeit 1×, 2×, 4× |
+| **F** oder der Geschwindigkeitsknopf | Geschwindigkeit 1× → 2× → 4× → 1× |
 | **V** | Um genau eine Stunde vorspulen |
 | **T** oder der Münzknopf | Steuern niedrig, normal, hoch |
-| **WASD** oder **Pfeiltasten**, mittlere Maustaste | Ansicht verschieben |
+| **Klicken und ziehen** mit der linken Taste, **WASD** oder **Pfeiltasten**, mittlere Maustaste | Ansicht verschieben |
 | **Mausrad** | Zoom |
 | Knopf **Vorräte** (oben) | Zeigt die Vorräte an Kohle, Holz, Stein, Zement und Nahrung |
-| **Speichern** / **Laden** (oben) | **Speichern** legt einen neuen Spielstand mit dem Namen „Tag N“ an; **Laden** setzt den neuesten Spielstand fort. Das Spiel speichert außerdem jeden Tag von selbst |
 | **F5** / **F9** | Schnellspeichern / Schnellspeicherstand laden |
 | **R** | Werkzeug **Straße**: klicken oder ziehen, um Feldwege zu legen |
 | **M** | Werkzeug **Straße ausbauen**: Feldweg → asphaltierte Straße → Allee |
 | **L** | Werkzeug **Leitung ausbauen**: Leitungen von Stufe I → II → III |
 | **G** | Verkehrskarte |
 | **J** oder der Knopf **Verkehr** (oben) | Fenster Verkehr: Personen, Waren, am stärksten belastete Straßen |
+| **E** oder die Glocke (oben) | Ereignisprotokoll: aktuelle Probleme und Verlauf |
+| **H** oder der Knopf **Haushalte** (oben) | Fenster Haushalte: Löhne, Ausgaben, Energietarif |
+| **K** oder der Knopf mit der Waage (oben) | Fenster Markt: Baustoffe und Nahrung kaufen und verkaufen |
 | Knopf **Umbenennen** (im Fenster Feld) | Benennt eine Straße, ein Wohnviertel, ein Krankenhaus oder einen Park um |
-| Registerkarten des Diagramms (unten) | Energie, Geld, Materialien, Stadt, Verkehr |
+| Knopf **Abreißen** (Symbol im Fenster Feld) | Reißt das gewählte Gebäude ab (die Hälfte der Kosten wird erstattet) |
+| Registerkarten des Diagramms (unten) | Energie, Geld, Materialien, Stadt, Verkehr, Ziele |
 
 ### Sprachen
 
-Das Spiel gibt es auf **Italienisch, Englisch, Deutsch, Französisch und Spanisch**. Im Startmenü oder im
-Pausenmenü wechselt der Punkt **Sprache** jederzeit, ohne Neustart; deine Wahl wird gespeichert. Beim ersten Start
-verwendet das Spiel die Sprache deines Systems, wenn es eine dieser fünf ist, sonst Englisch. In der Web-Version
-kannst du eine Sprache direkt öffnen, indem du `?lingua=de` (oder `it`, `en`, `fr`, `es`) an die Adresse anhängst.
+Das Spiel gibt es auf **Italienisch, Englisch, Deutsch, Französisch und Spanisch**. In den **Einstellungen**
+(Startmenü oder Pausenmenü) wechselt der Punkt **Sprache** jederzeit, ohne Neustart; deine Wahl wird gespeichert.
+Beim ersten Start verwendet das Spiel die Sprache deines Systems, wenn es eine dieser fünf ist, sonst Englisch. In
+der Web-Version kannst du eine Sprache direkt öffnen, indem du `?lingua=de` (oder `it`, `en`, `fr`, `es`) an die
+Adresse anhängst.
+
+### Einstellungen
+
+Im Startmenü oder im Pausenmenü (**⚙** oder **Esc**) wählst du **Einstellungen**. Jeder Klick auf einen Punkt
+wechselt zum nächsten Wert, und deine Wahl wird gespeichert.
+
+- **Vollbild** (nicht in der Web- und der Android-Version) und **Sprache**.
+- **Automatisch speichern**: jeden Tag, alle 3 Tage, alle 7 Tage oder aus.
+- **Größe der Oberfläche**: 90, 100 oder 110 %.
+- **Anordnung**: automatisch, Computer oder Telefon.
+- **Animationen**: an oder aus. Aus hält den bewegten Verkehr, die Wolken, den Rauch und die anderen Effekte an:
+  praktisch auf langsamen Computern.
+- **Musik** und **Soundeffekte**: 100, 75, 50 oder 25 % oder aus.
+
+### Auf dem Smartphone
+
+Auf einem Smartphone im **Querformat** verwendet das Spiel eine Anordnung für kleine Bildschirme:
+
+- die Karte füllt den Bildschirm, und die Leiste oben ist kurz; ein Tippen auf die Werte öffnet das Blatt **Stadt**
+  mit Zufriedenheit, Gesundheit und Steuern;
+- die **Kategorien** der Gebäude stehen unten: Ein Tippen öffnet ihr Raster, ein Tippen auf ein Gebäude zeigt seine
+  Karte mit der Beschreibung und dem Knopf **Bauen**;
+- die Fenster (Feld, Wetter, Ziele, Diagramme und die anderen) gleiten von unten herein; die Werte des Diagramms
+  liest du, indem du auf eine Spalte tippst.
+
+Die Anordnung wird automatisch gewählt; in den Einstellungen kannst du zwischen Telefon und Computer wechseln.
+
+### Musik und eine lebendige Karte
+
+- **Musik**: ein Stück für den Tag, eines für die Nacht und ein Thema mit Chören für das Startmenü; zwischen Tag und
+  Nacht wechselt die Musik am Ende des Stücks. **Soundeffekte** für das Bauen, Straßen, Abrisse, Stromausfälle,
+  Klicks und Fenster. Die Lautstärke stellst du in den Einstellungen ein.
+- **Die Karte bewegt sich**: Verkehrspunkte auf den Straßen (abends mit Scheinwerfern), Wolkenschatten, die der Wind
+  treibt, Schatten der Gebäude, die der Sonne folgen, glitzerndes Wasser und Wellen im Wind, Windräder, die sich bei
+  starkem Wind schneller drehen, Rauch nur aus arbeitenden Gebäuden, der mit dem Wind zieht, Dunst bei den
+  Verschmutzern, Spiegelungen auf den Solarparks zur Mittagszeit, Schnee, wenn es kalt ist.
+- Die Werte in der Leiste oben leuchten mit einem Pfeil auf, wenn sie steigen oder fallen.
 
 ### Signale an Gebäuden
 
@@ -364,6 +457,14 @@ kannst du eine Sprache direkt öffnen, indem du `?lingua=de` (oder `it`, `en`, `
 10. Erscheint „Zu wenige Lkw“, baue einen **Fuhrpark**. Wenn die Stadt wächst, sieh auf die **Verkehrskarte** (G)
     und baue die am stärksten belasteten Straßen aus (M); setze Alleen nicht direkt neben Wohnviertel.
 11. Halte Kraftwerke nahe am Rathaus oder an einem **Umspannwerk**: Weit weg verlieren sie Strom.
+12. Wird die **Glocke** rot, öffne das **Ereignisprotokoll** (E): Oben stehen die Probleme, die du lösen musst, und
+    ein Klick bringt dich hin.
+13. Sieh dir die **Prognose** im Fenster Ziele an: Steht dort „nicht im Plan“, gewinnst du unter den aktuellen
+    Bedingungen nicht.
+14. Erzeugt deine Industrie mehr, als du verbrauchst, verkauft ein **Markt** den Überschuss und lässt dich Baustoffe
+    günstiger kaufen.
+15. Stelle **Windparks** in Windrichtung mit Abstand auf (Fenster Wetter): Hintereinander nehmen sie sich gegenseitig
+    den Wind.
 
 ## Spielstände
 
@@ -371,7 +472,8 @@ kannst du eine Sprache direkt öffnen, indem du `?lingua=de` (oder `it`, `en`, `
   angelegt hast. Bis zu 50 benannte Spielstände pro Spiel.
 - **Schnellspeichern**: **F5** speichert, **F9** kehrt dorthin zurück. Es gibt einen pro Spiel, der jedes Mal
   überschrieben wird. Auf dem Tablet steht er im Pausenmenü.
-- **Automatische Spielstände**: einer zu Beginn jedes Spieltags; die letzten drei bleiben erhalten.
+- **Automatische Spielstände**: zu Beginn jedes Spieltags, oder alle 3 oder 7 Tage, oder nie (Einstellungen); die
+  letzten drei bleiben erhalten.
 - **Spiel laden** (Startmenü und Pausenmenü): alle deine Spielstände, nach Spiel gruppiert, mit Tag, Geld,
   Einwohnern und Datum. Hier kannst du **laden**, einen benannten Spielstand **umbenennen** oder einen **löschen**.
 - **Fortsetzen** (Startmenü) setzt den neuesten Spielstand fort, egal welcher Art.
@@ -414,6 +516,11 @@ Krankenhäuser und Parks bekommen einen Namen. Ein Spielstand der 0.8.0 öffnet 
 **0.9.0** verwendet dasselbe Format wie 0.8.0: Deine Spiele aus der 0.8.0 laufen einfach weiter, mit den neuen
 Arbeitszeiten.
 
+**Ab 0.10.0** ändert sich das Format erneut: Ereignisprotokoll, Löhne, Haushalte, Markt und Prognose. Spielstände
+früherer Versionen lassen sich laden: Das Ereignisprotokoll beginnt leer, der Tarif ist normal, das Personal fängt
+ohne Erfahrung neu an, und das Diagramm Ziele beginnt an dem Tag, an dem du das Spiel wieder aufnimmst. Ein
+Spielstand der 0.10.0 öffnet sich nicht in früheren Versionen.
+
 Spielstände einer Alpha-Version funktionieren in der nächsten vielleicht nicht: Das [Changelog](CHANGELOG.md) sagt
 es, wenn das passiert.
 
@@ -421,27 +528,34 @@ es, wenn das passiert.
 
 Was schon geplant ist, ungefähr in dieser Reihenfolge. Pläne können sich ändern.
 
-- **Ereignisprotokoll**: ein Fenster, das alle Warnungen und Ereignisse festhält, oben die Probleme, die noch
-  offen sind; ein Klick zeigt, wo es passiert ist.
-- **Löhne und Erfahrung**: Löhne, Rechnungen, Essen und Miete; wer an derselben Stelle bleibt, wird besser und
-  verdient mehr.
+- **Ziele und Freischaltungen**: kleine Ziele wie „baue 10 Häuser“, die neue Gebäude freischalten und das Rathaus
+  wachsen lassen; und ein Bildschirm **Neues Spiel**, auf dem du den Namen der Stadt, den Schwierigkeitsgrad und
+  Katastrophen ja oder nein wählst.
 - **Bautrupps und Bauhof**: Bauen wird Zeit brauchen. Die Arbeit erledigen Trupps des Rathauses und später der
   Bauhöfe, die mit deinen Baustoffen auch reparieren, was sich abnutzt.
 - **Öl, Gas und Wärme**: neue Energiequellen, und Heizung im Winter.
 - **Wasser und Abfall**: Wasserwerke, Kläranlagen und Deponien für eine größere Stadt.
 - **Bildung und Forschung**: Schulen und Technologien zum Entdecken, die neue Gebäude freischalten.
-- **Neue Karten, und später**: in jedem Spiel eine andere Karte, größere Karten, eine Minikarte; dann eine
-  isometrische Ansicht und mehrere miteinander verbundene Städte.
+- **Verschleiß, Notfälle und Streiks**: Gebäude nutzen sich ab und müssen repariert werden; Notfälle wie Brände und
+  Naturkatastrophen, für alle, die sie wählen.
+- **Neue Karten, und später**: in jedem Spiel eine andere Karte, größere Karten mit Flüssen und Brücken, eine
+  Minikarte; dann mehrere miteinander verbundene Städte und, noch später, eine isometrische Ansicht.
 
 ## Bekannte Probleme
 
 - Die Versionen für **Windows** und **macOS** wurden noch nicht auf echten Computern getestet: Wenn etwas nicht
   klappt, [sag Bescheid](#ein-problem-oder-eine-idee-melden).
 - Die **Android**-Version wird von Hand installiert, außerhalb des Play Store.
+- Die Anordnung für **Smartphones** ist neu: Bisher wurde sie nur auf simulierten Bildschirmen ausprobiert, noch
+  nicht auf echten Telefonen oder im Browser eines Telefons. Wenn etwas nicht klappt,
+  [sag Bescheid](#ein-problem-oder-eine-idee-melden).
 - In der **Web**-Version liegen die Spielstände im Browser: Löschst du die Daten der Seite, sind sie weg.
 - Es ist eine **Alpha**: Das Gleichgewicht des Spiels (Kosten, Produktion, Wachstum, Verkehr) ändert sich noch von
-  Version zu Version. Mit den neuen Arbeitszeiten produziert die Industrie in wenigen Stunden viel: Wenn ihre Höfe
-  voll werden, baue früh einen Fuhrpark.
+  Version zu Version. Die Industrie produziert in wenigen Stunden viel: Wenn ihre Höfe voll werden, baue früh einen
+  Fuhrpark.
+- Auf einem langsamen Computer oder im Browser kann ein sehr schneller Klick gelegentlich verloren gehen; der
+  nächste Klick verschiebt dann die Karte. Während die Prognose neu berechnet wird, verdeckt der Hinweis darauf
+  teilweise den Titel des Bereichs „Ziele“. Beides wird in einer späteren Version behoben.
 - Die Übersetzungen ins Deutsche, Französische und Spanische hat noch keine Person mit dieser Muttersprache
   durchgesehen: Meldungen zu Fehlern sind willkommen.
 
@@ -479,3 +593,6 @@ Entworfen und umgesetzt von **Marco Scarlino**, mit Unity und mit Hilfe von KI-W
 Übersetzungen.
 
 Schriften: Barlow Semi Condensed (SIL Open Font License 1.1), DejaVu Sans (Bitstream-Vera-Lizenz).
+
+Musik und Soundeffekte werden von einem eigens für das Spiel geschriebenen Programm Note für Note synthetisiert:
+keine fremden Samples und keine mit künstlicher Intelligenz erzeugte Musik.
